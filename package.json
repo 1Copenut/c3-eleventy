@@ -11,5 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "postcss": "^8.2.13",
+    "postcss-import": "^14.0.1"
   }
 }
