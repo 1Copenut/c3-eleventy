@@ -1,5 +1,10 @@
 module.exports = function (eleventyConfig) {
   return {
+    dir: {
+      input: 'src/site',
+      output: 'dist',
+    },
+
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid
     templateFormats: ['md', 'njk', 'html', 'liquid'],
