@@ -1,5 +1,5 @@
-
+@import '_variables.css';
 
 body {
-  background: var(--rebeccaPurple);
+  background: var(--blue);
 }
