@@ -1,4 +1,5 @@
 ---
-pageTitle: Continuum Design. Back Again!
+title: Continuum Design. Back Again!
 ---
+
 This is a paragraph of text.

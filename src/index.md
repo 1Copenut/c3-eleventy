@@ -1,5 +1,5 @@
 ---
-pageTitle: Continuum Design.
+title: Continuum Design.
 layout: layouts/layout.njk
 ---
 

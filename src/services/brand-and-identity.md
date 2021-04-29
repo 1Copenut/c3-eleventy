@@ -1,5 +1,5 @@
 ---
-pageTitle: Continuum Design Services. Brand and Identity.
+title: Continuum Design Services. Brand and Identity.
 layout: layouts/layout.njk
 ---
 

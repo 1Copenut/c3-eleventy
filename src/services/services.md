@@ -1,5 +1,5 @@
 ---
-pageTitle: Continuum Design Services.
+title: Continuum Design Services.
 layout: layouts/layout.njk
 ---
 
