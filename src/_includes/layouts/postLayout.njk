@@ -1,12 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>{{ title }}</title>
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
+    <nav aria-label="Breadcrumbs">
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">All posts</a>
+        </li>
+        <li>
+          <a aria-current="page" href="{{ page.url }}">{{ title }}</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </main>
   </body>
 </html>
