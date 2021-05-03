@@ -1,4 +1,7 @@
 module.exports = function (eleventyConfig) {
+  // Pass images through to /dist
+  eleventyConfig.addPassthroughCopy('src/images');
+
   return {
     dir: {
       input: 'src',
