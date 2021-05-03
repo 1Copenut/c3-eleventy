@@ -2,6 +2,7 @@
 @import 'global/_normalize.css';
 @import 'global/_typography.css';
 @import 'components/_header.css';
+@import 'components/_primarynav.css';
 
 body {
   background: var(--color-background-blue);

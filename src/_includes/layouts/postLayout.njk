@@ -6,6 +6,8 @@
     <link href="/css/main.css" rel="stylesheet" />
   </head>
   <body>
+    {% include "layouts/partials/_header.njk" %} {% include
+    "layouts/partials/_primarynav.njk" %}
     <nav aria-label="Breadcrumbs">
       <ul>
         <li>
@@ -23,5 +25,6 @@
       <h1>{{ title }}</h1>
       {{ content | safe }}
     </main>
+    {% include "layouts/partials/_footer.njk" %}
   </body>
 </html>
