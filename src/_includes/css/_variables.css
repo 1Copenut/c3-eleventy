@@ -1,3 +1,30 @@
 :root {
-  --blue: lightblue;
+  /* Breakpoints */
+  --breakpoint-small: 30em;
+
+  /* Colors */
+  --color-background-blue: #008fd5;
+  --color-background-blue--dark: #081999;
+  --color-background-blue--navy: #040f5e;
+  --color-background-dusty-rose: #ab4776;
+  --color-background-dusty-rose--dark: #882455;
+  --color-link-blue: #234a71;
+  --color-footer-black: #212121;
+  --color-footer-gray: #fafafa;
+  --color-text-black: #111;
+  --color-white: #fff;
+
+  /*  Type Sizes */
+  --font-size-body: 1rem;
+  --font-size-5: 1.333rem;
+  --font-size-4: 1.777rem;
+  --font-size-3: 2.369rem;
+  --font-size-2: 3.157rem;
+  --font-size-1: 4.209rem;
+  --font-size-display: 5.61rem;
+
+  /* Z-index */
+  --z-index-2: 2;
+  --z-index-5: 5;
+  --z-index-10: 10;
 }
