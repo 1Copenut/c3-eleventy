@@ -1,10 +1,12 @@
 [role='banner'] {
   background-color: var(--color-background-dusty-rose);
   height: 6.25rem;
+
   a {
     display: inline-block;
     text-decoration: none;
   }
+
   span {
     background-color: var(--color-background-blue--dark);
     color: var(--color-white);
@@ -16,6 +18,7 @@
       padding-right: 1rem;
     }
   }
+
   /* Tablet devices - 768px breakpoint */
   @media only screen and (min-width: 48rem) {
     height: 10rem;
@@ -29,6 +32,7 @@
       }
     }
   }
+
   /* Mid-size screens 1024px to 1280px */
   @media only screen and (min-width: 64rem) {
     height: 12rem;
@@ -37,6 +41,7 @@
   @media only screen and (min-width: 80rem) {
     height: 18rem;
   }
+
   /*
    * https://css-tricks.com/snippets/css/retina-display-media-query/
    * High-density phones and non-tablet devices
@@ -51,6 +56,7 @@
       url('../../images/backgrounds/mobile-header@2x.jpg') top left/cover
       no-repeat;
   }
+
   /* High-density tablets */
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 48rem),
     only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 48rem),
@@ -62,6 +68,7 @@
       url('../../images/backgrounds/tablet-header@2x.jpg') top left/cover
       no-repeat;
   }
+
   /* Mid-size high-density screens 1024 to 1280px */
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 64rem),
     only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 64rem),
@@ -72,6 +79,7 @@
     background: var(--color-background-dusty-rose)
       url('../../images/backgrounds/mid-header@2x.jpg') top left/cover no-repeat;
   }
+
   /* Large high-density screens 1280px and wider */
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 80rem),
     only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 80rem),

@@ -1,0 +1,15 @@
+[role='contentinfo'] {
+  background: var(--color-background-black);
+
+  .footer {
+    &__heading,
+    &__subhead,
+    &__copyright {
+      color: var(--color-footer-gray);
+    }
+  }
+
+  a {
+    color: var(--color-link-blue-light);
+  }
+}

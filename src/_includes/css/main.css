@@ -3,6 +3,7 @@
 @import 'global/_typography.css';
 @import 'components/_header.css';
 @import 'components/_primarynav.css';
+@import 'components/_footer.css';
 
 body {
   background: var(--color-background-blue);

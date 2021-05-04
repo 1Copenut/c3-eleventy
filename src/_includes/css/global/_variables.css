@@ -3,14 +3,16 @@
   --breakpoint-small: 30em;
 
   /* Colors */
+  --color-background-black: #121212;
   --color-background-blue: #008fd5;
   --color-background-blue--dark: #081999;
   --color-background-blue--navy: #040f5e;
   --color-background-dusty-rose: #ab4776;
   --color-background-dusty-rose--dark: #882455;
   --color-link-blue: #234a71;
+  --color-link-blue-light: #2397d3;
   --color-footer-black: #212121;
-  --color-footer-gray: #fafafa;
+  --color-footer-gray: #888888;
   --color-text-black: #111;
   --color-white: #fff;
 
