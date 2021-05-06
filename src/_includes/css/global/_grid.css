@@ -1,0 +1,9 @@
+.layout__container--grid {
+  height: 100%;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto 1fr auto;
+  }
+}

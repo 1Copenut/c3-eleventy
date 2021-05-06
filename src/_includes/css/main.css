@@ -1,6 +1,7 @@
 @import 'global/_variables.css';
 @import 'global/_utilities.css';
 @import 'global/_normalize.css';
+@import 'global/_grid.css';
 @import 'global/_typography.css';
 @import 'components/_header.css';
 @import 'components/_primarynav.css';

@@ -6,12 +6,14 @@
     <link href="/css/main.css" rel="stylesheet"/>
   </head>
   <body>
-    {% include "layouts/partials/_header.njk" %}
-    {% include "layouts/partials/_primarynav.njk" %}
-    <main>
-      <h1>{{ title }}</h1>
-      {{ content | safe }}
-    </main>
-    {% include "layouts/partials/_footer.njk" %}
+    <div class="layout__container--grid">
+      {% include "layouts/partials/_header.njk" %}
+      {% include "layouts/partials/_primarynav.njk" %}
+      <main>
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+      </main>
+      {% include "layouts/partials/_footer.njk" %}
+    </div>
   </body>
 </html>
