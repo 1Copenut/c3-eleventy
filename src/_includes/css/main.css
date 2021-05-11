@@ -7,7 +7,3 @@
 @import 'landmarks/_primarynav.css';
 @import 'landmarks/_main.css';
 @import 'landmarks/_footer.css';
-
-body {
-  background: var(--color-background-blue);
-}

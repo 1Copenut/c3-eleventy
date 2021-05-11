@@ -1,0 +1,22 @@
+Accessible by design. Accessible by choice.
+
+Accessibility is meeting your customers where they are. Making sure your website is usable for someone who only uses a smart phone. For someone who is deaf or hard-of-hearing. For someone who is blind or someone who prefers a light-touch selling experience. It is all of these things and more. 
+
+Accessibility starts with then end in mind.
+
+We achieve the best outcome when we make accessibility a requirement instead of a check just before launching a website. Sites are easier to change because extra code hasn't been added to fix earlier problems. Sites are easier to test because there are fewer lines of code and fewer bugs.
+
+Continuum Design specializes in these parts of accessibility:
+* User-interface design
+* User-experience design
+* Front-end development (HTML, CSS, JavaScript, ARIA)
+* Manual testing (more on this below)
+* Automated testing (more on this below)
+* WCAG2.0 and 2.1 standards
+* PDF, Word document creation
+
+How I do manual testing
+
+A significant amount of accessibility testing can be automated, but there are key things that must be tested by a person:
+
+* 
