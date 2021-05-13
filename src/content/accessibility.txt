@@ -2,11 +2,11 @@ Accessible by design. Accessible by choice.
 
 Accessibility is meeting your customers where they are. Making sure your website is usable for someone who only uses a smart phone. For someone who is deaf or hard-of-hearing. For someone who is blind or someone who prefers a light-touch selling experience. It is all of these things and more. 
 
-Accessibility starts with then end in mind.
+Accessibility starts with the end in mind.
 
-We achieve the best outcome when we make accessibility a requirement instead of a check just before launching a website. Sites are easier to change because extra code hasn't been added to fix earlier problems. Sites are easier to test because there are fewer lines of code and fewer bugs.
+We achieve the best outcome when we make accessibility a requirement instead of a check before launching a website. Sites are easier to change because code hasn't been added to fix existing problems. As a result, sites are easier to test&mdash;fewer lines of code mean fewer bugs.
 
-Continuum Design specializes in these parts of accessibility:
+Continuum Design specializes in web and document accessibility:
 * User-interface design
 * User-experience design
 * Front-end development (HTML, CSS, JavaScript, ARIA)
@@ -15,8 +15,18 @@ Continuum Design specializes in these parts of accessibility:
 * WCAG2.0 and 2.1 standards
 * PDF, Word document creation
 
-How I do manual testing
+Automated testing
 
-A significant amount of accessibility testing can be automated, but there are key things that must be tested by a person:
+Autmated tests are a great way to ensure a baseline of compliance. Unit tests check small snippets of code like a shopping cart or a navigation bar. Integration tests make sure units are working together. End-to-end tests confirm user actions from beginning to end. Visual regression tests make sure your site layout has not changed unexpectedly.
 
-* 
+Manual testing
+
+A significant part of accessibility testing can be automated, but there are key things that must be tested by a person. Computers do a great job repeating the same task over and over, asking if anything has changed. But it takes a person to ansewr "How does this website, how does this application work? Can I use it without getting frustrated or discouraged? Does it make me feel good about this purchase?"
+
+I test websites and applications manually to ensure inclusiveness for:
+
+* Mobile device users (smartphones, tablets)
+* Keyboard navigation
+* Voice navigation
+* Color contrast and color blindness
+* Screen readers (JAWS, NVDA, VoiceOver)
