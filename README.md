@@ -4,6 +4,7 @@
 
 - https://www.11ty.dev/docs/usage/
 - https://www.11ty.dev/docs/config/#transforms
+- https://www.raresportan.com/eleventy-part-three/
 
 ## Git References I Use Sometimes
 

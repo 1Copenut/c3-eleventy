@@ -6,15 +6,11 @@
     <link href="/css/main.css" rel="stylesheet"/>
   </head>
   <body>
-    <div id="parent-grid">
+    <div id="services-grid">
       {% include "layouts/partials/_header.njk" %}
       {% include "layouts/partials/_primarynav.njk" %}
-      <main role="main">
-        <div class="content__layout">
-          <h1>{{ title }}</h1>
-          {{ content | safe }}
-        </div>
-      </main>
+      {% block content %}{% endblock content %}
+      {% block aside %}{% endblock aside %}
       {% include "layouts/partials/_footer.njk" %}
     </div>
   </body>

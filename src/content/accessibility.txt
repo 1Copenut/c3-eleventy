@@ -23,7 +23,7 @@ Manual testing
 
 A significant part of accessibility testing can be automated, but there are key things that must be tested by a person. Computers do a great job repeating the same task over and over, asking if anything has changed. But it takes a person to ansewr "How does this website, how does this application work? Can I use it without getting frustrated or discouraged? Does it make me feel good about this purchase?"
 
-I test websites and applications manually to ensure inclusiveness for:
+I test websites to ensure inclusiveness:
 
 * Mobile device users (smartphones, tablets)
 * Keyboard navigation

@@ -1,6 +1,11 @@
-#parent-grid {
+#parent-grid,
+#services-grid {
   height: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto 1fr auto;
+}
+
+#services-grid {
+  grid-template-rows: auto auto auto 1fr auto;
 }
