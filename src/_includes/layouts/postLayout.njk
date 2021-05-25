@@ -6,25 +6,12 @@
     <link href="/css/main.css" rel="stylesheet" />
   </head>
   <body>
-    {% include "layouts/partials/_header.njk" %} {% include
-    "layouts/partials/_primarynav.njk" %}
-    <nav aria-label="Breadcrumbs">
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/posts/">All posts</a>
-        </li>
-        <li>
-          <a aria-current="page" href="{{ page.url }}">{{ title }}</a>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <h1>{{ title }}</h1>
+    <div id="post-grid">
+      {% include "layouts/partials/_header.njk" %}
+      {% include "layouts/partials/_primarynav.njk" %}
+      {% include "layouts/partials/_breadcrumb.njk" %}
       {{ content | safe }}
-    </main>
-    {% include "layouts/partials/_footer.njk" %}
+      {% include "layouts/partials/_footer.njk" %}
+    </div>
   </body>
 </html>
