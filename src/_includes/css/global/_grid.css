@@ -1,11 +1,25 @@
 #parent-grid,
-#services-grid {
+#services-grid,
+#post-grid {
   height: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto 1fr auto;
 }
 
-#services-grid {
+#services-grid,
+#post-grid {
   grid-template-rows: auto auto auto 1fr auto;
+}
+
+[role="main"],
+[role="complementary"] {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+
+  .content__layout {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
 }
