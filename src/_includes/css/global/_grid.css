@@ -1,14 +1,11 @@
-#parent-grid,
-#services-grid,
-#post-grid {
+.grid__rows {
   height: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto 1fr auto;
 }
 
-#services-grid,
-#post-grid {
+.grid__rows--five {
   grid-template-rows: auto auto auto 1fr auto;
 }
 

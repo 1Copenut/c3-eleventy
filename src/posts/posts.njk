@@ -4,6 +4,12 @@ layout: layouts/layout.njk
 eleventyExcludeFromCollections: true
 ---
 
-This is the posts page. We should list the posts in reverse chronological order.
+<main role="main">
+  <div class="content__layout">
+    <h1>{{ title }}</h1>
 
-{% include "layouts/partials/_postlist.njk" %}
+    <p>This is the posts page. We should list the posts in reverse chronological order.</p>
+
+    {% include "layouts/partials/_postlist.njk" %}
+  </div>
+</main>
