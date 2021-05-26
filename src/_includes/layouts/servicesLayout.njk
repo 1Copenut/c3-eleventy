@@ -9,8 +9,7 @@
     <div class="grid__rows grid__rows--five">
       {% include "layouts/partials/_header.njk" %}
       {% include "layouts/partials/_primarynav.njk" %}
-      {% block content %}{% endblock content %}
-      {% block aside %}{% endblock aside %}
+      {{ content | safe }}
       {% include "layouts/partials/_footer.njk" %}
     </div>
   </body>
