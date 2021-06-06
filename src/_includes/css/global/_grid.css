@@ -9,8 +9,13 @@
   grid-template-rows: auto auto auto 1fr auto;
 }
 
-[role="main"],
-[role="complementary"] {
+.grid__rows--six {
+  grid-template-rows: auto auto auto 1fr auto auto;
+}
+
+[aria-label='Breadcrumbs'],
+[role='main'],
+[role='complementary'] {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   width: 100%;
