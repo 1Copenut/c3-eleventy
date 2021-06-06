@@ -1,6 +1,52 @@
 ---
-title: Continuum Design Services. Contact Us.
+title: Contact me for your next project
 layout: layouts/layout.njk
 ---
 
-Contact Us form.
+<main role="main">
+  <div class="content__layout">
+    <h1>{{ title }}</h1>
+
+    <blockquote class="content__lead-paragraph">
+      <p>
+        Continuum Design looks forward to hearing from you. Please fill out the
+        form below. All fields are required except a phone number.
+      </p>
+    </blockquote>
+
+    <form action="" novalidate class="contact-form">
+      <fieldset class="contact-form__fieldset">
+        <legend class="contact-form__legend">
+          <h2>Your information</h2>
+        </legend>
+        <ul class="utils__list--no-bullets" role="list">
+          <li>
+            <label for="name" class="contact-form__label">Your name</label>
+            <input type="text" autocomplete="name" id="name" required />
+          </li>
+          <li>
+            <label for="email" class="contact-form__label"
+              >Your email address</label
+            >
+            <input type="email" autocomplete="email" id="email" required />
+          </li>
+          <li>
+            <label for="telephone" class="contact-form__label"
+              >Your telephone number (optional)</label
+            >
+            <input type="tel" autocomplete="tel" id="telephone" />
+          </li>
+          <li>
+            <label for="consented">
+              <input type="checkbox" id="consented" required />
+              <span>I consent to Continuum Design contacting me</span>
+            </label>
+          </li>
+          <li>
+            <input type="submit" value="Send my contact info" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </div>
+</main>

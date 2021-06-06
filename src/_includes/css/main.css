@@ -3,6 +3,7 @@
 @import 'global/_normalize.css';
 @import 'global/_grid.css';
 @import 'global/_typography.css';
+@import 'global/_forms.css';
 @import 'landmarks/_header.css';
 @import 'landmarks/_primarynav.css';
 @import 'landmarks/_main.css';

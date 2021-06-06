@@ -9,3 +9,7 @@
   position: absolute;
   width: 1px;
 }
+
+.utils__list--no-bullets {
+  list-style-type: none !important;
+}
