@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Read what Continuum Design has been doing and how it can help your business"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
     <link href="/css/main.css" rel="stylesheet" />
   </head>
   <body>
     <div class="grid__rows grid__rows--five">
-      {% include "layouts/partials/_header.njk" %}
-      {% include "layouts/partials/_primarynav.njk" %}
-      {% include "layouts/partials/_breadcrumb.njk" %}
+      {% include "layouts/partials/_header.njk" %} {% include
+      "layouts/partials/_primarynav.njk" %} {% include
+      "layouts/partials/_breadcrumb.njk" %}
       {{ content | safe }}
       {% include "layouts/partials/_footer.njk" %}
     </div>
