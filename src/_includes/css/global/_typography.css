@@ -37,3 +37,34 @@ dl {
   margin: 0;
   padding: 0;
 }
+
+a {
+  color: var(--color-link-blue-dark);
+
+  &:hover,
+  &:focus {
+    color: var(--color-background-dusty-rose--dark);
+  }
+}
+
+/* ========================================
+ * CLASS OVERRIDES
+ * ======================================== */
+.content__action-link {
+  color: var(--color-link-blue-dark);
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--color-background-dusty-rose--dark);
+    text-decoration: underline;
+  }
+
+  svg {
+    fill: currentColor;
+    height: 1.5rem;
+    vertical-align: sub;
+  }
+}
