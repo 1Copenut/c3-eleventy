@@ -10,3 +10,4 @@
 
 - https://alvinalexander.com/git/git-rm-file-git-repository-dont-track-accidentally-added/
 - https://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning
+- https://jigarius.com/blog/signing-git-commits
