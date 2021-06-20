@@ -1,3 +1,6 @@
+/* ========================================
+ * SELECTORS
+ * ======================================== */
 html,
 body {
   width: 100%;
@@ -5,14 +8,14 @@ body {
 }
 
 html {
-  font-size: 100%;
+  font-size: var(--font-size-body);
 }
 
 body {
   color: var(--color-text-black);
-  font-family: -apple-system, linkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system, linkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.5;
 }
 
@@ -21,19 +24,20 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
+h6,
 p {
-  margin: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
 ul,
 ol,
 dl {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+li {
   margin: 0;
   padding: 0;
 }
@@ -44,27 +48,5 @@ a {
   &:hover,
   &:focus {
     color: var(--color-background-dusty-rose--dark);
-  }
-}
-
-/* ========================================
- * CLASS OVERRIDES
- * ======================================== */
-.content__action-link {
-  color: var(--color-link-blue-dark);
-  font-size: var(--font-size-5);
-  font-weight: var(--font-weight-bold);
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    color: var(--color-background-dusty-rose--dark);
-    text-decoration: underline;
-  }
-
-  svg {
-    fill: currentColor;
-    height: 1.5rem;
-    vertical-align: sub;
   }
 }
