@@ -37,6 +37,26 @@ dl {
   padding: 0;
 }
 
+h1 {
+  font-size: var(--fluid-4);
+}
+
+h2 {
+  font-size: var(--fluid-3);
+}
+
+h3 {
+  font-size: var(--fluid-2);
+}
+
+h4 {
+  font-size: var(--fluid-1);
+}
+
+h5 {
+  font-size: var(--fluid-1);
+}
+
 li {
   margin: 0;
   padding: 0;

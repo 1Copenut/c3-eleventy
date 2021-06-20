@@ -1,5 +1,20 @@
 :root {
-  /* Fluid scales */
+  /* Colors */
+  --color-background-black: #121212;
+  --color-background-blue: #008fd5;
+  --color-background-blue--dark: #081999;
+  --color-background-blue--navy: #040f5e;
+  --color-background-dusty-rose: #ab4776;
+  --color-background-dusty-rose--dark: #882455;
+  --color-link-blue: #234a71;
+  --color-link-blue-light: #2397d3;
+  --color-link-blue-dark: #081999;
+  --color-footer-black: #212121;
+  --color-footer-gray: #888888;
+  --color-text-black: #111;
+  --color-white: #fff;
+
+  /* Fluid type scales */
   --fluid-min-width: 20;
   --fluid-max-width: 80;
   --fluid-min-size: 1;
@@ -17,18 +32,26 @@
   --fluid-min-scale-0: var(--fluid-min-ratio);
   --fluid-min-scale-1: var(--fluid-min-scale-0) * var(--fluid-min-ratio);
   --fluid-min-scale-2: var(--fluid-min-scale-1) * var(--fluid-min-ratio);
+  --fluid-min-scale-3: var(--fluid-min-scale-2) * var(--fluid-min-ratio);
+  --fluid-min-scale-4: var(--fluid-min-scale-3) * var(--fluid-min-ratio);
 
   --fluid-max-scale-0: var(--fluid-max-ratio);
   --fluid-max-scale-1: var(--fluid-max-scale-0) * var(--fluid-max-ratio);
   --fluid-max-scale-2: var(--fluid-max-scale-1) * var(--fluid-max-ratio);
+  --fluid-max-scale-3: var(--fluid-max-scale-2) * var(--fluid-max-ratio);
+  --fluid-max-scale-4: var(--fluid-max-scale-3) * var(--fluid-max-ratio);
 
   --fluid-min-size-0: var(--fluid-min-size);
   --fluid-min-size-1: var(--fluid-min-size) * var(--fluid-min-scale-0);
   --fluid-min-size-2: var(--fluid-min-size) * var(--fluid-min-scale-1);
+  --fluid-min-size-3: var(--fluid-min-size) * var(--fluid-min-scale-2);
+  --fluid-min-size-4: var(--fluid-min-size) * var(--fluid-min-scale-3);
 
   --fluid-max-size-0: var(--fluid-max-size);
   --fluid-max-size-1: var(--fluid-max-size) * var(--fluid-max-scale-0);
   --fluid-max-size-2: var(--fluid-max-size) * var(--fluid-max-scale-1);
+  --fluid-max-size-3: var(--fluid-max-size) * var(--fluid-max-scale-2);
+  --fluid-max-size-4: var(--fluid-max-size) * var(--fluid-max-scale-3);
 
   --fluid-0: calc(
     (
@@ -48,30 +71,18 @@
         (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)
     )
   );
-
-  /* Colors */
-  --color-background-black: #121212;
-  --color-background-blue: #008fd5;
-  --color-background-blue--dark: #081999;
-  --color-background-blue--navy: #040f5e;
-  --color-background-dusty-rose: #ab4776;
-  --color-background-dusty-rose--dark: #882455;
-  --color-link-blue: #234a71;
-  --color-link-blue-light: #2397d3;
-  --color-link-blue-dark: #081999;
-  --color-footer-black: #212121;
-  --color-footer-gray: #888888;
-  --color-text-black: #111;
-  --color-white: #fff;
-
-  /*  Type Sizes */
-  --font-size-body: 1rem;
-  --font-size-5: 1.333rem;
-  --font-size-4: 1.777rem;
-  --font-size-3: 2.369rem;
-  --font-size-2: 3.157rem;
-  --font-size-1: 4.209rem;
-  --font-size-display: 5.61rem;
+  --fluid-3: calc(
+    (
+      (var(--fluid-min-size-3) * 1rem) +
+        (var(--fluid-max-size-3) - var(--fluid-min-size-2)) * var(--fluid-bp)
+    )
+  );
+  --fluid-4: calc(
+    (
+      (var(--fluid-min-size-4) * 1rem) +
+        (var(--fluid-max-size-4) - var(--fluid-min-size-2)) * var(--fluid-bp)
+    )
+  );
 
   /*  Type Weights */
   --font-weight-normal: 400;
