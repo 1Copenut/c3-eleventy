@@ -10,6 +10,7 @@
 
 - https://utopia.fyi/blog/css-modular-scales/
 - https://www.madebymike.com.au/writing/precise-control-responsive-typography/
+- https://www.smashingmagazine.com/2020/07/css-techniques-legibility/
 
 ## Git References I Use Sometimes
 
