@@ -8,7 +8,7 @@ body {
 }
 
 html {
-  font-size: var(--font-size-body);
+  font-size: var(--fluid-0);
 }
 
 body {

@@ -6,6 +6,11 @@
 - https://www.11ty.dev/docs/config/#transforms
 - https://www.raresportan.com/eleventy-part-three/
 
+## Inspirational Posts
+
+- https://utopia.fyi/blog/css-modular-scales/
+- https://www.madebymike.com.au/writing/precise-control-responsive-typography/
+
 ## Git References I Use Sometimes
 
 - https://alvinalexander.com/git/git-rm-file-git-repository-dont-track-accidentally-added/
