@@ -89,6 +89,8 @@
         (var(--fluid-max-size-4) - var(--fluid-min-size-2)) * var(--fluid-bp)
     )
   );
+  --fluid-4-vertical-rhythm: calc(var(--fluid-min-size-0) * 1.627777777);
+  --fluid-4-margin: calc(var(--fluid-min-size-0) * 1.627777777rem);
 
   /*  Type Weights */
   --font-weight-normal: 400;

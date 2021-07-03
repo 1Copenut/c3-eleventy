@@ -46,8 +46,8 @@ td {
 
 h1 {
   font-size: var(--fluid-4);
-  line-height: 1.627777777;
-  margin: 1.627777777rem 0;
+  line-height: var(--fluid-4-vertical-rhythm);
+  margin: var(--fluid-4-margin) 0;
 }
 
 h2 {
