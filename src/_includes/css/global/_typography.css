@@ -13,48 +13,63 @@ html {
 
 body {
   color: var(--color-text-black);
-  font-family: -apple-system, linkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, linkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   line-height: 1.5;
 }
 
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
-  margin-bottom: 0;
-  padding: 0;
-}
-
-ul,
-ol,
-dl {
-  margin-bottom: 0;
+pre,
+form,
+fieldset,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
   padding: 0;
 }
 
 h1 {
   font-size: var(--fluid-4);
+  line-height: 1.627777777;
+  margin: 1.627777777rem 0;
 }
 
 h2 {
   font-size: var(--fluid-3);
+  line-height: 1.302;
+  margin: 1.302rem 0;
 }
 
 h3 {
   font-size: var(--fluid-2);
+  line-height: 1.25;
+  margin: 1.25rem 0;
 }
 
-h4 {
-  font-size: var(--fluid-1);
-}
-
+h4,
 h5 {
   font-size: var(--fluid-1);
+  line-height: 0.8333333333;
+}
+
+p {
+  margin: 1.5rem 0;
 }
 
 li {
