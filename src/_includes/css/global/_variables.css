@@ -71,26 +71,36 @@
         (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)
     )
   );
+  --fluid-1-margin: calc(var(--fluid-min-size-0) * 0.8333333333rem);
+  --fluid-1-vertical-rhythm: calc(var(--fluid-min-size-0) * 0.8333333333);
   --fluid-2: calc(
     (
       (var(--fluid-min-size-2) * 1rem) +
         (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)
     )
   );
+  --fluid-2-margin: calc(var(--fluid-min-size-0) * 1.25rem);
+  --fluid-2-vertical-rhythm: calc(var(--fluid-min-size-0) * 1.25);
   --fluid-3: calc(
     (
       (var(--fluid-min-size-3) * 1rem) +
         (var(--fluid-max-size-3) - var(--fluid-min-size-2)) * var(--fluid-bp)
     )
   );
+  --fluid-3-margin: calc(var(--fluid-min-size-0) * 1.302rem);
+  --fluid-3-vertical-rhythm: calc(var(--fluid-min-size-0) * 1.302);
   --fluid-4: calc(
     (
       (var(--fluid-min-size-4) * 1rem) +
         (var(--fluid-max-size-4) - var(--fluid-min-size-2)) * var(--fluid-bp)
     )
   );
-  --fluid-4-vertical-rhythm: calc(var(--fluid-min-size-0) * 1.627777777);
   --fluid-4-margin: calc(var(--fluid-min-size-0) * 1.627777777rem);
+  --fluid-4-vertical-rhythm: calc(var(--fluid-min-size-0) * 1.627777777);
+
+  /* Line leading */
+  --font-line-height: 1.5;
+  --font-vertical-rhythm: 1.5rem;
 
   /*  Type Weights */
   --font-weight-normal: 400;

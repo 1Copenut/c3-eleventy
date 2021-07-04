@@ -16,7 +16,7 @@ body {
   font-family: -apple-system, linkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  line-height: 1.5;
+  line-height: var(--font-line-height);
 }
 
 body,
@@ -52,24 +52,24 @@ h1 {
 
 h2 {
   font-size: var(--fluid-3);
-  line-height: 1.302;
-  margin: 1.302rem 0;
+  line-height: var(--fluid-3-vertical-rhythm);
+  margin: var(--fluid-3-margin) 0;
 }
 
 h3 {
   font-size: var(--fluid-2);
-  line-height: 1.25;
-  margin: 1.25rem 0;
+  line-height: var(--fluid-2-vertical-rhythm);
+  margin: var(--fluid-2-margin) 0;
 }
 
 h4,
 h5 {
-  font-size: var(--fluid-1);
-  line-height: 0.8333333333;
+  line-height: var(--fluid-1-vertical-rhythm);
+  margin: var(--fluid-1-margin) 0;
 }
 
 p {
-  margin: 1.5rem 0;
+  margin: var(--font-vertical-rhythm) 0;
 }
 
 li {
