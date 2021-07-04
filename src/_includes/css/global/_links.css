@@ -3,19 +3,29 @@
  * ======================================== */
 .content__action-link {
   color: var(--color-link-blue-dark);
+  display: block;
   font-size: var(--font-size-5);
   font-weight: var(--font-weight-bold);
+  margin-top: var(--font-vertical-rhythm);
   text-decoration: none;
+  width: fit-content;
 
   &:hover,
   &:focus {
     color: var(--color-background-dusty-rose--dark);
-    text-decoration: underline;
+
+    span {
+      border-bottom-color: currentColor;
+    }
+  }
+
+  span {
+    border-bottom: 2px solid var(--color-link-blue-dark);
   }
 
   svg {
     fill: currentColor;
     height: 1.5rem;
-    vertical-align: sub;
+    vertical-align: bottom;
   }
 }
