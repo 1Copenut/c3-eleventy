@@ -16,16 +16,32 @@
 [aria-label='Breadcrumbs'],
 [role='main'],
 [role='complementary'] {
+  column-gap: 1.5rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  max-width: 1440px;
   width: 100%;
 
   .content__layout {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 12;
+    margin: 0 1rem 0 1.25rem;
   }
 }
 
 [role='main'] {
   margin-bottom: 4rem;
+}
+
+/* Tablet devices - 768px breakpoint */
+@media only screen and (min-width: 48rem) {
+  [aria-label='Breadcrumbs'],
+  [role='main'],
+  [role='complementary'] {
+    .content__layout {
+      grid-column-start: 2;
+      margin: 0;
+    }
+  }
 }

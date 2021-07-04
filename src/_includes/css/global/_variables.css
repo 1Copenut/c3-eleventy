@@ -101,6 +101,9 @@
   /* Line leading */
   --font-line-height: 1.5;
   --font-vertical-rhythm: 1.5rem;
+  --font-vertical-rhythm-quarter: calc(var(--font-vertical-rhythm) / 4);
+  --font-vertical-rhythm-third: calc(var(--font-vertical-rhythm) / 3);
+  --font-vertical-rhythm-half: calc(var(--font-vertical-rhythm) / 2);
 
   /*  Type Weights */
   --font-weight-normal: 400;
