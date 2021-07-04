@@ -25,3 +25,7 @@
     grid-column-end: 12;
   }
 }
+
+[role='main'] {
+  margin-bottom: 4rem;
+}
