@@ -1,12 +1,15 @@
 /* ========================================
  * ACTION LINKS
  * ======================================== */
+.content__action-link-container {
+  margin: var(--font-vertical-rhythm) 0;
+}
+
 .content__action-link {
   color: var(--color-link-blue-dark);
   display: block;
-  font-size: var(--font-size-5);
+  font-size: var(--fluid-1);
   font-weight: var(--font-weight-bold);
-  margin-top: var(--font-vertical-rhythm);
   text-decoration: none;
   width: fit-content;
 
@@ -26,6 +29,6 @@
   svg {
     fill: currentColor;
     height: 1.5rem;
-    vertical-align: bottom;
+    vertical-align: middle;
   }
 }
