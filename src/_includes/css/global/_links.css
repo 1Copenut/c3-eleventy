@@ -3,7 +3,7 @@
  * ======================================== */
 .content__action-link-container {
   display: block;
-  margin: var(--font-vertical-rhythm-half) 0 var(--font-vertical-rhythm-double);
+  margin: var(--font-vertical-rhythm) 0;
 
   &--short {
     margin-top: var(--font-vertical-rhythm-quarter);

@@ -23,6 +23,7 @@ nav[aria-label='Primary links'] {
     color: var(--color-white);
     display: flex;
     list-style-type: none;
+    margin: 0;
     padding: 0;
   }
 

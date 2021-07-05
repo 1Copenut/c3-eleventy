@@ -1,12 +1,12 @@
 <nav aria-label="Breadcrumbs" class="content__breadcrumb-container">
-  <ul class="content__layout" role="list">
-    <li>
+  <ul class="content__layout content__breadcrumb-list" role="list">
+    <li class="content__breadcrumb-list-item">
       <a href="/">Home</a>
     </li>
-    <li>
+    <li class="content__breadcrumb-list-item">
       <a href="{{ parentDir }}">{{ parentText }}</a>
     </li>
-    <li>
+    <li class="content__breadcrumb-list-item">
       <a aria-current="page" href="{{ page.url }}">{{ shortTitle }}</a>
     </li>
   </ul>
