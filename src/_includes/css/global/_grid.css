@@ -1,3 +1,8 @@
+/* ========================================
+ * /global _GRID.CSS
+ * ======================================== */
+
+/* Grid row utilities */
 .grid__rows {
   height: 100%;
   display: grid;
@@ -13,7 +18,9 @@
   grid-template-rows: auto auto auto 1fr auto auto;
 }
 
+/* Landmark defaults */
 [aria-label='Breadcrumbs'],
+[role='banner'],
 [role='main'],
 [role='complementary'] {
   column-gap: 1.5rem;
@@ -30,8 +37,14 @@
   }
 }
 
-[role='main'] {
-  margin-bottom: 4rem;
+/* Banner landmark */
+[role='banner'] {
+  max-width: 100%;
+
+  .content__layout {
+    grid-column-start: 2;
+    margin: 0;
+  }
 }
 
 /* Tablet devices - 768px breakpoint */
@@ -42,6 +55,12 @@
     .content__layout {
       grid-column-start: 2;
       margin: 0;
+    }
+  }
+
+  [role='main'] {
+    .content__layout {
+      margin-bottom: 4rem;
     }
   }
 }

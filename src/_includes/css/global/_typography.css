@@ -1,6 +1,8 @@
 /* ========================================
- * SELECTORS
+ * /global _TYPOGRAPHY.CSS
  * ======================================== */
+
+/* Selectors */
 html,
 body {
   width: 100%;
@@ -64,6 +66,7 @@ h3 {
 
 h4,
 h5 {
+  font-size: var(--fluid-1);
   line-height: var(--fluid-1-vertical-rhythm);
   margin: var(--fluid-1-margin) 0;
 }

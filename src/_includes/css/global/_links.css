@@ -1,6 +1,8 @@
 /* ========================================
- * ACTION LINKS
+ * /global _LINKS.CSS
  * ======================================== */
+
+/* Action links */
 .content__action-link-container {
   display: block;
   margin: var(--font-vertical-rhythm) 0;

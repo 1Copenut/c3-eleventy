@@ -1,20 +1,29 @@
+/* ========================================
+ * /landmarks _HEADER.CSS
+ * ======================================== */
 [role='banner'] {
   background-color: var(--color-background-dusty-rose);
   height: 6.25rem;
 
   a {
     display: inline-block;
+    margin: 1rem 0 0;
+    max-width: 50ch;
     text-decoration: none;
   }
 
   span {
     background-color: var(--color-background-blue--dark);
     color: var(--color-white);
-    display: inline-block;
-    font-size: var(--font-size-4);
+    display: block;
+    font-size: var(--fluid-2);
+    margin-bottom: 0.25rem;
     padding: 0 0.5rem 0 0.25rem;
+
     + span {
-      font-size: var(--font-size-body);
+      display: inline-block;
+      font-size: var(--fluid-0);
+      margin: 0;
       padding-right: 1rem;
     }
   }
@@ -22,13 +31,12 @@
   /* Tablet devices - 768px breakpoint */
   @media only screen and (min-width: 48rem) {
     height: 10rem;
-    a {
-      max-width: 20rem;
-    }
+
     span {
-      font-size: var(--font-size-3);
+      font-size: var(--fluid-3);
+
       + span {
-        font-size: var(--font-size-body);
+        font-size: var(--fluid-1);
       }
     }
   }
@@ -40,6 +48,10 @@
   /* Large screens 1280px and wider */
   @media only screen and (min-width: 80rem) {
     height: 18rem;
+
+    a {
+      margin-top: 3rem;
+    }
   }
 
   /*
