@@ -2,33 +2,38 @@
  * ACTION LINKS
  * ======================================== */
 .content__action-link-container {
-  margin: var(--font-vertical-rhythm) 0;
-}
-
-.content__action-link {
-  color: var(--color-link-blue-dark);
   display: block;
-  font-size: var(--fluid-1);
-  font-weight: var(--font-weight-bold);
-  text-decoration: none;
-  width: fit-content;
+  margin: var(--font-vertical-rhythm-half) 0 var(--font-vertical-rhythm-double);
 
-  &:hover,
-  &:focus {
-    color: var(--color-background-dusty-rose--dark);
+  &--short {
+    margin-top: var(--font-vertical-rhythm-quarter);
+  }
+
+  a {
+    color: var(--color-link-blue-dark);
+    display: block;
+    font-size: var(--fluid-1);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    width: fit-content;
+
+    &:hover,
+    &:focus {
+      color: var(--color-background-dusty-rose--dark);
+
+      span {
+        border-bottom-color: currentColor;
+      }
+    }
 
     span {
-      border-bottom-color: currentColor;
+      border-bottom: 2px solid var(--color-link-blue-dark);
     }
-  }
 
-  span {
-    border-bottom: 2px solid var(--color-link-blue-dark);
-  }
-
-  svg {
-    fill: currentColor;
-    height: 1.5rem;
-    vertical-align: middle;
+    svg {
+      fill: currentColor;
+      height: 1.5rem;
+      vertical-align: middle;
+    }
   }
 }
