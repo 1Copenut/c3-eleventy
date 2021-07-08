@@ -1,0 +1,32 @@
+                 _   _                                   _           _             
+                | | (_)                                 | |         (_)            
+  ___ ___  _ __ | |_ _ _ __  _   _ _   _ _ __ ___     __| | ___  ___ _  __ _ _ __  
+ / __/ _ \| '_ \| __| | '_ \| | | | | | | '_ ` _ \   / _` |/ _ \/ __| |/ _` | '_ \ 
+| (_| (_) | | | | |_| | | | | |_| | |_| | | | | | | | (_| |  __/\__ \ | (_| | | | |
+ \___\___/|_| |_|\__|_|_| |_|\__,_|\__,_|_| |_| |_|  \__,_|\___||___/_|\__, |_| |_|
+                                                                        __/ |      
+                                                                       |___/       
+
+/* TEAM */
+Your title: Trevor Pierce, owner
+Site: https://continuumdesign.net/contact/
+Twitter: 1copenut
+Location: Flyover Country, USA
+
+
+/* THANKS */
+Zach Leatherman - @zachleat - Eleventy
+Sitnick the Developer - @sitnikcode - PostCSS, Autoprefixer
+Andy Bell - @piccalilli_ - Fluid typography with CSS clamp
+Deque Systems - @dequesystems - axe-core
+Cypress.io - @Cypress_io - Cypress end-to-end testing
+Netlify - @netlify - Hosting
+
+
+/* SITE */
+Last updated: July 7, 2021
+Language: English
+Standards: HTML5, CSS3, JavaScript ES6
+Accessibility: WCAG 2.1 Level AA
+Components: Eleventy, PostCSS, ES6 and modules, Cypress
+Software: Photoshop, VSCode, Vim, Node, NPM, Chrome, NVDA, VoiceOver
