@@ -1,21 +1,22 @@
 module.exports = function (eleventyConfig) {
-  // Pass images through to /dist
-  eleventyConfig.addPassthroughCopy('src/images');
+  // Pass items through to /dist
+  eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy(".well-known/humans.txt");
 
   return {
     dir: {
-      input: 'src',
-      output: 'dist',
+      input: "src",
+      output: "dist",
     },
 
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid
-    templateFormats: ['md', 'njk', 'html', '11ty.js'],
+    templateFormats: ["md", "njk", "html", "11ty.js"],
 
     // Pre-process *.md files with: (default: `liquid`)
-    markdownTemplateEngine: 'njk',
+    markdownTemplateEngine: "njk",
 
     // Pre-process *.html files with: (default: `liquid`)
-    htmlTemplateEngine: 'njk',
+    htmlTemplateEngine: "njk",
   };
 };
