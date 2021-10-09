@@ -48,27 +48,27 @@ td {
 
 h1 {
   font-size: var(--fluid-4);
-  line-height: var(--fluid-4-vertical-rhythm);
+  line-height: var(--fluid-3-vertical-rhythm);
   margin: var(--fluid-4-margin) 0;
 }
 
 h2 {
   font-size: var(--fluid-3);
   line-height: var(--fluid-3-vertical-rhythm);
-  margin: var(--fluid-3-margin) 0;
+  margin: 0 0 var(--fluid-2-margin);
 }
 
 h3 {
   font-size: var(--fluid-2);
   line-height: var(--fluid-2-vertical-rhythm);
-  margin: var(--fluid-2-margin) 0;
+  margin: 0 0 var(--fluid-1-margin);
 }
 
 h4,
 h5 {
   font-size: var(--fluid-1);
   line-height: var(--fluid-1-vertical-rhythm);
-  margin: var(--fluid-1-margin) 0;
+  margin: 0 0 var(--fluid-1-margin);
 }
 
 h1,
@@ -82,13 +82,15 @@ h6 {
 
 p {
   font-size: var(--fluid-0);
-  margin: var(--font-vertical-rhythm) 0;
+  margin: 0 0 var(--fluid-4-margin);
   max-width: 60ch;
 }
 
 ol,
-ul {
+ul,
+dl {
   font-size: var(--fluid-0);
+  margin: 0 0 var(--fluid-4-margin);
   max-width: 60ch;
   padding-left: 1.25rem;
 }
