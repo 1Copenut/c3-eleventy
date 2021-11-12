@@ -35,6 +35,14 @@ nav[aria-label='Primary links'] {
     display: block;
     padding: 0.5rem;
     text-decoration: none;
+
+    &.active {
+      background-color: var(--color-white);
+      border-bottom: 0.5rem solid var(--color-white);
+      color: var(--color-background-black);
+      font-weight: var(--font-weight-bold);
+      margin-bottom: -0.5rem;
+    }
   }
 
   svg {
