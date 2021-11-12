@@ -12,6 +12,7 @@
 - https://www.madebymike.com.au/writing/precise-control-responsive-typography/
 - https://www.smashingmagazine.com/2020/07/css-techniques-legibility/
 - https://24ways.org/2006/compose-to-a-vertical-rhythm
+- [Using Nunjucks 'If Expressions' in 11ty to create a simple active navigation state](https://bryanlrobinson.com/blog/using-nunjucks-if-expressions-to-create-an-active-navigation-state-in-11ty/)
 
 ## Git References I Use Sometimes
 
