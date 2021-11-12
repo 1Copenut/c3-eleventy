@@ -28,6 +28,10 @@ nav[aria-label='Primary links'] {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    &:hover {
+      background-color: var(--color-background-blue--navy);
+    }
   }
 
   .nav--primary__link {
@@ -36,12 +40,36 @@ nav[aria-label='Primary links'] {
     padding: 0.5rem;
     text-decoration: none;
 
+    &:hover {
+      background-color: var(--color-background-blue--navy);
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    &:focus-visible {
+      box-shadow: 4px 0 0 var(--color-background-dusty-rose--light) inset,
+        -4px 0 0 var(--color-background-dusty-rose--light) inset,
+        0 4px 0 var(--color-background-dusty-rose--light) inset,
+        0 -4px 0 var(--color-background-dusty-rose--light) inset;
+      outline: 6px solid var(--color-white);
+      outline-offset: 0;
+    }
+
     &.active {
       background-color: var(--color-white);
-      border-bottom: 0.5rem solid var(--color-white);
       color: var(--color-background-black);
       font-weight: var(--font-weight-bold);
-      margin-bottom: -0.5rem;
+
+      &:hover {
+        background-color: var(--color-white);
+        color: var(--color-background-black);
+      }
+
+      &:focus:not(:focus-visible) {
+        outline: none;
+      }
     }
   }
 
@@ -58,7 +86,7 @@ nav[aria-label='Primary links'] {
 
     .nav--primary__list {
       justify-content: flex-start;
-      padding: 0 0 0 1.5rem;
+      padding: 0;
     }
 
     .nav--primary__list-item {
@@ -79,11 +107,14 @@ nav[aria-label='Primary links'] {
     }
 
     .nav--primary__link--home {
-      padding-left: 0.875rem;
-    }
+      padding-left: 1.5rem;
 
-    svg {
-      display: inline;
+      svg {
+        display: inline;
+        height: 1.75rem;
+        padding-right: 0.5rem;
+        vertical-align: bottom;
+      }
     }
   }
 }

@@ -54,7 +54,7 @@ nav[aria-label='Breadcrumbs'] {
       }
     }
 
-    a[aria-current='page'] {
+    a[aria-current='location'] {
       color: var(--color-background-black);
       cursor: default;
       font-weight: var(--font-weight-bold);

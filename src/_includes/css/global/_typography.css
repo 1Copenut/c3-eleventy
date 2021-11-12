@@ -110,7 +110,17 @@ a {
   font-size: var(--fluid-0);
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: var(--color-background-dusty-rose--dark);
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: var(--color-background-dusty-rose--dark);
+    outline: 4px solid var(--color-background-dusty-rose--dark);
+    outline-offset: 6px;
   }
 }

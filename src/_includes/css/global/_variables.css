@@ -7,6 +7,7 @@
   --color-background-blue: #008fd5;
   --color-background-blue--dark: #081999;
   --color-background-blue--navy: #040f5e;
+  --color-background-dusty-rose--light: #c57299;
   --color-background-dusty-rose: #ab4776;
   --color-background-dusty-rose--dark: #882455;
   --color-background-gray: #727272;
@@ -22,9 +23,9 @@
   --fluid-min-width: 20;
   --fluid-max-width: 80;
   --fluid-min-size: 1;
-  --fluid-max-size: 1.25;
+  --fluid-max-size: 1.3125;
   --fluid-min-ratio: 1.2;
-  --fluid-max-ratio: 1.3;
+  --fluid-max-ratio: 1.333;
 
   /* CSS locks for fluid type */
   --fluid-screen: 100vw;
@@ -86,14 +87,14 @@
   --fluid-3: calc(
     (
       (var(--fluid-min-size-3) * 1rem) +
-        (var(--fluid-max-size-3) - var(--fluid-min-size-2)) * var(--fluid-bp)
+        (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)
     )
   );
   --fluid-3-margin: calc(var(--fluid-min-size-0) * 1.302rem);
   --fluid-4: calc(
     (
       (var(--fluid-min-size-4) * 1rem) +
-        (var(--fluid-max-size-4) - var(--fluid-min-size-2)) * var(--fluid-bp)
+        (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)
     )
   );
   --fluid-4-margin: calc(var(--fluid-min-size-0) * 1.627777777rem);
