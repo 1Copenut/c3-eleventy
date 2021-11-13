@@ -19,6 +19,7 @@
       width: 100%;
 
       + .footer__block {
+        align-content: flex-start;
         background: url('../../images/backgrounds/ampersand.png') top 25px left
           30% no-repeat;
         background-size: auto 80px;
@@ -68,7 +69,7 @@
       &--horizontal {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
         width: 100%;
       }
     }
