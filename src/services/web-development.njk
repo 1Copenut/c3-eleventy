@@ -4,28 +4,30 @@ shortTitle: Web development
 layout: 'layouts/servicesLayout.njk'
 parentDir: '/services/'
 parentText: All services
+tags: services
 ---
 
 <main role="main">
   <div class="content__layout">
     <h1>{{ title }}</h1>
 
-    <blockquote class="content__lead-paragraph">
-      <p>
-        Word-of-mouth is the best way to drive new business. A properly
-        optimized website is a close second.
+    <div class="services__opening">
+      <blockquote class="services__lead-paragraph">
+        <p>
+          <span class="type__leading-quote">&ldquo;</span>Word-of-mouth is the best way to drive new business. An optimized website is a close second.&rdquo;
       </p>
-    </blockquote>
+      </blockquote>
+    </div>
 
-    <h2>What a website can do for you</h2>
-    <p>
+    <h2 class="services__content-header">What a website can do for you</h2>
+    <p class="services__content-paragraph">
       Potential customers are often lost at three critical points. A website
       must be easy to find, look great on small screens, and provide a clear
       call to action.
     </p>
 
-    <h2>Search results are the first step to new customers</h2>
-    <p>
+    <h2 class="services__content-header">Search results are the first step to new customers</h2>
+    <p class="services__content-paragraph">
       Incomplete listings can send the wrong message. Customers will skip search
       listings that don't provide a web link, telephone number, or physical
       address. You want your business to stand out in a crowded field and you
@@ -33,7 +35,7 @@ parentText: All services
     </p>
 
     <h3>Search engine optimization (SEO)</h3>
-    <p>
+    <p class="services__content-paragraph">
       Continuum Design uses good SEO practices to get your website noticed. I
       will design a custom data profile that will help Google and other search
       engines understand your business. Search engines reward these good
@@ -41,8 +43,8 @@ parentText: All services
       media sites like Facebook or Instagram.
     </p>
 
-    <h2>Responsive design is good design</h2>
-    <p>
+    <h2 class="services__content-header">Responsive is good design</h2>
+    <p class="services__content-paragraph">
       Customers want a website to look good. Sites should respond to the size of
       your screen, so they look good at any size <strong>and</strong> are
       pleasing to read. This is responsive design in a nutshell. Continuum
@@ -51,22 +53,33 @@ parentText: All services
       sizes.
     </p>
 
-    <h2>Help customers say yes</h2>
-    <p>
+    <h2 class="services__content-header">Help customers say yes</h2>
+    <p class="services__content-paragraph">
       So customers have found your site, and are impressed with your business.
       They're ready to take the next step. Do they have a clear path to contact
       you?
     </p>
-    <p>
+    <p class="services__content-paragraph">
       Continuum Design will develop the right solution for you to follow up with
       customers. That could be a simple contact form and email, or integration
       with your social media feed.
     </p>
+
+    <div class="content__action-link-container">
+      <a href="/contact/" class="content__action-link">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+          <path
+            d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+        </svg>
+        <span>Contact me</span>
+      </a>
+    </div>
   </div>
 </main>
-
-<aside role="complementary">
-  <div class="content__layout">
-    <h4>I am the aside. Are you not entertained?</h4>
-  </div>
-</aside>

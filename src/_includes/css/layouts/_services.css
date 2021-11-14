@@ -15,6 +15,10 @@
     grid-row-start: 1;
     position: relative;
 
+    > * {
+      font-size: inherit;
+    }
+
     .type__leading-quote {
       left: -2rem;
       position: absolute;
@@ -54,7 +58,7 @@
 
   &__card {
     h3 {
-      border-top: 1px solid var(--color-background-dusty-rose--light);
+      border-top: 1px solid var(--color-text-black);
       padding: 0.5rem 0 0 0.25rem;
     }
 
@@ -64,6 +68,70 @@
       .content__action-link-container {
         margin-left: -0.25rem;
       }
+    }
+  }
+}
+
+/* Tablet devices - 768px breakpoint */
+@media only screen and (min-width: 48rem) {
+  .services {
+    &__lead-paragraph {
+      grid-column-end: 12;
+
+      .type__leading-quote {
+        left: -3.5rem;
+        top: -2.75rem;
+      }
+    }
+
+    &__content-paragraph {
+      max-width: 55ch;
+    }
+  }
+}
+
+/* Mid-size screens 1024px to 1280px */
+@media only screen and (min-width: 64rem) {
+  .services {
+    &__lead-paragraph {
+      .type__leading-quote {
+        left: -4.25rem;
+        top: -3.5rem;
+      }
+    }
+
+    &__card {
+      h3 {
+        border-top: none;
+      }
+    }
+
+    &__content-header {
+      max-width: 34ch;
+    }
+
+    &__content-paragraph {
+      max-width: 60ch;
+    }
+  }
+}
+
+/* Large screens 1280px and wider */
+@media only screen and (min-width: 80rem) {
+  .services {
+    &__lead-paragraph {
+      .type__leading-quote {
+        left: -4.5rem;
+        top: -3.5rem;
+      }
+    }
+
+    &__content-header {
+      max-width: 28ch;
+    }
+
+    &__content-paragraph {
+      max-width: 64ch;
     }
   }
 }

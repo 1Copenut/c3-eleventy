@@ -53,6 +53,7 @@
   @media only screen and (min-width: 64rem) {
     height: 12rem;
   }
+
   /* Large screens 1280px and wider */
   @media only screen and (min-width: 80rem) {
     height: 18rem;

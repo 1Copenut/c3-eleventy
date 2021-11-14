@@ -1,44 +1,49 @@
 ---
-title: Accessible by design. Accessible by choice.
+title: Accessible by design
 shortTitle: Accessibility
 layout: 'layouts/servicesLayout.njk'
 parentDir: '/services/'
 parentText: All services
+tags: services
 ---
 
 <main role="main">
   <div class="content__layout">
     <h1>{{ title }}</h1>
 
-    <blockquote class="content__lead-paragraph">
-      <p>
-        Accessibility is meeting your customers where they are. Making sure your
-        website is usable for someone who only uses a smart phone. For someone
-        who is deaf or hard-of-hearing. For someone who is blind or someone who
-        prefers a light-touch selling experience. It is all of these things and
-        more.
+    <div class="services__opening">
+      <blockquote class="services__lead-paragraph">
+        <p>
+          <span class="type__leading-quote">&ldquo;</span>Accessibility should not be thought as a feature. It is a requirement.&rdquo;
       </p>
-    </blockquote>
+      </blockquote>
+    </div>
 
-    <h2>Accessibility starts with the end in mind</h2>
-    <p>
-      We achieve the best outcome when we make accessibility a requirement
+    <h2 class="services__content-header">Start with the end in mind</h2>
+    <p class="services__content-paragraph">
+      We achieve the best outcome when we make accessibility a project requirement
       instead of a check before launching a website. Sites are easier to change
-      because code hasn't been added to fix existing problems. As a result,
+      because code hasn't been written to fix existing problems. As a result,
       sites are easier to test&mdash;fewer lines of code mean fewer bugs.
     </p>
 
-    <h3 id="list-services">Test Categories</h3>
+    <h3 id="list-services">Test categories</h3>
     <ul>
-      <li>Mobile device users (smartphones, tablets)</li>
+      <li>Mobile devices</li>
       <li>Keyboard navigation</li>
       <li>Voice navigation</li>
       <li>Color contrast and color blindness</li>
-      <li>Screen readers (JAWS, NVDA, VoiceOver)</li>
+      <li>Screen readers
+        <ul>
+          <li>JAWS</li>
+          <li>NVDA</li>
+          <li>VoiceOver</li>
+        </ul>
+      </li>
     </ul>
 
-    <h3>Automation</h3>
-    <p>
+    <h3 class="services__content-header">Automated testing</h3>
+    <p class="services__content-paragraph">
       Autmated tests are a great way to ensure a baseline of compliance. Unit
       tests check small snippets of code like a shopping cart or a navigation
       bar. Integration tests make sure units are working together. End-to-end
@@ -46,8 +51,8 @@ parentText: All services
       make sure your site layout has not changed unexpectedly.
     </p>
 
-    <h3>Manual Testing</h3>
-    <p>
+    <h3 class="services__content-header">Manual testing</h3>
+    <p class="services__content-paragraph">
       Some accessibility testing can be automated, but there are key things that
       a person must test. Computers do a great job repeating the same task,
       asking if anything has changed. But it takes a person to answer &ldquo;How

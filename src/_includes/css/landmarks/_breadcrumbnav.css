@@ -4,7 +4,8 @@
 
 /* Default "back by one" breadcrumb */
 nav[aria-label='Breadcrumbs'] {
-  height: 2rem;
+  height: 2.5rem;
+  padding-top: 0.5rem;
 
   .content__breadcrumb-list,
   .content__breadcrumb-list-item {
@@ -12,7 +13,7 @@ nav[aria-label='Breadcrumbs'] {
   }
 
   .content__breadcrumb-list {
-    align-self: end;
+    align-self: center;
   }
 
   .content__breadcrumb-list-item {
@@ -34,6 +35,7 @@ nav[aria-label='Breadcrumbs'] {
 @media only screen and (min-width: 48rem) {
   nav[aria-label='Breadcrumbs'] {
     height: 4rem;
+    padding: 0;
 
     .content__breadcrumb-list {
       align-self: center;
