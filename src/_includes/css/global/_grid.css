@@ -60,26 +60,14 @@
   [role='main'],
   [role='complementary'] {
     .content__layout {
-<<<<<<< HEAD
       grid-column-start: 2;
       grid-column-end: 12;
       margin: 0 0 4rem 0;
-=======
-      grid-column-start: 3;
-      margin: 0;
->>>>>>> f421149 (WIP. Adding grid styles for services page and quotes.)
     }
   }
 
   [role='main'] {
     margin-bottom: 6rem;
-<<<<<<< HEAD
-=======
-
-    .content__layout {
-      margin-bottom: 4rem;
-    }
->>>>>>> f421149 (WIP. Adding grid styles for services page and quotes.)
   }
 }
 
