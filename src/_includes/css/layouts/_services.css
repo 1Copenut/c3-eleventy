@@ -4,6 +4,10 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin: 0 auto;
+<<<<<<< HEAD
+=======
+    max-width: 1440px;
+>>>>>>> f421149 (WIP. Adding grid styles for services page and quotes.)
     width: 100%;
   }
 

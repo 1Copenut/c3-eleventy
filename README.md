@@ -14,6 +14,7 @@
 - https://24ways.org/2006/compose-to-a-vertical-rhythm
 - [Using Nunjucks 'If Expressions' in 11ty to create a simple active navigation state](https://bryanlrobinson.com/blog/using-nunjucks-if-expressions-to-create-an-active-navigation-state-in-11ty/)
 - [Using the aria-current attribute](https://tink.uk/using-the-aria-current-attribute/)
+- [Building Personal Static Site with Eleventy](https://jec.fyi/blog/building-my-static-site-with-11ty)
 
 ## Git References I Use Sometimes
 
