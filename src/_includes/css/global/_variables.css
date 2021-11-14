@@ -100,6 +100,7 @@
   --fluid-4-margin: calc(var(--fluid-min-size-0) * 1.627777777rem);
 
   /* Line leading */
+  /* Values are derived by dividing computed line-height by font-size */
   --font-line-height: 1.5;
   --font-vertical-rhythm-quarter: calc(var(--font-line-height) / 4);
   --font-vertical-rhythm-third: calc(var(--font-line-height) / 3);

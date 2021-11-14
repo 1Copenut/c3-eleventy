@@ -124,3 +124,12 @@ a {
     outline-offset: 6px;
   }
 }
+
+/* ========================================
+ * Class-based utilities
+ * ======================================== */
+.type {
+  &__leading-quote {
+    font-size: var(--fluid-7);
+  }
+}

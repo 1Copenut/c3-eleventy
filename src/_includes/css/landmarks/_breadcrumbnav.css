@@ -35,6 +35,11 @@ nav[aria-label='Breadcrumbs'] {
   nav[aria-label='Breadcrumbs'] {
     height: 4rem;
 
+    .content__breadcrumb-list {
+      align-self: center;
+      margin: 0;
+    }
+
     .content__breadcrumb-list-item {
       display: inline;
       margin-right: 0.325rem;
