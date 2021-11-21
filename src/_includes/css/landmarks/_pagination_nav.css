@@ -1,0 +1,28 @@
+/* ========================================
+ * /landmarks _PAGINATION_NAV.CSS
+ * ======================================== */
+
+/* Default "back by one" breadcrumb */
+nav[aria-label='Pagination'] {
+  height: auto;
+  padding-top: 0.5rem;
+
+  .pagination__list,
+  .pagination__list-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .pagination__list {
+    align-self: center;
+    text-align: center;
+  }
+
+  .pagination__list-item {
+    display: inline;
+  }
+
+  .pagination__divider {
+    margin: 0 2rem;
+  }
+}

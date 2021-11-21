@@ -1,0 +1,14 @@
+<nav aria-label="Pagination">
+  <ul class="content__layout pagination__list" role="list">
+    {% if prevPost.url %}
+      <li class="pagination__list-item">
+        <strong>Previous</strong>: <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.shortTitle }}</a>
+      </li>
+    {% endif %}
+    {% if nextPost.url %}
+      <li class="pagination__list-item">
+        <strong>Next</strong>: <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>

@@ -7,8 +7,9 @@
 @import 'global/_links.css';
 @import 'global/_pages.css';
 @import 'landmarks/_header.css';
-@import 'landmarks/_primarynav.css';
-@import 'landmarks/_breadcrumbnav.css';
+@import 'landmarks/_primary_nav.css';
+@import 'landmarks/_breadcrumb_nav.css';
 @import 'landmarks/_main.css';
 @import 'landmarks/_footer.css';
+@import 'landmarks/_pagination_nav.css';
 @import 'layouts/_services.css';

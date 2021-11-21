@@ -20,6 +20,7 @@
 
 /* Landmark defaults */
 [aria-label='Breadcrumbs'],
+[aria-label='Pagination'],
 [role='banner'],
 [role='main'],
 [role='complementary'] {
@@ -54,6 +55,7 @@
 /* Tablet devices - 768px breakpoint */
 @media only screen and (min-width: 48rem) {
   [aria-label='Breadcrumbs'],
+  [aria-label='Pagination'],
   [role='main'],
   [role='complementary'] {
     .content__layout {
@@ -71,6 +73,7 @@
 /* Mid-size screens 1024px to 1280px */
 @media only screen and (min-width: 64rem) {
   [aria-label='Breadcrumbs'],
+  [aria-label='Pagination'],
   [role='main'],
   [role='complementary'] {
     .content__layout {
