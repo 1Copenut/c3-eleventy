@@ -3,7 +3,7 @@
  * ======================================== */
 
 /* Default "back by one" breadcrumb */
-nav[aria-label='Pagination'] {
+nav[aria-label="Pagination"] {
   height: auto;
   padding-top: 0.5rem;
 
@@ -14,12 +14,21 @@ nav[aria-label='Pagination'] {
   }
 
   .pagination__list {
+    align-content: space-between;
+    align-items: center;
     align-self: center;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 6vw;
   }
 
   .pagination__list-item {
     display: inline;
+
+    &--next {
+      margin-left: auto;
+    }
   }
 
   .pagination__divider {
