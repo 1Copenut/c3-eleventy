@@ -5,7 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html" />
     <meta
       name="description"
-      content="Continuum Design offers services including web development, visual design, and accessibility"
+      content="Continuum Design is a design and development agency that focuses on small business"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
     <link href="/css/main.css" rel="stylesheet" />
@@ -14,12 +15,9 @@
   <body>
     <div class="grid__rows grid__rows--five layout--has-breadcrumb">
       {% include "layouts/partials/_header.njk" %}
-      {% include
-      "layouts/partials/_primarynav.njk" %}
-      {% include
-      "layouts/partials/_breadcrumb.njk" %}
+      {% include "layouts/partials/_primarynav.njk" %}
+      {% include "layouts/partials/_breadcrumb.njk" %}
       {{ content | safe }}
-      {% include "layouts/partials/_servicesPagination.njk" %}
       {% include "layouts/partials/_footer.njk" %}
     </div>
   </body>
