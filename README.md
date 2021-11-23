@@ -5,17 +5,18 @@
 - https://www.11ty.dev/docs/usage/
 - https://www.11ty.dev/docs/config/#transforms
 - https://www.raresportan.com/eleventy-part-three/
+- [Get next or previous collection item universal filters](https://www.11ty.dev/docs/filters/collection-items/)
+- [Content dates](https://www.11ty.dev/docs/dates/)
 
 ## Inspirational Posts, Guides, and Tutorials
 
-- https://utopia.fyi/blog/css-modular-scales/
+- [CSS-only fluid modular type scales](https://utopia.fyi/blog/css-modular-scales/)
 - [Precise control over responsive typography](https://www.madebymike.com.au/writing/precise-control-responsive-typography/)
 - [Modern CSS Techniques To Improve Legibility](https://www.smashingmagazine.com/2020/07/css-techniques-legibility/)
-- https://24ways.org/2006/compose-to-a-vertical-rhythm
+- [Compose to a Vertical Rhythm](https://24ways.org/2006/compose-to-a-vertical-rhythm)
 - [Using Nunjucks 'If Expressions' in 11ty to create a simple active navigation state](https://bryanlrobinson.com/blog/using-nunjucks-if-expressions-to-create-an-active-navigation-state-in-11ty/)
 - [Using the aria-current attribute](https://tink.uk/using-the-aria-current-attribute/)
 - [Building Personal Static Site with Eleventy](https://jec.fyi/blog/building-my-static-site-with-11ty)
-- [&ldquo;Previous&rdquo; and &ldquo;next&rdquo; in Eleventy](https://www.brycewray.com/posts/2019/12/previous-next-eleventy/)
 
 ## Git References I Use Sometimes
 
