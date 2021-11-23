@@ -82,8 +82,19 @@ title: Accessible by design
       </a>
     </div>
   </div>
-
-{% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>{% endif %}
-{% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a>{% endif %}
-
 </main>
+
+<nav aria-label="Pagination">
+  <ul class="content__layout pagination__list" role="list">
+    {% if previousPost %}
+      <li class="pagination__list-item">
+        <strong>Previous:</strong> <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>
+      </li>
+    {% endif %}
+    {% if nextPost %}
+      <li class="pagination__list-item">
+        <strong>Next:</strong> <a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
