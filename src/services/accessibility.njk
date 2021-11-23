@@ -1,11 +1,15 @@
 ---
-title: Accessible by design
-shortTitle: Accessibility
+date: 2021-11-02
 layout: 'layouts/servicesLayout.njk'
 parentDir: '/services/'
 parentText: All services
+shortTitle: Accessibility
 tags: services
+title: Accessible by design
 ---
+
+{% set previousPost = collections.services | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.services | getNextCollectionItem(page) %}
 
 <main role="main">
   <div class="content__layout">
@@ -78,4 +82,8 @@ tags: services
       </a>
     </div>
   </div>
+
+{% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>{% endif %}
+{% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a>{% endif %}
+
 </main>

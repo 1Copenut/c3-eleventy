@@ -1,11 +1,15 @@
 ---
-title: A memorable brand will set your business apart
-shortTitle: Brand and identity
+date: 2021-11-04
 layout: 'layouts/servicesLayout.njk'
 parentDir: '/services/'
 parentText: All services
+shortTitle: Brand and identity
 tags: services
+title: A memorable brand will set your business apart
 ---
+
+{% set previousPost = collections.services | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.services | getNextCollectionItem(page) %}
 
 <main role="main">
 <div class="content__layout">
@@ -100,4 +104,7 @@ tags: services
     </a>
   </div>
 </div>
+
+{% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>{% endif %}
+{% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a>{% endif %}
 </main>
