@@ -2,7 +2,7 @@
  * /landmarks _PAGINATION_NAV.CSS
  * ======================================== */
 
-/* Default "back by one" breadcrumb */
+/* End of page pagination */
 nav[aria-label="Pagination"] {
   height: auto;
   padding-top: 0.5rem;
@@ -20,18 +20,44 @@ nav[aria-label="Pagination"] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem 6vw;
+    margin-top: 2rem;
+    padding: 0 6vw;
   }
 
   .pagination__list-item {
+    color: var(--color-link-blue-dark);
     display: inline;
+
+    &:hover {
+      color: var(--color-background-dusty-rose--dark);
+    }
 
     &--next {
       margin-left: auto;
     }
-  }
 
-  .pagination__divider {
-    margin: 0 2rem;
+    a,
+    span {
+      color: currentColor;
+    }
+  }
+}
+
+/* Tablet devices - 768px breakpoint */
+@media only screen and (min-width: 48rem) {
+  nav[aria-label='Pagination'] {
+    .pagination__list {
+      border-top: 6px solid var(--color-background-dusty-rose);
+      padding: 1.5rem 0.5rem 0;
+    }
+  }
+}
+
+/* Mid-size screens 1024px to 1280px */
+@media only screen and (min-width: 64rem) {
+  nav[aria-label='Pagination'] {
+    .pagination__list {
+      margin-top: 3rem;
+    }
   }
 }

@@ -48,8 +48,8 @@
   }
 }
 
-[role='main'] {
-  margin-bottom: 2rem;
+[role='contentinfo'] {
+  margin-top: 2rem;
 }
 
 /* Tablet devices - 768px breakpoint */
@@ -61,12 +61,12 @@
     .content__layout {
       grid-column-start: 2;
       grid-column-end: 12;
-      margin: 0 0 4rem 0;
+      margin: 0;
     }
   }
 
-  [role='main'] {
-    margin-bottom: 6rem;
+  [role='contentinfo'] {
+    margin-top: 3rem;
   }
 }
 
@@ -79,11 +79,10 @@
     .content__layout {
       grid-column-start: 3;
       grid-column-end: 11;
-      margin: 0 0 4rem 0;
     }
   }
 
-  [role='main'] {
-    margin-bottom: 12rem;
+  [role='contentinfo'] {
+    margin-top: 6rem;
   }
 }

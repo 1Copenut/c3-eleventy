@@ -5,7 +5,7 @@ parentDir: '/services/'
 parentText: All services
 shortTitle: Visual design
 tags: services
-title: It all started with visual communication
+title: It all starts with visual design
 ---
 
 {% set previousPost = collections.services | getPreviousCollectionItem(page) %}
@@ -31,7 +31,7 @@ title: It all started with visual communication
       digital offset printing to match your budget.
     </p>
 
-  <h2 class="services__content-header">User-interface design</h2>
+  <h2 class="services__content-header">User-interfaces (UI)</h2>
   <p class="services__content-paragraph">
       User-interface or UI design, is like visual design, but incorporates
       interaction, animation, and screen size to create web pages users can
@@ -40,7 +40,7 @@ title: It all started with visual communication
       user-experience or UX design.
     </p>
 
-  <h2 class="services__content-header">User-experience design</h2>
+  <h2 class="services__content-header">User-experience (UX)</h2>
   <p class="services__content-paragraph">
       UX design explores the steps users take to accomplish a task. Common UX
       problems include signing up for a newsletter, ecommerce checkouts, and
@@ -83,12 +83,12 @@ title: It all started with visual communication
   <ul class="content__layout pagination__list" role="list">
     {% if previousPost %}
       <li class="pagination__list-item">
-        <strong>Previous:</strong> <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>
+        <strong class="utils__visibility--sr-only">Previous:</strong><span aria-hidden="true">&laquo;</span> <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>
       </li>
     {% endif %}
     {% if nextPost %}
-      <li class="pagination__list-item pagination__list-item--next"">
-        <strong>Next:</strong> <a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a>
+      <li class="pagination__list-item pagination__list-item--next">
+        <strong class="utils__visibility--sr-only">Next:</strong><a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a> <span aria-hidden="true">&raquo;</span>
       </li>
     {% endif %}
   </ul>

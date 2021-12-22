@@ -5,7 +5,7 @@ parentDir: '/services/'
 parentText: All services
 shortTitle: Web development
 tags: services
-title: Continuum Design can bring your business online
+title: Web development is art. And science.
 ---
 
 {% set previousPost = collections.services | getPreviousCollectionItem(page) %}
@@ -92,12 +92,12 @@ title: Continuum Design can bring your business online
   <ul class="content__layout pagination__list" role="list">
     {% if previousPost %}
       <li class="pagination__list-item">
-        <strong>Previous:</strong> <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>
+        <strong class="utils__visibility--sr-only">Previous:</strong><span aria-hidden="true">&laquo;</span> <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>
       </li>
     {% endif %}
     {% if nextPost %}
-      <li class="pagination__list-item pagination__list-item--next"">
-        <strong>Next:</strong> <a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a>
+      <li class="pagination__list-item pagination__list-item--next">
+        <strong class="utils__visibility--sr-only">Next:</strong><a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a> <span aria-hidden="true">&raquo;</span>
       </li>
     {% endif %}
   </ul>
