@@ -1,13 +1,55 @@
 ---
-title: This is a second awesome post!
-shortTitle: This is a second awesome post!
+title: Learn how to secure a jump box in three steps
+shortTitle: Secure a jump box
 parentDir: '/posts/'
 parentText: All posts
+date: Last Modified
 ---
 
-<main role="main">
-  <div class="content__layout">
-    <h1>{{ title }}</h1>
-    <p>I do not have much to say about that.</p>
-  </div>
-</main>
+<div class="posts__grid">
+  <main role="main">
+    <div class="content__layout">
+      <h1>{{ title }}</h1>
+
+      <div class="services__opening">
+        <blockquote class="services__lead-paragraph">
+          <p>Jump boxes are colloquially known as those things we use to keep our private networks safe. WTF does that even mean?</p>
+        </blockquote>
+      </div>
+
+      <div class="posts__byline">
+        <p class="services__content-paragraph">
+          <strong>Thermadore</strong> wrote this article on {{ page.date }}
+        </p>
+      </div>
+
+      <p>Don't worry. As long as you hit that wire with the connecting hook at precisely 88 miles per hour, the instance the lightning strikes the tower, everything will be fine. Now, Biff, um, can I assume that your insurance is gonna pay for the damage? You bet. Right. Yeah, who are you?</p>
+
+      <h2>The jump box must only be accessed with SSH</h2> <a href="#aside-def-1">[1]</a>
+      <p>Hey, hey, keep rolling, keep rolling there. No, no, no, no, this sucker's electrical. But I need a nuclear reaction to generate the one point twenty-one gigawatts of electricity that I need. You too. Look, there's a rhythmic ceremonial ritual coming up. Yeah. The car, Dad, I mean He wrecked it, totaled it. I needed that car tomorrow night, Dad, I mean do you have any idea how important this was, do you have any clue?</p>
+
+      <h3>It starts with a secure shell</h3> <a href="#aside-def-2">[2]</a>
+      <p>Yet. No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling through the parking lot, you see us struggling in the car, you walk up, you open the door and you say, your line, George. Yeah, I guessed you're a sailor, aren't you, that's why you wear that life preserver. Hey c'mon, I had to change, you think I'm going back in that zoot suit? The old man really came through it worked. Good, I'll see you tonight. Don't forget, now, 1:15 a.m., Twin Pines Mall.</p>
+
+      <figure>
+        <img src="https://via.placeholder.com/700x400" alt="Placeholder" />
+        <figcaption>
+          Figure 1: Logging into OpenWrt via SSH using PuTTY running on Windows. In a real scenario, we would never use the password, favoring SSH public/private key pairs instead. This image is just an example of what SSH looks like in action.
+        </figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <aside role="complementary">
+    <ul>
+      <li>
+        <h6 id="aside-def-1">Jump server</h6>
+        <p>A jump server, jump host or jump box is a system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between then. <a href="#">Wikipedia - Jump Server</a>
+      </li>
+      <li>
+        <h6 id="aside-def-2">Secure shell (SSH)</h6>
+        <p>Secure Shell (SSH) is a network protocol for operating services securely over an unsecured network. Typical applications include remote command-line login and remote command-line execution, but any network service can be accessed with SSH. <a href="#">Wikipedia - Secure Shell</a>
+      </li>
+    </ul>
+  </aside>
+</div>

@@ -1,0 +1,19 @@
+.posts__grid {
+  aside * {
+    color: #666;
+    font-size: 1rem !important;
+    font-style: italic;
+    text-align: right;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+  }
+}

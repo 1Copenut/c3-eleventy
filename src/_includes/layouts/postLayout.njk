@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta
       name="description"
       content="Read what Continuum Design has been doing and how it can help your business"
@@ -13,10 +12,10 @@
     <link rel="author" href="/.well-known/humans.txt" />
   </head>
   <body>
-    <div class="grid__rows grid__rows--five layout--has-breadcrumb">
-      {% include "layouts/partials/_header.njk" %} {% include
-      "layouts/partials/_primarynav.njk" %} {% include
-      "layouts/partials/_breadcrumb.njk" %}
+    <div class="grid__rows grid__rows--five layout--has-breadcrumb layout--has-aside">
+      {% include "layouts/partials/_header.njk" %}
+      {% include "layouts/partials/_primarynav.njk" %}
+      {% include "layouts/partials/_breadcrumb.njk" %}
       {{ content | safe }}
       {% include "layouts/partials/_footer.njk" %}
     </div>
