@@ -19,6 +19,7 @@ nav[aria-label="Pagination"] {
     align-self: center;
     display: flex;
     flex-direction: row;
+    font-family: var(--typefaces-sans);
     justify-content: space-between;
     margin-top: 2rem;
     padding: 0 6vw;
@@ -49,6 +50,10 @@ nav[aria-label="Pagination"] {
     .pagination__list {
       border-top: 6px solid var(--color-background-dusty-rose);
       padding: 1.5rem 0.5rem 0;
+
+      a {
+        font-size: calc(var(--fluid-0) * 0.875);
+      }
     }
   }
 }

@@ -3,22 +3,23 @@
  * ======================================== */
 
 /* Selectors */
+html {
+  font-size: 100%;
+}
+
 html,
 body {
   width: 100%;
   height: 100%;
 }
 
-html {
-  font-size: 100%;
-}
-
 body {
   color: var(--color-text-black);
-  font-family: -apple-system, linkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  line-height: var(--font-line-height);
+  font-family: var(--typefaces-sans);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.7;
+  letter-spacing: -0.05px;
+  word-spacing: -1px;
 }
 
 body,
@@ -42,12 +43,29 @@ p,
 blockquote,
 th,
 td {
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-line-height);
+  letter-spacing: 0;
   margin: 0;
   padding: 0;
+  word-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--typefaces-sans);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.05px;
+  word-spacing: -1px;
 }
 
 h1 {
   font-size: var(--fluid-4);
+  letter-spacing: 0;
   line-height: var(--fluid-3-vertical-rhythm);
   margin: var(--fluid-4-margin) 0;
 }
@@ -81,6 +99,7 @@ h6 {
 }
 
 p {
+  font-family: var(--typefaces-serif);
   font-size: var(--fluid-0);
   margin: 0 0 var(--fluid-4-margin);
   max-width: 60ch;
@@ -93,6 +112,11 @@ dl {
   margin: 0 0 var(--fluid-4-margin);
   max-width: 60ch;
   padding-left: 1.25rem;
+}
+
+ol,
+ul {
+  font-family: var(--typefaces-serif);
 }
 
 li {

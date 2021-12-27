@@ -27,6 +27,18 @@
   --fluid-min-ratio: 1.2;
   --fluid-max-ratio: 1.333;
 
+  /* Typefaces */
+  --typefaces-default: -apple-system, linkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --typefaces-sans: "Public Sans", Arial, Helvetica, 'sans-serif';
+    --typefaces-serif: 'Crimson Pro', Georgia, serif;
+
+  /*  Type Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
   /* CSS locks for fluid type */
   --fluid-screen: 100vw;
   --fluid-bp: calc(
@@ -141,10 +153,6 @@
   --fluid-2-vertical-rhythm: calc(var(--fluid-min-size-0) * 1.25);
   --fluid-3-vertical-rhythm: calc(var(--fluid-min-size-0) * 1.302);
   --fluid-4-vertical-rhythm: calc(var(--fluid-min-size-0) * 1.627777777);
-
-  /*  Type Weights */
-  --font-weight-normal: 400;
-  --font-weight-bold: 700;
 
   /* Z-index */
   --z-index-2: 2;

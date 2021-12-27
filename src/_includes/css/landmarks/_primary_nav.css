@@ -14,6 +14,7 @@ nav[aria-label='Primary links'] {
 
   .nav--primary__list {
     display: flex;
+    font-family: var(--typefaces-sans);
     height: 100%;
     justify-content: space-around;
     margin: 0;

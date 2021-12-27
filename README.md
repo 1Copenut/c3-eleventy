@@ -17,6 +17,11 @@
 - [Using Nunjucks 'If Expressions' in 11ty to create a simple active navigation state](https://bryanlrobinson.com/blog/using-nunjucks-if-expressions-to-create-an-active-navigation-state-in-11ty/)
 - [Using the aria-current attribute](https://tink.uk/using-the-aria-current-attribute/)
 - [Building Personal Static Site with Eleventy](https://jec.fyi/blog/building-my-static-site-with-11ty)
+- [How to Load Fonts in a Way That Fights FOUT and Makes Lighthouse Happy](https://css-tricks.com/how-to-load-fonts-in-a-way-that-fights-fout-and-makes-lighthouse-happy/)
+- [The Fastest Google Fonts](https://csswizardry.com/2020/05/the-fastest-google-fonts/)
+- [Font style matcher](https://meowni.ca/font-style-matcher/)
+- [Google variable fonts](https://fonts.google.com/variablefonts)
+- [MDN Variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide)
 
 ## Git References I Use Sometimes
 
