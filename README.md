@@ -21,10 +21,11 @@
 - [The Fastest Google Fonts](https://csswizardry.com/2020/05/the-fastest-google-fonts/)
 - [Font style matcher](https://meowni.ca/font-style-matcher/)
 - [Google variable fonts](https://fonts.google.com/variablefonts)
-- [MDN Variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide)
+- [MDN: Variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide)
 
 ## Git References I Use Sometimes
 
-- https://alvinalexander.com/git/git-rm-file-git-repository-dont-track-accidentally-added/
-- https://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning
-- https://jigarius.com/blog/signing-git-commits
+- [Tell Git not to track a file any more (remove from repo)](https://alvinalexander.com/git/git-rm-file-git-repository-dont-track-accidentally-added/)
+- [SO: View the change history of a file using Git versioning](https://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning)
+- [Signing Git Commits and Tags with GPG](https://jigarius.com/blog/signing-git-commits)
+- [Pro Git: Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
