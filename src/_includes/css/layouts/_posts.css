@@ -132,7 +132,7 @@
 
     &__figure {
       figcaption {
-        font-size: calc(var(--fluid-0) * 0.875);
+        font-size: calc(var(--fluid-0) * var(--type-size-modifier--secondary));
       }
     }
   }

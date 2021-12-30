@@ -88,6 +88,7 @@
     &__link {
       color: var(--color-link-blue-light);
       display: inline-block;
+      font-size: calc(var(--fluid-0) * var(--type-size-modifier--footer));
 
       &:hover,
       &:focus-visible {

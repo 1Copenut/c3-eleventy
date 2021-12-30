@@ -28,15 +28,14 @@
   --fluid-max-ratio: 1.333;
 
   /* Typefaces */
-  --typefaces-default: -apple-system, linkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    --typefaces-sans: "Public Sans", Arial, Helvetica, 'sans-serif';
-    --typefaces-serif: 'Crimson Pro', Georgia, serif;
+  --typefaces-sans: 'Public Sans', Arial, Helvetica, 'sans-serif';
+  --typefaces-serif: Literata, Georgia, serif;
 
   /*  Type Weights */
-  --font-weight-light: 300;
+  --font-weight-light: 333;
   --font-weight-normal: 400;
+  --font-weight-semi-bold: 550;
+  --font-weight-semi-bold--list: 600;
   --font-weight-bold: 700;
 
   /* CSS locks for fluid type */
@@ -141,9 +140,14 @@
     )
   );
 
+  /* Type modifiers */
+  /* Because sometimes we just need to make things a hair smaller :) */
+  --type-size-modifier--footer: 0.9375;
+  --type-size-modifier--secondary: 0.875;
+
   /* Line leading */
   /* Values are derived by dividing computed line-height by font-size */
-  --font-line-height: 1.5;
+  --font-line-height: 1.65;
   --font-vertical-rhythm-quarter: calc(var(--font-line-height) / 4);
   --font-vertical-rhythm-third: calc(var(--font-line-height) / 3);
   --font-vertical-rhythm-half: calc(var(--font-line-height) / 2);

@@ -1,11 +1,12 @@
 /* ========================================
- * /global _LINKS.CSS
+ * /components _ACTION_LINKS.CSS
  * ======================================== */
 
 /* Action links */
 .content__action-link-container {
   display: block;
   margin: var(--font-vertical-rhythm) 0;
+  margin-left: -6px;
 
   &--short {
     margin-top: 0.5rem;
@@ -14,6 +15,9 @@
   a {
     color: var(--color-link-blue-dark);
     display: block;
+    font-family: var(--typefaces-sans);
+    font-variation-settings: "wght" var(--font-weight-semi-bold);
+    letter-spacing: -0.05px;
     text-decoration: none;
     width: fit-content;
 

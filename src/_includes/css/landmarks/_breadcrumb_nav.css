@@ -62,16 +62,16 @@ nav[aria-label='Breadcrumbs'] {
       }
     }
 
-    a {
-      font-size: calc(var(--fluid-0) * 0.875);
-    }
+    .content__breadcrumb-link {
+      font-size: calc(var(--fluid-0) * var(--type-size-modifier--secondary));
 
-    a[aria-current='location'] {
-      color: var(--color-background-black);
-      cursor: default;
-      font-weight: var(--font-weight-bold);
-      pointer-events: none;
-      text-decoration: none;
+      &[aria-current='location'] {
+        color: var(--color-background-black);
+        cursor: default;
+        font-variation-settings: "wght" var(--font-weight-bold);
+        pointer-events: none;
+        text-decoration: none;
+      }
     }
   }
 }

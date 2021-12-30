@@ -41,15 +41,12 @@ nav[aria-label='Primary links'] {
     padding: 0.5rem 0.5rem calc(0.5rem + env(safe-area-inset-bottom));
     text-decoration: none;
 
-    &:hover {
-      background-color: var(--color-background-blue--navy);
-    }
-
     &:focus:not(:focus-visible) {
       outline: none;
     }
 
     &:focus-visible {
+      background-color: var(--color-background-blue--navy);
       box-shadow: 4px 0 0 var(--color-background-dusty-rose--light) inset,
         -4px 0 0 var(--color-background-dusty-rose--light) inset,
         0 4px 0 var(--color-background-dusty-rose--light) inset,
@@ -107,6 +104,10 @@ nav[aria-label='Primary links'] {
 
     .nav--primary__link {
       padding: 0.5rem 1.625rem;
+
+      &[aria-current="page"] {
+        font-variation-settings: "wght" var(--font-weight-bold);
+      }
     }
 
     .nav--primary__link--home {

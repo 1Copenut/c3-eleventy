@@ -21,7 +21,9 @@
 - [The Fastest Google Fonts](https://csswizardry.com/2020/05/the-fastest-google-fonts/)
 - [Font style matcher](https://meowni.ca/font-style-matcher/)
 - [Google variable fonts](https://fonts.google.com/variablefonts)
+- [Google CSS API](https://developers.google.com/fonts/docs/css2)
 - [MDN: Variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide)
+- [Get started with variable fonts](https://medium.com/@clagnut/get-started-with-variable-fonts-c055fd73ecd7)
 
 ## Git References I Use Sometimes
 

@@ -73,7 +73,7 @@ h1 {
 h2 {
   font-size: var(--fluid-3);
   line-height: var(--fluid-3-vertical-rhythm);
-  margin: 0 0 var(--fluid-2-margin);
+  margin: 0 0 var(--fluid-1-margin);
 }
 
 h3 {
@@ -101,6 +101,7 @@ h6 {
 p {
   font-family: var(--typefaces-serif);
   font-size: var(--fluid-0);
+  font-variation-settings: "wght" var(--font-weight-light);
   margin: 0 0 var(--fluid-4-margin);
   max-width: 60ch;
 }
@@ -119,13 +120,22 @@ ul {
   font-family: var(--typefaces-serif);
 }
 
+ul {
+  padding-left: 1.75rem;
+}
+
 li {
   font-size: var(--fluid-0);
+  font-variation-settings: "wght" var(--font-weight-light);
   margin: 0 0 var(--font-vertical-rhythm-quarter) 0;
   padding: 0 0 0 0.25rem;
 
   &:last-of-type {
     margin: 0;
+  }
+
+  > * {
+    font-family: inherit;
   }
 }
 
@@ -149,11 +159,25 @@ a {
   }
 }
 
+strong {
+  font-variation-settings: "wght" var(--font-weight-bold) !important;
+}
+
 /* ========================================
  * Class-based utilities
  * ======================================== */
 .type {
   &__leading-quote {
     font-size: var(--fluid-7);
+  }
+}
+
+/* ========================================
+ * Media queries
+ * ======================================== */
+ /* Tablet devices - 768px breakpoint */
+@media only screen and (min-width: 48rem) {
+  h2 {
+    margin: 0 0 var(--fluid-2-margin);
   }
 }
