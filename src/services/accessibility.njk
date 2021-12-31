@@ -11,9 +11,9 @@ title: Accessible by design
 {% set previousPost = collections.services | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.services | getNextCollectionItem(page) %}
 
-<main role="main">
+<main aria-labelledby="content-heading" role="main" id="content">
   <div class="content__layout">
-    <h1>{{ title }}</h1>
+    <h1 id="content-heading">{{ title }}</h1>
 
     <div class="services__opening">
       <blockquote class="services__lead-paragraph">
