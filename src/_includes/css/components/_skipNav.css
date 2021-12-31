@@ -1,0 +1,16 @@
+.content__skip-nav {
+  display: flex;
+  font-variation-settings: "wght" var(--font-weight-semi-bold);
+  padding: 1.25rem 3rem;
+  position: absolute;
+  top: -9999px;
+
+  &:focus {
+    background-color: var(--color-white);
+    top: 0;
+  }
+
+  &:focus-visible {
+    outline-offset: 0;
+  }
+}
