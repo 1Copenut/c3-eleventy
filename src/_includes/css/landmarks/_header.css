@@ -65,8 +65,15 @@
 
   /*
    * https://css-tricks.com/snippets/css/retina-display-media-query/
-   * High-density phones and non-tablet devices
+   * Phones and non-tablet devices
    */
+  @media only screen and (min-width: 20rem) {
+    background: var(--color-background-dusty-rose)
+      url('../../images/backgrounds/mobile-header.jpg') top left/cover
+      no-repeat;
+  }
+  
+  /* High-density phones and non-tablet devices */
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 20rem),
     only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 20rem),
     only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 20rem),
@@ -75,6 +82,13 @@
     only screen and (min-resolution: 2dppx) and (min-width: 20rem) {
     background: var(--color-background-dusty-rose)
       url('../../images/backgrounds/mobile-header@2x.jpg') top left/cover
+      no-repeat;
+  }
+
+  /* Tablets */
+  @media only screen and (min-width: 48rem) {
+    background: var(--color-background-dusty-rose)
+      url('../../images/backgrounds/tablet-header.jpg') top left/cover
       no-repeat;
   }
 
@@ -90,6 +104,13 @@
       no-repeat;
   }
 
+  /* Mid-size screens 1024 to 1280px */
+  @media only screen and (min-width: 64rem) {
+    background: var(--color-background-dusty-rose)
+      url('../../images/backgrounds/mid-header.jpg') top left/cover
+      no-repeat;
+  }
+
   /* Mid-size high-density screens 1024 to 1280px */
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 64rem),
     only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 64rem),
@@ -99,6 +120,13 @@
     only screen and (min-resolution: 2dppx) and (min-width: 64rem) {
     background: var(--color-background-dusty-rose)
       url('../../images/backgrounds/mid-header@2x.jpg') top left/cover no-repeat;
+  }
+
+  /* Large screens 1280px and wider */
+  @media only screen and (min-width: 80rem) {
+    background: var(--color-background-dusty-rose)
+      url('../../images/backgrounds/large-header.jpg') top left/cover
+      no-repeat;
   }
 
   /* Large high-density screens 1280px and wider */
