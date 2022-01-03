@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "clean-css": "^5.2.2",
     "postcss": "^8.2.13",
     "postcss-import": "^14.0.1",
     "postcss-nested": "^5.0.5"
