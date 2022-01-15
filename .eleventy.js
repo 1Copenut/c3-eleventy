@@ -1,7 +1,16 @@
+// const criticalCss = require("eleventy-critical-css");
+
 module.exports = function (eleventyConfig) {
   // Pass items through to /dist
   eleventyConfig.addPassthroughCopy("src/images");
-  eleventyConfig.addPassthroughCopy(".well-known/humans.txt");
+  // eleventyConfig.addPassthroughCopy(".well-known/humans.txt");
+  // eleventyConfig.addPlugin(criticalCss, {
+  //   css: ['css/main.css'],
+  //   extract: false,
+  //   ignore: {
+  //     atrules: ['@font-face'],
+  //   },
+  // });
 
   return {
     dir: {
