@@ -19,31 +19,31 @@ layout: layouts/layout.njk
         <legend class="contact-form__legend">
           <h2>Your information</h2>
         </legend>
-        <ul class="utils__list--no-bullets" role="list">
-          <li>
+        <ul class="utils__list--no-bullets contact-form__list" role="list">
+          <li class="contact-form__list-item">
             <label for="name" class="contact-form__label">Your name</label>
             <input type="text" autocomplete="name" id="name" required />
           </li>
-          <li>
+          <li class="contact-form__list-item">
             <label for="email" class="contact-form__label"
-              >Your email address</label
+              >Email address</label
             >
             <input type="email" autocomplete="email" id="email" required />
           </li>
-          <li>
+          <li class="contact-form__list-item">
             <label for="telephone" class="contact-form__label"
-              >Your telephone number (optional)</label
+              >Telephone number (optional)</label
             >
             <input type="tel" autocomplete="tel" id="telephone" />
           </li>
-          <li>
-            <label for="consented">
+          <li class="contact-form__list-item">
+            <label for="consented" class="contact-form__label contact-form__label--checkbox">
               <input type="checkbox" id="consented" required />
-              <span>I consent to Continuum Design contacting me</span>
+              <span>I consent to being contacted</span>
             </label>
           </li>
-          <li>
-            <input type="submit" value="Send my contact info" />
+          <li class="contact-form__list-item">
+            <input class="contact-form__submit" type="submit" value="Send my contact info" />
           </li>
         </ul>
       </fieldset>
