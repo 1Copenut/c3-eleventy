@@ -1,0 +1,14 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Literata';
+  font-style: italic;
+  font-display: swap;
+  src: url('../fonts/Literata-Italic[opsz\,wght].woff2') format('woff2');
+}
+/* latin */
+@font-face {
+  font-family: 'Literata';
+  font-style: italic;
+  font-display: swap;
+  src: url('../fonts/Literata[opsz\,wght].woff2') format('woff2');
+}

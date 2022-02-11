@@ -1,0 +1,148 @@
+============================================================
+Literata variable font license
+============================================================
+
+TypeTogether Webfont Licence Agreement, version 2.0
+© Copyright TypeTogether 2017. All Rights Reserved.
+
+PLEASE READ CAREFULLY: This Addendum (Webfont EULA) governs the uses of Font Software, licensed for use a Webfont, hereafter referred to as Licensed Webfont(s). Where there is a conflict with the Typetogether EULA, the Typetogether EULA shall control. If you are confused as to the rights granted or the uses prohibited under the Web Font EULA, please contact Typetogether at www.type-together.com.
+
+Using the Licensed Webfont(s) on the web, for styling HTML web pages, is permitted using the @font—face selector in CS5 ﬁles and/or such other standard as Typetogether may permit in the future and as may be subject to the following restrictions. Should any additional or uses not permitted under this license be desired, contact the Typetogether to request the appropriate license upgrade.
+
+1. You may not link to, nor make available online, any TrueType, OpenType or other version of the Font Software you may have licensed. The use of improperly used or non-licensed webfonts is also prohibited. You may not convert any standard Typetogether Font Software to any web font format.
+
+2. The comments, showing copyright and other legal or ownership information in the sample HTML/CS5/Javascript ﬁles, must be retained in your web site code.
+
+3. The Licensed Webfont(s) may be used on any web site owned/controlled by the licensee (subject to paragraph 4 below). The total traffic, measured in page views, of web sites on which the Licensed Webfont is used must be no greater than the number of page views per month specified in the receipt you received for the Licensed Webfont. Unless stated otherwise, validity is perpetual.
+
+4. Agencies or others responsible for multiple clients’ web sites, such as, for example only, web design agencies or hosting providers, may not use and/or share a single Webfont or other Font Software license to benefit multiple clients. Each user of Webfont Software must purchase a license that is proper for their own uses.
+
+5. The Licensed Webfont(s) may not be used in any interactive web applications where, by way of example only, not limitation, and subject to the relevant terms and conditions in the Typetogether EULA, where the:
+a) end users can select and/or use any Licensed Web font for a text composition or editing use;
+b) with respect to commercial uses, the Licensed Webfont(s) are used within an interactive web or game application, a fee based application, an e-book, PDF document distributed for a fee, or an application that is distributed without charge which is used to promote a business’s activity, services or products (except as may be otherwise provided under the License Upgrade, Embedding).
+
+6. You may not use conversion or editing tools or software to amend, modify or others change or alter the Licensed Webfont(s).
+
+7. Use of the Licensed Webfont(s) with web font technologies other than @font—face, such as, by way of example, not limitation, slFR, Cufón or Typeface.js, is allowed.
+
+8. The Licensed Webfont(s) may not be sold, re-sold sub-licensed made available by hot linking, cross linking or otherwise made available, irrespective of the technology or methods used, to any third party or by any Webfont provision service.
+
+============================================================
+Public Sans variable font license
+============================================================
+
+This repository is a fork of Libre Franklin: https://github.com/impallari/Libre-Franklin
+
+## License for USWDS’s Modified Version
+
+This repository contains both the original font software for Libre Franklin (the “Original Version”) and font software modifications made by the General Services Administration (GSA). This repository combines the Original Version and these GSA modifications into a piece of font software called Public Sans, which is a “Modified Version” of Libre Franklin.
+
+As a work of the United States Government, the font software modifications made by GSA are not subject to copyright within the United States. Additionally, GSA waives copyright and related rights in its font software modifications worldwide through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+
+The Original Version (as defined in the SIL Open Font License, Version 1.1) remains subject to copyright under the SIL Open Font License, Version 1.1.
+
+This Modified Version (Public Sans) contains both software under the SIL Open Font License, Version 1.1 and software modifications by GSA released as CC0. As a work of the United States Government, the software modifications made by GSA are not subject to copyright within the United States. Additionally, GSA waives copyright and related rights in its software modifications worldwide through the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/). It is a “joint work” made of the original software and modifications combined into a single work.
+
+**In practice, users of this Modified Version (Public Sans) should use Public Sans according to the terms of the SIL Open Font License, Version 1.1, below.** This is because this font is a combination of work subject to copyright and work not subject to copyright, so the more restrictive requirements apply to using the combined work.
+
+## License of project USWDS’s Modified Version is based on
+
+- Libre Franklin is licensed under the SIL Open Font License, Version 1.1 (<http://scripts.sil.org/OFL>)
+- To view the copyright and specific terms and conditions of Libre Franklin, please refer to [OFL.txt](https://github.com/impallari/Libre-Franklin/blob/master/OFL.txt)
+
+## SIL Open Font License, Version 1.1
+
+Copyright 2015 The Public Sans Project Authors (https://github.com/uswds/public-sans)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+This license is copied below, and is also available with a FAQ at http://scripts.sil.org/OFL
+
+```
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+```
