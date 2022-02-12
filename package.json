@@ -1,9 +1,11 @@
 {
   "name": "continuum-eleventy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Continuum Design, LLC. Built on Eleventy.",
   "main": "index.js",
   "scripts": {
+    "build": "rimraf dist/ && npx @11ty/eleventy",
+    "build:test": "npm run build && npx http-server ./dist/ -d false -o",
     "start": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,8 +15,10 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "clean-css": "^5.2.2",
+    "http-server": "^14.1.0",
     "postcss": "^8.2.13",
     "postcss-import": "^14.0.1",
-    "postcss-nested": "^5.0.5"
+    "postcss-nested": "^5.0.5",
+    "rimraf": "^3.0.2"
   }
 }
