@@ -29,4 +29,4 @@ Language: English
 Standards: HTML5, CSS3, JavaScript ES6
 Accessibility: WCAG 2.1 Level AA
 Components: Eleventy, PostCSS, ES6 and modules, Cypress
-Software: Photoshop, VSCode, Vim, Node, NPM, Chrome, NVDA, VoiceOver
+Software: Photoshop, VSCode, Vim, Node, NPM, Chrome, Firefox, Safari, NVDA, VoiceOver

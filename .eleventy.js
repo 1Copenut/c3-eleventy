@@ -3,6 +3,7 @@
 module.exports = function (eleventyConfig) {
   // Pass items through to /dist
   eleventyConfig.addPassthroughCopy("src/images");
+<<<<<<< HEAD
   // eleventyConfig.addPassthroughCopy(".well-known/humans.txt");
   // eleventyConfig.addPlugin(criticalCss, {
   //   css: ['css/main.css'],
@@ -11,6 +12,11 @@ module.exports = function (eleventyConfig) {
   //     atrules: ['@font-face'],
   //   },
   // });
+=======
+  eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy("src/css/*.css");
+  eleventyConfig.addPassthroughCopy(".well-known/*.txt");
+>>>>>>> main
 
   return {
     dir: {
