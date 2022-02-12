@@ -15,11 +15,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "clean-css": "^5.2.2",
-<<<<<<< HEAD
     "critical": "^4.0.1",
-=======
     "http-server": "^14.1.0",
->>>>>>> main
     "postcss": "^8.2.13",
     "postcss-import": "^14.0.1",
     "postcss-nested": "^5.0.5",
