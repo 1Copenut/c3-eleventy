@@ -4,8 +4,11 @@
   "description": "Continuum Design, LLC. Built on Eleventy.",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist/ && npx @11ty/eleventy",
-    "build:test": "npm run build && npx http-server ./dist/ -d false -o",
+    "clean": "rimraf dist/",
+    "build:prime": "npx @11ty/eleventy ; npx @11ty/eleventy",
+    "build:test": "npx @11ty/eleventy && npx http-server ./dist/ -d false -o",
+    "build:cold-start": "npm run clean && npm run build:prime",
+    "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
