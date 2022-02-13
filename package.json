@@ -5,17 +5,23 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist/ && npx @11ty/eleventy",
-    "build:test": "npm run build && npx http-server ./dist/ -d false -o",
-    "start": "npx @11ty/eleventy --serve",
+    "build:test": "npm run build && npx http-server ./dist/ -o",
+    "start": "rimraf dist/ && npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "a11y"
+  ],
+  "author": "Trevor Pierce",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "clean-css": "^5.2.2",
     "http-server": "^14.1.0",
+    "md5": "^2.3.0",
     "postcss": "^8.2.13",
     "postcss-import": "^14.0.1",
     "postcss-nested": "^5.0.5",
