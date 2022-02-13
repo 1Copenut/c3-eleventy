@@ -8,7 +8,7 @@
 /* latin */
 @font-face {
   font-family: 'Literata';
-  font-style: italic;
+  font-style: regular;
   font-display: swap;
   src: url('../fonts/Literata[opsz\,wght].woff2') format('woff2');
 }

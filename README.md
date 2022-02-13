@@ -1,4 +1,4 @@
-# Continuum Design v3.dough
+# Continuum Design ~~v3.dough~~ v3.it\'s-about-time
 
 ## Eleventy References I Use A Lot
 
@@ -24,8 +24,9 @@
 - [Google CSS API](https://developers.google.com/fonts/docs/css2)
 - [MDN: Variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide)
 - [Get started with variable fonts](https://medium.com/@clagnut/get-started-with-variable-fonts-c055fd73ecd7)
+- [Cache Busting with Eleventy and PostCSS](https://florian.ec/blog/cache-busting-eleventy-postcss/)
 
-## Git References I Use Sometimes
+## Git References I Use ~~Sometimes~~ A Lot
 
 - [Tell Git not to track a file any more (remove from repo)](https://alvinalexander.com/git/git-rm-file-git-repository-dont-track-accidentally-added/)
 - [SO: View the change history of a file using Git versioning](https://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning)
@@ -33,3 +34,7 @@
 - [Pro Git: Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
 - [Pro Git: Interactive
   Staging](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)
+
+## NPM References
+  
+- [package.json - Specifics of npm's package.json handling](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
