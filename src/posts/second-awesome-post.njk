@@ -8,13 +8,13 @@ tags: ['posts', 'security', 'networking']
 ---
 
 <div class="posts__grid">
-  <main aria-labelledby="content-heading" role="main" id="content">
+  <main aria-labelledby="content-heading" role="main" id="content" itemscope itemtype="https://schema.org/CreativeWork">
     <div class="content__layout">
       <h1 id="content-heading">{{ title }}</h1>
 
       <div class="posts__lead">
         <blockquote class="posts__lead-paragraph">
-          <p>Jump boxes are colloquially known as those things we use to keep our private networks safe. WTF does that even mean?</p>
+          <p itemProp="description">Jump boxes are colloquially known as those things we use to keep our private networks safe. WTF does that even mean?</p>
         </blockquote>
       </div>
 
@@ -23,9 +23,15 @@ tags: ['posts', 'security', 'networking']
 
       <div class="posts__byline-container">
         <ul role="list">
-          <li><strong>Author:</strong> Thermadore</li>
-          <li><strong>Published:</strong> {{ page.date }}</li>
-          <li><strong>Tagged:</strong> <a href="#">security</a>, <a href="#">networking</a></li>
+          <li><span itemprop="author"><strong>Author:</strong> Thermadore</span></li>
+          <li><time datetime="2022-02-13" itemProp="datePublished"><strong>Published:</strong> {{ page.date }}</time></li>
+          <li>
+            <strong>This post tagged:</strong>
+            <ul>
+              <li><a href="#">security</a></li>
+              <li><a href="#">networking</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
 
@@ -49,11 +55,15 @@ tags: ['posts', 'security', 'networking']
   <aside aria-labelledby="post-definitions-id" role="complementary">
     <div class="content__layout">
       <h2 id="post-definitions-id">Definitions</h2>
-      <dl class="posts__jump-link-definitions">
-        <dt id="aside-def-1">Jump server</dt>
-        <dd>A jump server, jump host or jump box is a system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between then. <a href="#">Wiki - Jump Server</a></dd>
-        <dt id="aside-def-2">Secure shell (SSH)</dt>
-        <dd>SSH is a network protocol for running services securely over an unsecured network. Typical applications include remote command-line login and remote command-line execution, but any network service can be accessed with SSH. <a href="#">Wiki - Secure Shell</a></dd>
+      <dl class="posts__jump-link-definitions" itemscope itemtype="https://schema.org/DefinedTermSet">
+        <div itemscope itemtype="https://schema.org/DefinedTerm">
+          <dt id="aside-def-1" itemprop="name">Jump server</dt>
+          <dd itemprop="description">A jump server, jump host or jump box is a system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between then. <a href="#">Wiki - Jump Server</a></dd>
+        </div>
+        <div itemscope itemtype="https://schema.org/DefinedTerm">
+          <dt id="aside-def-2" itemprop="name">Secure shell (SSH)</dt>
+          <dd itemprop="description">SSH is a network protocol for running services securely over an unsecured network. Typical applications include remote command-line login and remote command-line execution, but any network service can be accessed with SSH. <a href="#">Wiki - Secure Shell</a></dd>
+        </div>
       </dl>
     </div>
   </aside>
