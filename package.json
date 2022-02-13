@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist/ && npx @11ty/eleventy",
-    "build:test": "npm run build && npx http-server ./dist/ -o",
+    "build:test": "npm run build && npx http-server ./dist/ -d false -o"
     "start": "rimraf dist/ && npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
