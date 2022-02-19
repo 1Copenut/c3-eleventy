@@ -1,0 +1,10 @@
+{% set canonical = config.baseUrl + page.url %}
+
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ canonical }}" />
+
+<!-- Twitter Summary Card meta tags -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@1copenut" />
+<meta name="twitter:title" content="{{ title }}" />

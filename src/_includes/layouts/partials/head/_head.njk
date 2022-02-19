@@ -1,13 +1,22 @@
+{% set canonical = config.baseUrl + page.url %}
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html" />
-  <meta
-    name="description"
-    content="Continuum Design is a design and development agency that focuses on small business."
-  />
+  {% if pageDescription %}
+    <meta name="description" content="{{ pageDescription }}" />
+  {% else %}
+    <meta name="description" content="{{ config.globalDescription }}" />
+  {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% if '/posts' in page.url %}
+    {% include "layouts/partials/head/_postsSeoFB.njk" %}
+  {% else %}
+    {% include "layouts/partials/head/_seoFB.njk" %}
+  {% endif %}
   <title>{{ title }}</title>
   {% include "layouts/partials/head/_css.njk" %}
-  {% include "layouts/partials/head/_seo.njk" %}
+  <link rel="canonical" href="{{ canonical }}" />
   {% include "layouts/partials/head/_wellKnown.njk" %}
+  {% include "layouts/partials/head/_seo.njk" %}
 </head>
