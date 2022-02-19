@@ -12,38 +12,77 @@ layout: layouts/layout.njk
         Continuum Design looks forward to hearing from you. Please fill out the
         form below. All fields are required except a phone number.
       </p>
+      <noscript>
+        <p>I apologize for the inconvenience, but Javascript is required to complete this contact form.</p>
+      </noscript>
     </blockquote>
 
-    <form action="" novalidate class="contact-form">
+    <form
+      class="contact-form"
+      data-netlify="true"
+      id="continuum-contact-form"
+      method="post"
+      name="continuum-contact"
+      netlify-honeypot="botz"
+      novalidate
+    >
       <fieldset class="contact-form__fieldset">
         <legend class="contact-form__legend">
           <h2>Your information</h2>
         </legend>
-        <ul class="utils__list--no-bullets" role="list">
-          <li>
+        <ul class="utils__list--no-bullets contact-form__list" role="list">
+          <li class="contact-form__list-item">
             <label for="name" class="contact-form__label">Your name</label>
-            <input type="text" autocomplete="name" id="name" required />
+            <input
+              autocomplete="name"
+              id="name"
+              maxlength="40"
+              minlength="2"
+              name="name"
+              pattern="[A-Za-z0-9' -.]{2,40}"
+              type="text"
+              required
+            />
           </li>
-          <li>
+          <li class="contact-form__list-item">
             <label for="email" class="contact-form__label"
-              >Your email address</label
+              >Email address</label
             >
-            <input type="email" autocomplete="email" id="email" required />
+            <input
+              autocomplete="email"
+              id="email"
+              maxlength="100"
+              name="email"
+              type="email"
+              required
+            />
           </li>
-          <li>
+          <li class="contact-form__list-item">
             <label for="telephone" class="contact-form__label"
-              >Your telephone number (optional)</label
+              >Telephone number (optional)</label
             >
-            <input type="tel" autocomplete="tel" id="telephone" />
+            <input
+              autocomplete="tel"
+              id="telephone"
+              maxlength="20"
+              name="telephone"
+              pattern="^[(]{0,1}[0-9]{3}[)]{0,1}[-.\s]?[0-9]{3}[-.\s]?[0-9]{4}$"
+              placeholder="(123) 456-7890"
+              type="tel"
+            />
           </li>
-          <li>
-            <label for="consented">
-              <input type="checkbox" id="consented" required />
-              <span>I consent to Continuum Design contacting me</span>
+          <li class="contact-form__list-item utils__visibility--none">
+            <label for="botz" class="contact-form__label">Leave this field blank if you are a human</label>
+            <input type="text" id="botz" name="botz" />
+          </li>
+          <li class="contact-form__list-item">
+            <label for="consented" class="contact-form__label contact-form__label--checkbox">
+              <input type="checkbox" id="consented" name="consent" required />
+              <span>I consent to being contacted</span>
             </label>
           </li>
-          <li>
-            <input type="submit" value="Send my contact info" />
+          <li class="contact-form__list-item">
+            <input class="contact-form__submit" type="submit" value="Send" />
           </li>
         </ul>
       </fieldset>

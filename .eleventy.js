@@ -1,7 +1,9 @@
 module.exports = function (eleventyConfig) {
   // Pass items through to /dist
   eleventyConfig.addPassthroughCopy("src/images");
-  eleventyConfig.addPassthroughCopy(".well-known/humans.txt");
+  eleventyConfig.addPassthroughCopy({ "src/_copied/fonts" : "fonts" });
+  eleventyConfig.addPassthroughCopy({ "src/_copied/css/*.css" : "css"});
+  eleventyConfig.addPassthroughCopy(".well-known/*.txt");
 
   return {
     dir: {

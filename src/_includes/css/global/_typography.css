@@ -139,7 +139,8 @@ li {
   }
 }
 
-a {
+a,
+input {
   color: var(--color-link-blue-dark);
   font-size: var(--fluid-0);
 
