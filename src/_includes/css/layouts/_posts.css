@@ -202,6 +202,12 @@
         }
       }
     }
+
+    &__jump-link-definitions {
+      border: none;
+      margin: 0;
+      padding: 0 0 0 1vw;
+    }
   }
 }
 
