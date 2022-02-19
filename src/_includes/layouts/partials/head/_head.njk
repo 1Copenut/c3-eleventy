@@ -6,6 +6,11 @@
     content="Continuum Design is a design and development agency that focuses on small business."
   />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% if '/posts' in page.url %}
+    {% include "layouts/partials/head/_postsSeoFB.njk" %}
+  {% else %}
+    {% include "layouts/partials/head/_seoFB.njk" %}
+  {% endif %}
   <title>{{ title }}</title>
   {% include "layouts/partials/head/_css.njk" %}
   {% include "layouts/partials/head/_seo.njk" %}
