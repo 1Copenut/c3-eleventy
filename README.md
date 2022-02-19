@@ -27,6 +27,7 @@
 - [Cache Busting with Eleventy and PostCSS](https://florian.ec/blog/cache-busting-eleventy-postcss/)
 - [Open Graph documentation](https://ogp.me/)
 - [Twitter Cards documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
+- [I Finally Understand Eleventy's Data Cascade.](https://benmyers.dev/blog/eleventy-data-cascade/)
 
 ## Git References I Use ~~Sometimes~~ A Lot
 
