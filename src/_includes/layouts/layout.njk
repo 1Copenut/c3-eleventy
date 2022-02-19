@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ config.language }}">
   {% include "layouts/partials/head/_head.njk" %}
   <body>
     {% include "layouts/partials/_skipNav.njk" %}
     <div class="grid__rows">
-      {% include "layouts/partials/_header.njk" %} {% include
-      "layouts/partials/_primarynav.njk" %}
+      {% include "layouts/partials/_header.njk" %}
+      {% include "layouts/partials/_primarynav.njk" %}
       {{ content | safe }}
       {% include "layouts/partials/_footer.njk" %}
     </div>

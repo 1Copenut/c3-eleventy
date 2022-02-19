@@ -25,6 +25,8 @@
 - [MDN: Variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide)
 - [Get started with variable fonts](https://medium.com/@clagnut/get-started-with-variable-fonts-c055fd73ecd7)
 - [Cache Busting with Eleventy and PostCSS](https://florian.ec/blog/cache-busting-eleventy-postcss/)
+- [Open Graph documentation](https://ogp.me/)
+- [Twitter Cards documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 
 ## Git References I Use ~~Sometimes~~ A Lot
 
