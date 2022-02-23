@@ -1,13 +1,13 @@
 # Security email address must include the subject
-# as written or it will be flagged as spam. Do not
-# include any attachments.
-Contact: mailto:security@continuumdesign.net?subject=Continuum Design website security notice
+# as written or it will be flagged as spam.
+# Do not include any attachments.
+<!-- TODO: Add the email address when ready to go live -->
 
 # Public key expiration
-Expires: 2027-01-17T06:00:00.000Z
+<!-- TODO: Add a public key -->
 
 # Link to OpenPGP public key
-Encryption: https://keys.openpgp.org/search?q=security%40continuumdesign.net
+<!-- TODO: Add a public key -->
 
 # Preferred language
 Preferred-Languages: en
