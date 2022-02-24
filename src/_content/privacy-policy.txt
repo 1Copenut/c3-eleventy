@@ -1,0 +1,9 @@
+Privacy Policy
+
+Continuum Design believes in the right to privacy and the right to be forgotten. This applies to everyone who visits the site, sends an email, or uses the contact form. Contact data will never be sold, rented, or given to third-parties for marketing purposes. All contact logs older than 30 days are deleted.
+
+Analytics
+At this time, I am evaluating analytics packages that are better aligned with GDPR and other data protection mandates. In no particular order I am considering:
+
+* Elastic Observability
+* 
