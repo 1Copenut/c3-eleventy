@@ -1,0 +1,17 @@
+# Privacy policy
+
+Continuum Design (Continuum Design, LLC) believes in the right to privacy and the right to be forgotten. This applies to everyone who visits the site, sends an email, or uses the contact form. Contact data will never be sold, rented, or transferred to third-parties for marketing purposes.
+
+## How your data will be used
+Continuum Design will only ask for the minimal amount of data to contact you. This may include your name, email address, and/or a telephone number. Your data will be used to answer questions or requests for work submitted. Additionally, your data may be used to respond to emails regarding sales, general information, or security.
+
+## Data retention policy
+
+All information submitted through the contact form older than thirty (30) days will be deleted. Direct email conversations older than the previous calendar year will be archived offline.
+
+## Analytics
+I am evaluating analytics packages that allow me to monitor my website while honoring user privacy and minimizing data retention. Continuum Design does not use cookies for analytics at this time. If that changes in the future, there will be a public notification period before feature lanch. Users will be asked to opt in to any cookies being used for analytics tracking purposes.
+
+## Questions
+
+If you have any questions about Continuum Design's privacy policy, please do not hesitate to contact me at <strong>mailto:privacy@continuumdesign.net</strong>.
