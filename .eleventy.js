@@ -1,9 +1,14 @@
+const generatePermalinkDate = require('./src/_lib/generatePermalinkDate');
+
 module.exports = function (eleventyConfig) {
   // Pass items through to /dist
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy({ "src/_copied/fonts" : "fonts" });
   eleventyConfig.addPassthroughCopy({ "src/_copied/css/*.css" : "css"});
   eleventyConfig.addPassthroughCopy(".well-known/*.txt");
+  eleventyConfig.addPassthroughCopy("robots.txt");
+
+  eleventyConfig.addFilter('generatePermalinkDate', generatePermalinkDate);
 
   return {
     dir: {

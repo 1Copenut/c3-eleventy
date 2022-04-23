@@ -1,0 +1,25 @@
+# Artwork provided via
+# https://pagedart.com/blog/robots-txt-file-example/
+#        _
+#       [ ]
+#      (   )
+#       |>|
+#    __/===\__
+#   //| o=o |\\
+# <]  | o=o |  [>
+#     \=====/
+#    / / | \ \
+#   <_________>
+
+User-agent: *
+Allow: /$
+Allow: /images/
+Allow: /posts/
+Allow: /services/
+Allow: /support/
+
+User-agent: *
+Disallow: /css/
+
+Sitemap: https://continuumdesign.net/sitemap.xml
+Sitemap: https://www.continuumdesign.net/sitemap.xml
