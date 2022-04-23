@@ -1,4 +1,4 @@
 {
   "layout": "layouts/postLayout.njk",
-  "tags": ["posts"]
+  "tags": ["posts", "sitemap"]
 }
