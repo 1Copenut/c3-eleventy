@@ -1,14 +1,39 @@
 ---
+author: Trevor Pierce
+date: 2022-01-01
+dateTime: January 1, 2022, 7:30pm
 title: My first blog post
 shortTitle: My first blog post
 parentDir: '/posts/'
 parentText: All posts
+permalink: "posts/{{ date | generatePermalinkDate }}/{{ title | slugify }}/index.html"
 tags: ['']
 ---
+<div class="posts__grid">
+  <main aria-labelledby="content-heading" role="main" id="content" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="content__layout">
+      <h1 id="content-heading">{{ title }}</h1>
 
-<main aria-labelledby="content-heading" role="main" id="content">
-  <div class="content__layout">
-    <h1 id="content-heading">{{ title }}</h1>
-    <p>This is the first paragraph of the first post!</p>
-  </div>
-</main>
+      <div class="posts__lead">
+        <blockquote class="posts__lead-paragraph">
+          <p itemProp="description">This is just the first demo post</p>
+        </blockquote>
+      </div>
+
+      <!-- console.log the page data -->
+{{ collections.tags | log }}
+
+      <div class="posts__byline-container">
+        <ul role="list">
+          <li><span itemprop="author"><strong>Author:</strong> Thermadore</span></li>
+          <li><time datetime="2022-01-01" itemProp="datePublished"><strong>Published:</strong> {{ dateTime }}</time></li>
+        </ul>
+      </div>
+
+      <p>Don't worry. As long as you hit that wire with the connecting hook at precisely 88 miles per hour, the instance the lightning strikes the tower, everything will be fine. Now, Biff, um, can I assume that your insurance is gonna pay for the damage? You bet. Right. Yeah, who are you?</p>
+
+      <h2 class="posts__jump-link-header">Say something neat Marty</h2>
+      <p>Hey, hey, keep rolling, keep rolling there. No, no, no, no, this sucker's electrical. But I need a nuclear reaction to generate the one point twenty-one gigawatts of electricity that I need. You too. Look, there's a rhythmic ceremonial ritual coming up. Yeah. The car, Dad, I mean He wrecked it, totaled it. I needed that car tomorrow night, Dad, I mean do you have any idea how important this was, do you have any clue?</p>
+    </div>
+  </main>
+</div>
