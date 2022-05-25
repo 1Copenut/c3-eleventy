@@ -15,10 +15,13 @@ User-agent: *
 Allow: /$
 Allow: /images/
 Allow: /posts/
+Allow: /privacy/
+Allow: /security/
 Allow: /services/
-Allow: /support/
+Allow: /terms-and-conditions/
 
 User-agent: *
+Disallow: /.well_known/
 Disallow: /css/
 
 Sitemap: https://continuumdesign.net/sitemap.xml

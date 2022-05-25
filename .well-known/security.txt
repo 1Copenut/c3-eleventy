@@ -1,16 +1,23 @@
-# Security email address must include the subject
-# as written or it will be flagged as spam.
+# Our security contact channels
+# ==================================================
+# Security email address must include "Security issue"
+# in the subject line or it will be flagged as spam.
 # Do not include any attachments.
-<!-- TODO: Add the email address when ready to go live -->
+Contact: <!-- TODO: Add the email address when ready to go live -->
+Contact: https://continuumdesign.net/contact/
 
 # Public key expiration
+# ==================================================
 <!-- TODO: Add a public key -->
 
 # Link to OpenPGP public key
+# ==================================================
 <!-- TODO: Add a public key -->
 
 # Preferred language
+# ==================================================
 Preferred-Languages: en
 
 # You can always find us here
-Canonical: https://continuumdesign.net/.well-known/security.txt
+# ==================================================
+Canonical: https://continuumdesign.net/security/
