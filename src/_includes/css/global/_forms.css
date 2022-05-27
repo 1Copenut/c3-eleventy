@@ -3,7 +3,8 @@
  * ======================================== */
 input[type="text"],
 input[type="tel"],
-input[type="email"] {
+input[type="email"],
+textarea {
   border: 1px solid var(--color-footer-black);
   border-radius: 0;
   color: var(--color-text-black);
@@ -13,6 +14,12 @@ input[type="email"] {
   margin: 0;
   padding: 0.625rem 0.75rem;
 }
+
+textarea {
+  height: 10rem;
+}
+
+input:invalid { color: red; }
 
 .contact-form {
   &__fieldset {
@@ -35,6 +42,21 @@ input[type="email"] {
       > label {
         margin-top: 0;
       }
+    }
+
+    .contact-form__error-msg {
+      display: none;
+    }
+  }
+
+  &__list-item.js-invalid {
+    .contact-form__label,
+    .contact-form__error-msg {
+      color: red;
+    }
+
+    .contact-form__error-msg {
+      display: block;
     }
   }
 

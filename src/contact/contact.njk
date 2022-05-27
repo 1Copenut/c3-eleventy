@@ -36,6 +36,7 @@ tags: ['sitemap']
             <label for="name" class="contact-form__label">Your name</label>
             <input
               autocomplete="name"
+              class="js-validate"
               id="name"
               maxlength="40"
               minlength="2"
@@ -44,6 +45,7 @@ tags: ['sitemap']
               type="text"
               required
             />
+            <p class="contact-form__error-msg">A name is required</p>
           </li>
           <li class="contact-form__list-item">
             <label for="email" class="contact-form__label"
@@ -51,12 +53,14 @@ tags: ['sitemap']
             >
             <input
               autocomplete="email"
+              class="js-validate"
               id="email"
               maxlength="100"
               name="email"
               type="email"
               required
             />
+            <p class="contact-form__error-msg">A valid email address is required</p>
           </li>
           <li class="contact-form__list-item">
             <label for="telephone" class="contact-form__label"
@@ -64,6 +68,7 @@ tags: ['sitemap']
             >
             <input
               autocomplete="tel"
+              class="js-validate"
               id="telephone"
               maxlength="20"
               name="telephone"
@@ -71,6 +76,18 @@ tags: ['sitemap']
               placeholder="(123) 456-7890"
               type="tel"
             />
+            <p class="contact-form__error-msg">Enter a valid telephone number</p>
+          </li>
+          <li class="contact-form__list-item">
+            <label for="message" class="contact-form__label">Tell us about your project</label>
+            <textarea
+              class="js-validate"
+              id="message"
+              maxlength="500"
+              minlength="5"
+              required
+            ></textarea>
+            <p class="contact-form__error-msg">A short message is required</p>
           </li>
           <li class="contact-form__list-item utils__visibility--none">
             <label for="botz" class="contact-form__label">Leave this field blank if you are a human</label>
@@ -78,9 +95,10 @@ tags: ['sitemap']
           </li>
           <li class="contact-form__list-item">
             <label for="consented" class="contact-form__label contact-form__label--checkbox">
-              <input type="checkbox" id="consented" name="consent" required />
+              <input class="js-validate" type="checkbox" id="consented" name="consent" required />
               <span>I consent to being contacted</span>
             </label>
+            <p class="contact-form__error-msg">You must check the box before submitting</p>
           </li>
           <li class="contact-form__list-item">
             <input class="contact-form__submit" type="submit" value="Send" />
@@ -89,4 +107,29 @@ tags: ['sitemap']
       </fieldset>
     </form>
   </div>
+
+  <script type="text/javascript">
+    const contactForm = document.getElementById('continuum-contact-form');
+    contactForm.addEventListener('submit', validateForm);
+
+    function validateForm(e) {
+      console.log('Fired validateForm');
+      const form = e.target;
+      const fields = [...document.querySelectorAll('.js-validate')];
+
+      fields.forEach(field => {
+        if (field.checkValidity()) {
+          field.closest('li').classList.remove('js-invalid');
+        } else {
+          field.closest('li').classList.add('js-invalid');
+        }
+      });
+
+      if (!form.checkValidity()) {
+        console.log('Form not submitted. Has errors.');
+        e.preventDefault();
+        e.stopImmediatePropagation();
+      }
+    }
+  </script>
 </main>
