@@ -45,7 +45,7 @@ tags: ['sitemap']
               type="text"
               required
             />
-            <p class="contact-form__error-msg">A name is required</p>
+            <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-name">A name is required</p>
           </li>
           <li class="contact-form__list-item">
             <label for="email" class="contact-form__label"
@@ -60,11 +60,11 @@ tags: ['sitemap']
               type="email"
               required
             />
-            <p class="contact-form__error-msg">A valid email address is required</p>
+            <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-email">A valid email address is required</p>
           </li>
           <li class="contact-form__list-item">
             <label for="telephone" class="contact-form__label"
-              >Telephone number (optional)</label
+              >Telephone number <em>(optional)</em></label
             >
             <input
               autocomplete="tel"
@@ -76,10 +76,10 @@ tags: ['sitemap']
               placeholder="(123) 456-7890"
               type="tel"
             />
-            <p class="contact-form__error-msg">Enter a valid telephone number</p>
+            <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-telephone">Enter a valid telephone number</p>
           </li>
           <li class="contact-form__list-item">
-            <label for="message" class="contact-form__label">Tell us about your project</label>
+            <label for="message" class="contact-form__label">Tell me about your project</label>
             <textarea
               class="js-validate"
               id="message"
@@ -87,7 +87,7 @@ tags: ['sitemap']
               minlength="5"
               required
             ></textarea>
-            <p class="contact-form__error-msg">A short message is required</p>
+            <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-message">A short message is required</p>
           </li>
           <li class="contact-form__list-item utils__visibility--none">
             <label for="botz" class="contact-form__label">Leave this field blank if you are a human</label>
@@ -98,7 +98,7 @@ tags: ['sitemap']
               <input class="js-validate" type="checkbox" id="consented" name="consent" required />
               <span>I consent to being contacted</span>
             </label>
-            <p class="contact-form__error-msg">You must check the box before submitting</p>
+            <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-consented">You must check the box before submitting</p>
           </li>
           <li class="contact-form__list-item">
             <input class="contact-form__submit" type="submit" value="Send" />
@@ -120,8 +120,11 @@ tags: ['sitemap']
       fields.forEach(field => {
         if (field.checkValidity()) {
           field.closest('li').classList.remove('js-invalid');
+          field.removeAttribute('aria-describedby');
         } else {
+          const fieldId = field.getAttribute('id');
           field.closest('li').classList.add('js-invalid');
+          field.setAttribute('aria-describedby', `error-msg-${fieldId}`);
         }
       });
 

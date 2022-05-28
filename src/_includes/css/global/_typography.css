@@ -140,7 +140,8 @@ li {
 }
 
 a,
-input {
+input,
+textarea {
   color: var(--color-link-blue-dark);
   font-size: var(--fluid-0);
 
