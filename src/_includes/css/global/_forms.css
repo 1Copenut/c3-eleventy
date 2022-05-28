@@ -51,7 +51,8 @@ input:invalid {
 
   &__list-item.js-invalid {
     border-left: 6px solid #9f0b0b;
-    padding: 0.5rem 0 0 1.25rem;
+    margin-top: var(--fluid-3-margin);
+    padding: 0.5rem 0 1.25rem 1.25rem;
 
     .contact-form__label,
     .contact-form__error-msg {
@@ -64,13 +65,21 @@ input:invalid {
       outline-color: #9f0b0b;
     }
 
+    .contact-form__label {
+      margin: 0;
+    }
+
     .contact-form__label--checkbox {
       margin-top: var(--fluid-1-margin);
     }
 
     .contact-form__error-msg {
       display: block;
-      margin: var(--fluid-1-margin) 0;
+      margin: 0 0 var(--fluid-1-margin);
+    }
+
+    .contact-form__label--checkbox + .contact-form__error-msg {
+      margin: var(--fluid-1-margin) 0 0;
     }
   }
 
@@ -126,6 +135,19 @@ input:invalid {
     &:focus-visible {
       background-color: var(--color-background-blue--navy);
       color: var(--color-white);
+    }
+  }
+}
+
+/* Tablet devices - 768px breakpoint */
+@media only screen and (min-width: 48rem) {
+  .contact-form {
+    &__list-item {
+      margin-top: var(--fluid-3-margin);
+    }
+
+    &__list-item.js-invalid {
+      padding: 0.5rem 0 1.75rem 1.75rem;
     }
   }
 }
