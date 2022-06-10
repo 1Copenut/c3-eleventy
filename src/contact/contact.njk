@@ -19,10 +19,11 @@ tags: ['sitemap']
     </blockquote>
 
     <form
+      action="thankyou/"
       class="contact-form"
       data-netlify="true"
       id="continuum-contact-form"
-      method="post"
+      {# method="post" #}
       name="continuum-contact"
       netlify-honeypot="botz"
       novalidate
@@ -34,7 +35,7 @@ tags: ['sitemap']
         <ul class="utils__list--no-bullets contact-form__list" role="list">
           <li class="contact-form__list-item">
             <label for="name" class="contact-form__label">Your name</label>
-            <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-name">A name is required</p>
+            <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-name">A name of two or more letters is required</p>
             <input
               autocomplete="name"
               class="js-validate"
@@ -98,7 +99,7 @@ tags: ['sitemap']
               <input class="js-validate" type="checkbox" id="consented" name="consent" required />
               <span>I consent to being contacted</span>
             </label>
-            <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-consented">You must check the box before submitting</p>
+            <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-consented">You must check the consent box before submitting</p>
           </li>
           <li class="contact-form__list-item">
             <input class="contact-form__submit" type="submit" value="Send" />
@@ -120,10 +121,12 @@ tags: ['sitemap']
       fields.forEach(field => {
         if (field.checkValidity()) {
           field.closest('li').classList.remove('js-invalid');
+          field.removeAttribute('aria-invalid');
           field.removeAttribute('aria-describedby');
         } else {
           const fieldId = field.getAttribute('id');
           field.closest('li').classList.add('js-invalid');
+          field.setAttribute('aria-invalid', 'true');
           field.setAttribute('aria-describedby', `error-msg-${fieldId}`);
         }
       });
