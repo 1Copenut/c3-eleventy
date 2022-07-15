@@ -19,7 +19,7 @@ tags: ['sitemap']
     </blockquote>
 
     <form
-      action="thankyou/"
+      action="thankyou"
       class="contact-form"
       data-netlify="true"
       id="continuum-contact-form"
@@ -111,12 +111,11 @@ tags: ['sitemap']
 
   <script type="text/javascript">
     const contactForm = document.getElementById('continuum-contact-form');
-    contactForm.addEventListener('submit', validateForm);
+    const fields = [...document.querySelectorAll('.js-validate')];
 
-    function validateForm(e) {
+    function validateFormOnSubmit(e) {
       console.log('Fired validateForm');
       const form = e.target;
-      const fields = [...document.querySelectorAll('.js-validate')];
 
       fields.forEach(field => {
         if (field.checkValidity()) {
@@ -137,5 +136,19 @@ tags: ['sitemap']
         e.stopImmediatePropagation();
       }
     }
+
+    function clearErrorState(field) {
+      const parent = field.closest('li');
+      if (!parent.classList.contains('js-invalid')) return;
+
+      parent.classList.remove('js-invalid');
+      field.removeAttribute('aria-invalid');
+      field.removeAttribute('aria-describedby');
+    }
+
+    contactForm.addEventListener('submit', validateFormOnSubmit);
+    fields.forEach(field => {
+      field.addEventListener('blur', e => clearErrorState(e.target));
+    });
   </script>
 </main>
