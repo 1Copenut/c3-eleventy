@@ -47,10 +47,14 @@ input:invalid {
       display: none;
       font-family: var(--typefaces-sans);
     }
+
+    .contact-form--flourish {
+      display: none;
+    }
   }
 
   &__list-item.js-invalid {
-    border-left: 12px solid #9f0b0b;
+    border-left: 6px solid #9f0b0b;
     margin-top: var(--fluid-4-margin);
     padding: 0.5rem 0 1.25rem 1.25rem;
 
@@ -80,6 +84,10 @@ input:invalid {
 
     .contact-form__label--checkbox + .contact-form__error-msg {
       margin: var(--fluid-1-margin) 0 0;
+    }
+
+    .contact-form--flourish {
+      display: inline;
     }
   }
 
