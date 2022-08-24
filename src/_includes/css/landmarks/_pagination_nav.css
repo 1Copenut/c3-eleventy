@@ -48,7 +48,7 @@ nav[aria-label="Pagination"] {
 @media only screen and (min-width: 48rem) {
   nav[aria-label='Pagination'] {
     .pagination__list {
-      border-top: 6px solid var(--color-background-dusty-rose);
+      border-top: 1px solid var(--color-background-dusty-rose);
       padding: 1.5rem 0.5rem 0;
 
       a {
