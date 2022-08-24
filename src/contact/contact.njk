@@ -32,6 +32,9 @@ tags: ['sitemap']
         <legend class="contact-form__legend">
           <h2>Your information</h2>
         </legend>
+        <div class="contact-form__alert" role="alert">
+          <p class="contact-form__alert-msg" tabindex="-1"></p>
+        </div>
         <ul class="utils__list--no-bullets contact-form__list" role="list">
           <li class="contact-form__list-item">
             <label for="name" class="contact-form__label"><span aria-hidden="true" class="contact-form--flourish">&#x2916;&nbsp;</span>Your name</label>
@@ -102,7 +105,7 @@ tags: ['sitemap']
             <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-consented">You must check the consent box before submitting</p>
           </li>
           <li class="contact-form__list-item">
-            <input class="contact-form__submit" type="submit" value="Send" />
+            <input class="contact-form__submit" type="submit" value="Send message" />
           </li>
         </ul>
       </fieldset>
@@ -134,6 +137,7 @@ tags: ['sitemap']
         console.log('Form not submitted. Has errors.');
         e.preventDefault();
         e.stopImmediatePropagation();
+        alertOnError('.contact-form__alert-msg');
       }
     }
 
@@ -144,6 +148,15 @@ tags: ['sitemap']
       parent.classList.remove('js-invalid');
       field.removeAttribute('aria-invalid');
       field.removeAttribute('aria-describedby');
+    }
+
+    function alertOnError(target) {
+      const invalidInputs = document.querySelectorAll(':scope .contact-form__fieldset :invalid');
+      const targetMessage = document.querySelector(target);
+      const targetMessageText = `Your form has ${invalidInputs.length} errors. Please update and press Send.`;
+
+      targetMessage.textContent = targetMessageText;
+      targetMessage.focus();
     }
 
     contactForm.addEventListener('submit', validateFormOnSubmit);

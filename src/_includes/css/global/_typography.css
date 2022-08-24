@@ -141,7 +141,8 @@ li {
 
 a,
 input,
-textarea {
+textarea,
+p[tabindex="-1"] {
   font-size: var(--fluid-0);
 
   &:focus:not(:focus-visible) {
