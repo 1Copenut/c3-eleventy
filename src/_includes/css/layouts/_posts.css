@@ -76,7 +76,7 @@
     
     dd {
       a {
-        color: var(--color-link-blue-dark);
+        color: var(--color-background-blue--dark);
         display: block;
       }
     }

@@ -135,7 +135,7 @@ tags: ['sitemap']
         console.log('Form not submitted. Has errors.');
         e.preventDefault();
         e.stopImmediatePropagation();
-        alertOnError('.contact-form__alert');
+        alertOnSubmitError('.contact-form__alert');
       }
     }
 
@@ -148,15 +148,20 @@ tags: ['sitemap']
       field.removeAttribute('aria-describedby');
     }
 
-    function alertOnError(target) {
+    function alertOnSubmitError(target) {
       const invalidInputs = document.querySelectorAll(':scope .contact-form__fieldset :invalid');
       const alertBox = document.querySelector(target);
       const alertTextBlock = document.createElement('p')
-      const alertTextMsg = `Your form has ${invalidInputs.length} errors. Please update and press Send.`;
+      const alertTextMsg = `Your form has ${invalidInputs.length} errors. Please update and press Send message.`;
+
+      while (alertBox.firstChild) {
+        alertBox.removeChild(alertBox.firstChild);
+      }
 
       alertTextBlock.append(alertTextMsg);
       alertBox.append(alertTextBlock);
       alertBox.focus();
+      {# alertBox.scrollIntoView(); #}
     }
 
     contactForm.addEventListener('submit', validateFormOnSubmit);

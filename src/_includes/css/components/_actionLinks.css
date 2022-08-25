@@ -13,7 +13,7 @@
   }
 
   a {
-    color: var(--color-link-blue-dark);
+    color: var(--color-background-blue--dark);
     display: block;
     font-family: var(--typefaces-sans);
     font-variation-settings: "wght" var(--font-weight-semi-bold);
@@ -31,7 +31,7 @@
     }
 
     span {
-      border-bottom: 2px solid var(--color-link-blue-dark);
+      border-bottom: 2px solid var(--color-background-blue--dark);
     }
 
     svg {

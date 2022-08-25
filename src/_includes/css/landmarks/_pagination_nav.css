@@ -26,7 +26,7 @@ nav[aria-label="Pagination"] {
   }
 
   .pagination__list-item {
-    color: var(--color-link-blue-dark);
+    color: var(--color-background-blue--dark);
     display: inline;
 
     &:hover {

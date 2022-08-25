@@ -68,8 +68,8 @@ input:invalid {
     padding: 0 0 1.25rem 1.75rem;
 
     &:focus-within {
-      border-left-color: var(--color-background-dusty-rose--light);
-      transition: border-left-color 1s ease;
+      border-left-color: var(--color-background-dusty-rose--lighter);
+      transition: border-left-color 0.625s ease;
 
       label,
       label + * {
@@ -88,7 +88,7 @@ input:invalid {
       }
 
       &:focus-visible {
-        outline-color: var(--color-background-dusty-rose--light);
+        outline-color: var(--color-background-dusty-rose--dark);
       }
     }
 
@@ -174,14 +174,20 @@ input:invalid {
   }
 
   &__alert {
-    background-color: var(--color-form--error);
-    color: var(--color-white);
+    background-color: var(--color-background-dusty-rose--lighter);
+    border-radius: 0.375rem;
     margin: 1rem 0;
 
     & > * {
       margin: 0;
       font-family: var(--typefaces-sans);
-      padding: 1rem;
+      padding: 0.875rem 1.5rem;
+    }
+
+    &:not(:focus) {
+      opacity: 0.5;
+      /* TODO: Ensure these transitions wouldn't be better as transforms */
+      transition: opacity 1s ease;
     }
   }
 }
