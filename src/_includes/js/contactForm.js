@@ -37,7 +37,7 @@ function alertOnSubmitError(target) {
   const invalidInputs = document.querySelectorAll(':scope .contact-form__fieldset :invalid');
   const alertBox = document.querySelector(target);
   const alertTextNode = document.createElement('p')
-  const alertTextMsg = `Your form has ${invalidInputs.length} errors. Please update and press Send message.`;
+  const alertTextMsg = `Your form has ${invalidInputs.length} error${invalidInputs.length === 1 ? '' : 's'}. Please update and press Send message.`;
 
   while (alertBox.firstChild) {
     alertBox.removeChild(alertBox.firstChild);
