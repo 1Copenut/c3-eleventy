@@ -4,6 +4,7 @@ const postcss = require('postcss');
 const postcssImport = require('postcss-import');
 const postcssNested = require('postcss-nested');
 const cleanCSS = require("clean-css");
+const csso = require('postcss-csso');
 
 const generateCssHash = require('../_lib/generateCssHash');
 
@@ -23,35 +24,14 @@ module.exports = class {
   }
 
   async render({ rawCss, rawFilepath, destFilePath }) {
-    return await postcss([postcssImport, postcssNested])
+    return await postcss([
+      postcssImport,
+      postcssNested,
+      csso({ restructure: false })
+    ])
       .process(rawCss, { from: rawFilepath })
-      .then((result) => result.css)
       .then((result) => {
-        new cleanCSS({ returnPromise : true })
-          .minify(result)
-          .then((result) => {
-            const { stats, warnings, errors, styles } = result;
-
-            console.group();
-            console.log('========================================');
-            console.log('Clean CSS stats:');
-            console.log(stats);
-            console.groupEnd();
-
-            console.group();
-            console.log('========================================');
-            console.log('Clean CSS warnings:');
-            console.log(warnings);
-            console.groupEnd();
-
-            console.group();
-            console.log('========================================');
-            console.log('Clean CSS errors:');
-            console.log(errors);
-            console.groupEnd();
-
-            fs.writeFileSync(destFilePath, styles, { encoding: "utf-8" });
-          });
+        fs.writeFileSync(destFilePath, result.css, { encoding: "utf-8" });
       })
       .catch((error) => {
         console.log(error);
