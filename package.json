@@ -18,7 +18,7 @@
   "author": "Trevor Pierce",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^1.0.2",
     "clean-css": "^5.2.2",
     "dayjs": "^1.11.1",
     "http-server": "^14.1.0",
