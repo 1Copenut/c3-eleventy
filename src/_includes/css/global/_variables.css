@@ -7,13 +7,14 @@
   --color-background-blue: #008fd5;
   --color-background-blue--dark: #081999;
   --color-background-blue--navy: #040f5e;
+  --color-background-dusty-rose--lighter: #e9d1dc;
   --color-background-dusty-rose--light: #c57299;
   --color-background-dusty-rose: #ab4776;
   --color-background-dusty-rose--dark: #882455;
   --color-background-gray: #727272;
+  --color-form--error: #a70e0e;
   --color-link-blue: #234a71;
   --color-link-blue-light: #2397d3;
-  --color-link-blue-dark: #081999;
   --color-footer-black: #212121;
   --color-footer-gray: #888888;
   --color-text-black: #2b2b2b;
@@ -90,10 +91,11 @@
   --fluid-2: calc(((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
   --fluid-2-margin: calc(var(--fluid-min-size-0) * 1.25rem);
   --fluid-3: calc(((var(--fluid-min-size-3) * 1rem) + (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)));
-  --fluid-3-margin: calc(var(--fluid-min-size-0) * 1.302rem);
+  --fluid-3-margin: calc(var(--fluid-min-size-0) * 1.5625rem);
   --fluid-4: calc(((var(--fluid-min-size-4) * 1rem) + (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)));
-  --fluid-4-margin: calc(var(--fluid-min-size-0) * 1.627777777rem);
+  --fluid-4-margin: calc(var(--fluid-min-size-0) * 1.953125rem);
   --fluid-5: calc(((var(--fluid-min-size-5) * 1rem) + (var(--fluid-max-size-5) - var(--fluid-min-size-5)) * var(--fluid-bp)));
+  --fluid-5-margin: calc(var(--fluid-min-size-0) * 2.44140625rem);
   --fluid-6: calc(((var(--fluid-min-size-6) * 1rem) + (var(--fluid-max-size-6) - var(--fluid-min-size-6)) * var(--fluid-bp)));
   --fluid-7: calc(((var(--fluid-min-size-7) * 1rem) + (var(--fluid-max-size-7) - var(--fluid-min-size-7)) * var(--fluid-bp)));
 

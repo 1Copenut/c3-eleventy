@@ -140,23 +140,30 @@ li {
 }
 
 a,
-input {
-  color: var(--color-link-blue-dark);
+input,
+textarea,
+div[tabindex="-1"] {
   font-size: var(--fluid-0);
-
-  &:hover,
-  &:focus-visible {
-    color: var(--color-background-dusty-rose--dark);
-  }
 
   &:focus:not(:focus-visible) {
     outline: none;
   }
 
   &:focus-visible {
-    color: var(--color-background-dusty-rose--dark);
     outline: 4px solid var(--color-background-dusty-rose--dark);
     outline-offset: 6px;
+  }
+}
+
+a {
+  color: var(--color-background-blue--dark);
+
+  &:hover {
+    color: var(--color-background-dusty-rose--dark);
+  }
+
+  &:focus-visible {
+    color: var(--color-background-dusty-rose--dark);
   }
 }
 
