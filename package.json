@@ -18,12 +18,12 @@
   "author": "Trevor Pierce",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^1.0.2",
     "clean-css": "^5.2.2",
-    "dayjs": "^1.11.1",
-    "http-server": "^14.1.0",
+    "dayjs": "^1.11.5",
+    "http-server": "^14.1.1",
     "md5": "^2.3.0",
-    "postcss": "^8.2.13",
+    "postcss": "^8.4.16",
     "postcss-import": "^14.0.1",
     "postcss-nested": "^5.0.5",
     "rimraf": "^3.0.2"

@@ -23,6 +23,7 @@ Allow: /terms-and-conditions/
 User-agent: *
 Disallow: /.well_known/
 Disallow: /css/
+Disallow: /js/
 
 Sitemap: https://continuumdesign.net/sitemap.xml
 Sitemap: https://www.continuumdesign.net/sitemap.xml

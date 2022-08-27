@@ -24,7 +24,7 @@ Netlify - @netlify - Hosting
 
 
 /* SITE */
-Last updated: July 7, 2021
+Last updated: August 27, 2022
 Language: English
 Standards: HTML5, CSS3, JavaScript ES6
 Accessibility: WCAG 2.1 Level AA
