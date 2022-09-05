@@ -4,6 +4,7 @@
 [role='banner'] {
   background-color: var(--color-background-dusty-rose);
   height: 6.25rem;
+  position: relative;
 
   a {
     display: inline-block;
@@ -36,6 +37,26 @@
     }
   }
 
+  img {
+    height: 6.25rem;
+    width: 100%;
+  }
+
+  .content__layout--header-text {
+    position: relative;
+    z-index: var(--z-index-2);
+  }
+
+  .content__layout--hero {
+    background-color: var(--color-background-dusty-rose);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: var(--z-index-1);
+  }
+
   /* Tablet devices - 768px breakpoint */
   @media only screen and (min-width: 48rem) {
     height: 10rem;
@@ -47,11 +68,19 @@
         font-size: var(--fluid-1);
       }
     }
+
+    img {
+      height: 10rem;
+    }
   }
 
   /* Mid-size screens 1024px to 1280px */
   @media only screen and (min-width: 64rem) {
     height: 12rem;
+
+    img {
+      height: 12rem;
+    }
   }
 
   /* Large screens 1280px and wider */
@@ -61,83 +90,9 @@
     a {
       margin-top: 3rem;
     }
-  }
 
-  /*
-   * https://css-tricks.com/snippets/css/retina-display-media-query/
-   * Phones and non-tablet devices
-   */
-  @media only screen and (min-width: 20rem) {
-    background: var(--color-background-dusty-rose)
-      url('../../images/backgrounds/mobile-header.jpg') top left/cover
-      no-repeat;
-  }
-  
-  /* High-density phones and non-tablet devices */
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 20rem),
-    only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 20rem),
-    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 20rem),
-    only screen and (min-device-pixel-ratio: 2) and (min-width: 20rem),
-    only screen and (min-resolution: 192dpi) and (min-width: 20rem),
-    only screen and (min-resolution: 2dppx) and (min-width: 20rem) {
-    background: var(--color-background-dusty-rose)
-      url('../../images/backgrounds/mobile-header@2x.jpg') top left/cover
-      no-repeat;
-  }
-
-  /* Tablets */
-  @media only screen and (min-width: 48rem) {
-    background: var(--color-background-dusty-rose)
-      url('../../images/backgrounds/tablet-header.jpg') top left/cover
-      no-repeat;
-  }
-
-  /* High-density tablets */
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 48rem),
-    only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 48rem),
-    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 48rem),
-    only screen and (min-device-pixel-ratio: 2) and (min-width: 48rem),
-    only screen and (min-resolution: 192dpi) and (min-width: 48rem),
-    only screen and (min-resolution: 2dppx) and (min-width: 48rem) {
-    background: var(--color-background-dusty-rose)
-      url('../../images/backgrounds/tablet-header@2x.jpg') top left/cover
-      no-repeat;
-  }
-
-  /* Mid-size screens 1024 to 1280px */
-  @media only screen and (min-width: 64rem) {
-    background: var(--color-background-dusty-rose)
-      url('../../images/backgrounds/mid-header.jpg') top left/cover
-      no-repeat;
-  }
-
-  /* Mid-size high-density screens 1024 to 1280px */
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 64rem),
-    only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 64rem),
-    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 64rem),
-    only screen and (min-device-pixel-ratio: 2) and (min-width: 64rem),
-    only screen and (min-resolution: 192dpi) and (min-width: 64rem),
-    only screen and (min-resolution: 2dppx) and (min-width: 64rem) {
-    background: var(--color-background-dusty-rose)
-      url('../../images/backgrounds/mid-header@2x.jpg') top left/cover no-repeat;
-  }
-
-  /* Large screens 1280px and wider */
-  @media only screen and (min-width: 80rem) {
-    background: var(--color-background-dusty-rose)
-      url('../../images/backgrounds/large-header.jpg') top left/cover
-      no-repeat;
-  }
-
-  /* Large high-density screens 1280px and wider */
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 80rem),
-    only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 80rem),
-    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 80rem),
-    only screen and (min-device-pixel-ratio: 2) and (min-width: 80rem),
-    only screen and (min-resolution: 192dpi) and (min-width: 80rem),
-    only screen and (min-resolution: 2dppx) and (min-width: 80rem) {
-    background: var(--color-background-dusty-rose)
-      url('../../images/backgrounds/large-header@2x.jpg') top left/cover
-      no-repeat;
+    img {
+      height: 18rem;
+    }
   }
 }
