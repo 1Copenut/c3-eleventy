@@ -5,8 +5,33 @@
 .posts {
   /* Containing 12-column grid */
   &__grid {
+    column-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+
+    section[role="region"],
+    main,
+    aside {
+      display: block;
+      grid-column-start: 1;
+      grid-column-end: 12;
+      grid-row: 1;
+
+      > div {
+        margin: 0;
+      }
+    }
+
+    main {
+      grid-row: 2;
+    }
+
     aside {
       font-size: var(--fluid-0);
+      grid-row: 3;
       margin-top: 2rem;
       text-align: left;
   
@@ -105,7 +130,7 @@
   .layout {
     &--posts {
       [aria-label='Breadcrumbs'] .content__layout {
-        grid-column-start: 3;
+        grid-column-start: 2;
       }
     }
   }
@@ -118,18 +143,27 @@
       margin: 0 auto;
       max-width: 1440px;
       width: 100%;
+
+      section[role="region"] {
+        grid-column-start: 2;
+        grid-column-end: 13;
+        grid-row: 1;
+      }
   
       main {
-        display: block;
-        grid-column-start: 3;
-        grid-column-end: 11;
+        grid-column-start: 4;
+        grid-column-end: 12;
+        grid-row: 2;
+
+        p {
+          max-width: 68ch;
+        }
       }
 
       aside {
-        display: block;
-        grid-column-start: 3;
-        grid-column-end: 11;
-        grid-row: 2;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row: 3;
 
         * {
           font-size: 1rem;
@@ -166,27 +200,16 @@
 
 /* Mid-size screens 1024px to 1280px */
 @media only screen and (min-width: 64rem) {
-  .layout {
-    &--posts {
-      [aria-label='Breadcrumbs'] .content__layout {
-        grid-column-start: 4;
-      }
-    }
-  }
-
   .posts {
     &__grid {
       column-gap: 1.75rem;
-
-      main {
-        grid-column-start: 4;
-      }
 
       aside {
         align-self: center;
         grid-column-start: 2;
         grid-column-end: 4;
-        grid-row: 1;
+        grid-row: 2;
+        margin-top: 0.625rem;
         text-align: right;
 
         h2 {
