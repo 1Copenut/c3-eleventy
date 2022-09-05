@@ -1,13 +1,15 @@
+# ========================================
+# Basic security headers
+# ========================================
 /*
-  # ========================================
-  # Basic security headers
-  # ========================================
   x-content-type-options: nosniff
   X-frame-options: DENY
   X-XSS-protection: 1; mode=block
   content-security-policy: default-src 'self'; base-uri 'none'; object-src 'none'; connect-src 'none'; frame-src 'none'; img-src 'self' data: www.google-analytics.com; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-ancestors 'none'; require-trusted-types-for 'script';
 
-  # ========================================
-  # .well-known directory
-  # ========================================
+# ========================================
+# .well-known directory
+# ========================================
+/.well-known
+  content-type: text/plain
   
