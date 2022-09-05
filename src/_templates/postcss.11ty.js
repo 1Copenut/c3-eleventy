@@ -3,7 +3,6 @@ const path = require('path');
 const postcss = require('postcss');
 const postcssImport = require('postcss-import');
 const postcssNested = require('postcss-nested');
-const cleanCSS = require("clean-css");
 const csso = require('postcss-csso');
 
 const generateCssHash = require('../_lib/generateCssHash');
