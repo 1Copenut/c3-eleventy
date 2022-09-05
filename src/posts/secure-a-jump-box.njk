@@ -13,9 +13,9 @@ title: Secure a jump box in three steps
 tags: ['security', 'networking']
 ---
 <div class="posts__grid">
-  <section role="region">
+  <div role="region">
     <h1 id="content-heading">{{ title }}</h1>
-  </section>
+  </div>
   <main aria-labelledby="content-heading" role="main" id="content" itemscope itemtype="https://schema.org/CreativeWork">
     <div class="content__layout">
       <div class="posts__lead">
@@ -25,15 +25,15 @@ tags: ['security', 'networking']
       </div>
 
       <!-- console.log the page data -->
-{{ collections.tags | log }}
+      {{ collections.tags | log }}
 
       <div class="posts__byline-container">
         <ul role="list">
           <li><span itemprop="author"><strong>Author:</strong> Thermadore</span></li>
           <li><time datetime="2022-02-13" itemProp="datePublished"><strong>Published:</strong> {{ dateTime }}</time></li>
           <li>
-            <strong>This post tagged:</strong>
-            <ul>
+            <strong>This post is tagged:</strong>
+            <ul class="list--unordered-second-level">
               <li><a href="#">security</a></li>
               <li><a href="#">networking</a></li>
             </ul>
