@@ -10,10 +10,11 @@ permalink: "posts/{{ date | generatePermalinkDate }}/{{ title | slugify }}/index
 tags: ['']
 ---
 <div class="posts__grid">
+  <div role="region">
+    <h1 id="content-heading">{{ title }}</h1>
+  </div>
   <main aria-labelledby="content-heading" role="main" id="content" itemscope itemtype="https://schema.org/CreativeWork">
     <div class="content__layout">
-      <h1 id="content-heading">{{ title }}</h1>
-
       <div class="posts__lead">
         <blockquote class="posts__lead-paragraph">
           <p itemProp="description">This is just the first demo post</p>

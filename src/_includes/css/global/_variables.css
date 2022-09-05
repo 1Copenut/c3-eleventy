@@ -18,6 +18,7 @@
   --color-footer-black: #212121;
   --color-footer-gray: #888888;
   --color-text-black: #2b2b2b;
+  --color-text-gray: #686868;
   --color-white: #fff;
 
   /* Fluid type defaults */
@@ -30,10 +31,10 @@
 
   /* Typefaces */
   --typefaces-sans: 'Public Sans', Arial, Helvetica, 'sans-serif';
-  --typefaces-serif: Literata, Georgia, serif;
+  --typefaces-serif: 'Source Serif VF', Georgia, serif;
 
   /*  Type Weights */
-  --font-weight-light: 333;
+  --font-weight-light: 365;
   --font-weight-normal: 400;
   --font-weight-semi-bold: 550;
   --font-weight-semi-bold--list: 600;
