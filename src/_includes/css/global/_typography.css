@@ -57,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--typefaces-sans);
+  font-family: var(--typefaces-sans--bold);
   font-weight: var(--font-weight-bold);
   letter-spacing: -0.05px;
   word-spacing: -1px;

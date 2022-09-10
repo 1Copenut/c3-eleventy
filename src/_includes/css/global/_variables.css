@@ -30,7 +30,9 @@
   --fluid-max-ratio: 1.333;
 
   /* Typefaces */
-  --typefaces-sans: 'Public Sans', Arial, Helvetica, 'sans-serif';
+  --typefaces-sans: 'Public Sans Regular', Arial, Helvetica, 'sans-serif';
+  --typefaces-sans--light: 'Public Sans Light', Arial, Helvetica, 'sans-serif';
+  --typefaces-sans--bold: 'Public Sans Bold', Arial, Helvetica, 'sans-serif';
   --typefaces-serif: 'Source Serif VF', Georgia, serif;
 
   /*  Type Weights */

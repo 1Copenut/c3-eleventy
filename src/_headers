@@ -5,11 +5,10 @@
   x-content-type-options: nosniff
   X-frame-options: DENY
   X-XSS-protection: 1; mode=block
-  content-security-policy: default-src 'self'; base-uri 'none'; object-src 'none'; connect-src 'none'; frame-src 'none'; img-src 'self' data: www.google-analytics.com; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-ancestors 'none'; require-trusted-types-for 'script';
+  content-security-policy: default-src 'self'; base-uri 'none'; object-src 'none'; connect-src 'none'; frame-src 'none'; img-src 'self' data; style-src 'self'; script-src 'self' 'sha256-0dhzRub3e7mU2g5sd8vHUEe971OY216EW+BnNkWNaQs='; frame-ancestors 'none'; require-trusted-types-for 'script';
 
 # ========================================
 # .well-known directory
 # ========================================
 /.well-known
   content-type: text/plain
-  
