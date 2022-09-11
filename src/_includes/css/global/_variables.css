@@ -3,6 +3,7 @@
  * ======================================== */
 :root {
   /* Colors */
+  --color-alice-blue: #f0f8ff;
   --color-background-black: #121212;
   --color-background-blue: #008fd5;
   --color-background-blue--dark: #081999;
@@ -34,10 +35,11 @@
   --typefaces-serif: 'Source Serif VF', Georgia, serif;
 
   /*  Type Weights */
-  --font-weight-light: 365;
+  --font-weight-light: 300;
+  --font-weight-balanced: 365;
   --font-weight-normal: 400;
   --font-weight-semi-bold: 550;
-  --font-weight-semi-bold--list: 600;
+  --font-weight-semi-bold--list: 650;
   --font-weight-bold: 700;
 
   /* CSS locks for fluid type */
