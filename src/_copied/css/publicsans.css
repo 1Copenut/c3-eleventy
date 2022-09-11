@@ -11,24 +11,27 @@
 /* extra bold:    800 */
 /* black:         900 */
 @font-face {
-  font-family: 'Public Sans Light';
-  font-style: light;
+  font-family: 'Public Sans';
+  font-style: normal;
   font-display: swap;
+  font-weight: 300;
   src:  url('../fonts/PublicSans-Light.woff2') format('woff2'),
         url('../fonts/PublicSans-Light.ttf') format('ttf');
 }
 /* regular */
 @font-face {
-  font-family: 'Public Sans Regular';
-  font-style: regular;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
   font-display: swap;
   src:  url('../fonts/PublicSans-Regular.woff2') format('woff2'),
         url('../fonts/PublicSans-Regular.ttf') format('ttf');
 }
 /* bold - 700 */
 @font-face {
-  font-family: 'Public Sans Bold';
-  font-style: bold;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
   src:  url('../fonts/PublicSans-Bold.woff2') format('woff2'),
         url('../fonts/PublicSans-Bold.ttf') format('ttf');

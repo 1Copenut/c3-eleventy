@@ -9,5 +9,8 @@
       {{ content | safe }}
       {% include "layouts/partials/_footer.njk" %}
     </div>
+    {% if page.url === '/contact/' %}
+      <script type="text/javascript" src="../js/contactForm.js"></script>
+    {% endif %}
   </body>
 </html>
