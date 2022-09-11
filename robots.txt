@@ -18,9 +18,7 @@
 ###################################################################
 
 User-agent: *
-Disallow: /.well_known/
-Disallow: /css/
-Disallow: /js/
+Disallow: /
 
 ###################################################################
 # The Ultimate robots.txt Bot and User-Agent Blocker
