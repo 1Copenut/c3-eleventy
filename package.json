@@ -4,7 +4,7 @@
   "description": "Continuum Design, LLC. Built on Eleventy.",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist/ && npx @11ty/eleventy",
+    "build": "npm install && rimraf dist/ && npx @11ty/eleventy && npm prune --omit=dev",
     "build:test": "npm run build && npx http-server ./dist/ -d false -o",
     "start": "rimraf dist/ && npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,13 +19,13 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "dayjs": "^1.11.5",
+    "dayjs": "^1.11.7",
     "http-server": "^14.1.1",
     "md5": "^2.3.0",
-    "postcss": "^8.4.16",
+    "postcss": "^8.4.19",
     "postcss-csso": "^6.0.1",
-    "postcss-import": "^14.0.1",
-    "postcss-nested": "^5.0.5",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.0",
     "rimraf": "^3.0.2"
   }
 }
