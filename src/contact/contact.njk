@@ -44,7 +44,7 @@ tags: ['sitemap']
               maxlength="50"
               minlength="2"
               name="name"
-              pattern="[A-Za-z0-9' -.]{2,50}"
+              pattern="[A-Za-z' -.,]{2,50}"
               type="text"
               required
             />
@@ -58,7 +58,7 @@ tags: ['sitemap']
               autocomplete="email"
               class="js-validate"
               id="email"
-              maxlength="100"
+              maxlength="75"
               name="email"
               type="email"
               required
@@ -68,7 +68,7 @@ tags: ['sitemap']
             <label for="telephone" class="contact-form__label"
               ><span aria-hidden="true" class="contact-form--flourish">&#x2916;&nbsp;</span>Telephone number <em>(optional)</em></label
             >
-             <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-telephone">Enter a valid telephone number</p>
+             <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-telephone">Enter a valid telephone number with area code</p>
             <input
               autocomplete="tel"
               class="js-validate"
@@ -76,7 +76,7 @@ tags: ['sitemap']
               maxlength="20"
               name="telephone"
               pattern="^[(]{0,1}[0-9]{3}[)]{0,1}[-.\s]?[0-9]{3}[-.\s]?[0-9]{4}$"
-              placeholder="(123) 456-7890"
+              placeholder="123-456-7890"
               type="tel"
             />
           </li>
@@ -86,7 +86,7 @@ tags: ['sitemap']
             <textarea
               class="js-validate"
               id="message"
-              maxlength="500"
+              maxlength="750"
               minlength="5"
               required
             ></textarea>
