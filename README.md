@@ -28,6 +28,7 @@
 - [Open Graph documentation](https://ogp.me/)
 - [Twitter Cards documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 - [I Finally Understand Eleventy's Data Cascade.](https://benmyers.dev/blog/eleventy-data-cascade/)
+- [Fixing Content-Security-Policies with Cloudflare Workers](https://www.blackhillsinfosec.com/fixing-content-security-policies-with-cloudflare-workers/)
 
 ## Git References I Use ~~Sometimes~~ A Lot
 
