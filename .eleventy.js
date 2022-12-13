@@ -1,3 +1,4 @@
+require("dotenv").config();
 const generatePermalinkDate = require("./src/_lib/generatePermalinkDate");
 
 module.exports = function (eleventyConfig) {
@@ -11,6 +12,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_routes.json");
 
   eleventyConfig.addFilter("generatePermalinkDate", generatePermalinkDate);
+
+  eleventyConfig.addGlobalData("env", process.env);
 
   return {
     dir: {

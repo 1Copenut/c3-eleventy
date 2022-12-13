@@ -1,6 +1,6 @@
 export const onRequest = async ({ request, next, env }) => {
-  const TEMP_NONCE_SECRET = env.TEMP_NONCE_SECRET;
-  const TEMP_NONCE_TOKEN = env.TEMP_NONCE_TOKEN;
+  const NONCE_SECRET = env.NONCE_SECRET;
+  const NONCE_TOKEN = "8675309-song"; // Will be swapped later for a nonce generating function
 
   const contentType = request.headers.get("accept");
   const response = await next();
@@ -18,10 +18,7 @@ export const onRequest = async ({ request, next, env }) => {
 
     // Find the nonce string and replace it
     return new HTMLRewriter()
-      .on(
-        "script",
-        new AttributeWriter("nonce", TEMP_NONCE_SECRET, TEMP_NONCE_TOKEN)
-      )
+      .on("script", new AttributeWriter("nonce", NONCE_SECRET, NONCE_TOKEN))
       .transform(response);
   } else {
     return response;

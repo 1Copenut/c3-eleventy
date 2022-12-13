@@ -27,5 +27,8 @@
     "postcss-import": "^15.1.0",
     "postcss-nested": "^6.0.0",
     "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }
