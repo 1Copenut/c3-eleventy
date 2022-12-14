@@ -29,6 +29,7 @@
 - [Twitter Cards documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 - [I Finally Understand Eleventy's Data Cascade.](https://benmyers.dev/blog/eleventy-data-cascade/)
 - [Fixing Content-Security-Policies with Cloudflare Workers](https://www.blackhillsinfosec.com/fixing-content-security-policies-with-cloudflare-workers/)
+- [How to Safely Share Your Email Address on a Website](https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website/#the-javascript-approach)
 
 ## Git References I Use ~~Sometimes~~ A Lot
 
