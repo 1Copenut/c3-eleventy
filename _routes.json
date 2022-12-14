@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "include": ["/dist/*"],
-  "exclude": ["/src/*", "/.well-known/*"]
+  "include": ["/*"],
+  "exclude": []
 }
