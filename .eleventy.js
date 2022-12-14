@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/_includes/js/*.js": "js" });
   eleventyConfig.addPassthroughCopy(".well-known/*.txt");
   eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy("_routes.json");
 
   eleventyConfig.addFilter("generatePermalinkDate", generatePermalinkDate);

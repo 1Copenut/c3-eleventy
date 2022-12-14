@@ -6,11 +6,11 @@ export const onRequest = async ({ request, next, env }) => {
   const response = await next();
 
   if (contentType.includes("text/html")) {
-    // Add basic CSP headers first
-    response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
-    response.headers.set("X-Content-Type-Options", "nosniff");
-    response.headers.set("X-Frame-Options", "SAMEORIGIN");
-    response.headers.set("X-XSS-Protection", "1; mode=block");
+    // Add stubbed out CSP
+    // response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+    // response.headers.set("X-Content-Type-Options", "nosniff");
+    // response.headers.set("X-Frame-Options", "SAMEORIGIN");
+    // response.headers.set("X-XSS-Protection", "1; mode=block");
     response.headers.set(
       "Content-Security-Policy",
       `default-src 'self'; base-uri 'none'; object-src 'none'; connect-src 'none'; frame-src https://challenges.cloudflare.com; img-src 'self' data; style-src 'self'; script-src 'self' 'sha256-0dhzRub3e7mU2g5sd8vHUEe971OY216EW+BnNkWNaQs=' https://challenges.cloudflare.com; frame-ancestors 'none'; require-trusted-types-for 'script';`
