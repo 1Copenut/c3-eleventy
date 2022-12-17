@@ -7,6 +7,7 @@
 - https://www.raresportan.com/eleventy-part-three/
 - [Get next or previous collection item universal filters](https://www.11ty.dev/docs/filters/collection-items/)
 - [Content dates](https://www.11ty.dev/docs/dates/)
+- [Collections (using tags)](https://www.11ty.dev/docs/collections/)
 
 ## Inspirational Posts, Guides, and Tutorials
 
