@@ -1,19 +1,18 @@
+import CryptoJS from "crypto-js";
+import { v4 } from "uuid";
+
 export const onRequest = async ({ request, next, env }) => {
   const NONCE_SECRET = env.NONCE_SECRET;
-  const NONCE_TOKEN = "8675309-song"; // Will be swapped later for a nonce generating function
+  const NONCE_TOKEN = nonceGenerator();
 
   const contentType = request.headers.get("accept");
   const response = await next();
 
   if (contentType.includes("text/html")) {
-    // Add stubbed out CSP
-    // response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
-    // response.headers.set("X-Content-Type-Options", "nosniff");
-    // response.headers.set("X-Frame-Options", "SAMEORIGIN");
-    // response.headers.set("X-XSS-Protection", "1; mode=block");
+    // TODO: Replace the SHA256 value
     response.headers.set(
       "Content-Security-Policy",
-      `default-src 'self'; base-uri 'none'; object-src 'none'; connect-src 'none'; frame-src https://challenges.cloudflare.com; img-src 'self' data; style-src 'self'; script-src 'self' 'sha256-0dhzRub3e7mU2g5sd8vHUEe971OY216EW+BnNkWNaQs=' https://challenges.cloudflare.com; frame-ancestors 'none'; require-trusted-types-for 'script';`
+      `default-src 'self'; base-uri 'none'; object-src 'none'; connect-src 'none'; frame-src https://challenges.cloudflare.com; img-src 'self' data; style-src 'self'; script-src 'self' 'nonce-${NONCE_TOKEN}' https://challenges.cloudflare.com; frame-ancestors 'none'; require-trusted-types-for 'script';`
     );
 
     // Find the nonce string and replace it
@@ -41,4 +40,9 @@ class AttributeWriter {
       );
     }
   }
+}
+
+function nonceGenerator() {
+  var hash = CryptoJS.SHA256(v4());
+  return hash.toString();
 }
