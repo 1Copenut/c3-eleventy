@@ -30,6 +30,8 @@
 - [Twitter Cards documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 - [I Finally Understand Eleventy's Data Cascade.](https://benmyers.dev/blog/eleventy-data-cascade/)
 - [How to Safely Share Your Email Address on a Website](https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website/#the-javascript-approach)
+- [We have a problem with promises](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+- [SO: How to wait until an element exists?](https://stackoverflow.com/a/61511955)
 
 ## Git References I Use ~~Sometimes~~ A Lot
 

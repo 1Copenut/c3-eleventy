@@ -1,4 +1,5 @@
 const generatePermalinkDate = require("./src/_lib/generatePermalinkDate");
+const minifyInlineScripts = require("./src/_lib/minifyInlineScripts");
 
 module.exports = function (eleventyConfig) {
   // Pass items through to /dist
@@ -15,6 +16,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_headers");
 
   eleventyConfig.addFilter("generatePermalinkDate", generatePermalinkDate);
+  eleventyConfig.addNunjucksAsyncFilter(
+    "minifyInlineScripts",
+    minifyInlineScripts
+  );
 
   return {
     dir: {
