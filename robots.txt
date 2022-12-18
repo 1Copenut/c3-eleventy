@@ -12,15 +12,6 @@
 #   <_________>
 
 ###################################################################
-# My basic DIS-allow list for Google bots
-# Copyright:
-# https://github.com/1copenut/c3-eleventy
-###################################################################
-
-User-agent: *
-Disallow: /
-
-###################################################################
 # The Ultimate robots.txt Bot and User-Agent Blocker
 # Copyright:
 # https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
