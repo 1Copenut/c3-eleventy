@@ -35,6 +35,9 @@
 - [We have a problem with promises](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
 - [SO: How to wait until an element exists?](https://stackoverflow.com/a/61511955)
 
+## Things I Want to Try Soon
+- [A Set of Useful 11ty Filters](https://www.aleksandrhovhannisyan.com/blog/useful-11ty-filters/)
+
 ## Git References I Use ~~Sometimes~~ A Lot
 
 - [Tell Git not to track a file any more (remove from repo)](https://alvinalexander.com/git/git-rm-file-git-repository-dont-track-accidentally-added/)
