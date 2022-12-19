@@ -1,13 +1,15 @@
-# Continuum Design ~~v3.dough~~ v3.it\'s-about-time
+# Continuum Design ~~v3.dough~~ ~~v3.it\'s-about-time~~ v3.is-it-ever-gonna-launch?
 
 ## Eleventy References I Use A Lot
 
-- https://www.11ty.dev/docs/usage/
-- https://www.11ty.dev/docs/config/#transforms
-- https://www.raresportan.com/eleventy-part-three/
-- [Get next or previous collection item universal filters](https://www.11ty.dev/docs/filters/collection-items/)
-- [Content dates](https://www.11ty.dev/docs/dates/)
-- [Collections (using tags)](https://www.11ty.dev/docs/collections/)
+- [11ty: Docs usage](https://www.11ty.dev/docs/usage/)
+- [11ty: Transforms](https://www.11ty.dev/docs/config/#transforms)
+- [Let's Learn Eleventy (11ty) - Part III](https://www.raresportan.com/eleventy-part-three/)
+- [11ty: Get next or previous collection item universal filters](https://www.11ty.dev/docs/filters/collection-items/)
+- [11ty: Content dates](https://www.11ty.dev/docs/dates/)
+- [11ty: Collections (using tags)](https://www.11ty.dev/docs/collections/)
+- [11ty: Filters](https://www.11ty.dev/docs/filters/)
+- [11ty: JavaScript template functions](https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions)
 
 ## Inspirational Posts, Guides, and Tutorials
 
