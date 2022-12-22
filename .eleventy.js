@@ -17,14 +17,20 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy("_routes.json");
 
+  // Synchronous filters
   eleventyConfig.addFilter("generatePermalinkDate", generatePermalinkDate);
 
-  eleventyConfig.addGlobalData("env", process.env);
-
+  // Asynchronous filters
   eleventyConfig.addNunjucksAsyncFilter(
     "minifyInlineScripts",
     minifyInlineScripts
   );
+
+  // Short codes
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  // Environment variables
+  eleventyConfig.addGlobalData("env", process.env);
 
   return {
     dir: {
