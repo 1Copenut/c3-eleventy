@@ -6,7 +6,7 @@ export const onRequest = async ({ request, next, env }) => {
   const headers = Object.fromEntries(response.headers);
   const contentType = headers["content-type"];
 
-  // 200 OK. Set CSP headers
+  // 200 OK. Set CSP headers.
   if (contentType && contentType.startsWith("text/html")) {
     response.headers.set("cf-nonce-generator", "HIT");
     response.headers.set(
