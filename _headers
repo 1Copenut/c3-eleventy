@@ -1,13 +1,4 @@
 # ========================================
-# Basic security headers
-# ========================================
-/*
-  Referrer-Policy: strict-origin-when-cross-origin
-  x-content-type-options: nosniff
-  X-frame-options: DENY
-  X-XSS-protection: 1; mode=block
-
-# ========================================
 # .well-known directory
 # ========================================
 /.well-known
