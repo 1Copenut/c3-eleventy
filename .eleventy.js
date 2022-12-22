@@ -1,6 +1,5 @@
 require("dotenv").config();
 const generatePermalinkDate = require("./src/_lib/generatePermalinkDate");
-const generatePermalinkDate = require("./src/_lib/generatePermalinkDate");
 const minifyInlineScripts = require("./src/_lib/minifyInlineScripts");
 
 module.exports = function (eleventyConfig) {
