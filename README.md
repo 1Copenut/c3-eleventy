@@ -1,12 +1,15 @@
-# Continuum Design ~~v3.dough~~ v3.it\'s-about-time
+# Continuum Design ~~v3.dough~~ ~~v3.it\'s-about-time~~ v3.is-it-ever-gonna-launch?
 
 ## Eleventy References I Use A Lot
 
-- https://www.11ty.dev/docs/usage/
-- https://www.11ty.dev/docs/config/#transforms
-- https://www.raresportan.com/eleventy-part-three/
-- [Get next or previous collection item universal filters](https://www.11ty.dev/docs/filters/collection-items/)
-- [Content dates](https://www.11ty.dev/docs/dates/)
+- [11ty: Docs usage](https://www.11ty.dev/docs/usage/)
+- [11ty: Transforms](https://www.11ty.dev/docs/config/#transforms)
+- [Let's Learn Eleventy (11ty) - Part III](https://www.raresportan.com/eleventy-part-three/)
+- [11ty: Get next or previous collection item universal filters](https://www.11ty.dev/docs/filters/collection-items/)
+- [11ty: Content dates](https://www.11ty.dev/docs/dates/)
+- [11ty: Collections (using tags)](https://www.11ty.dev/docs/collections/)
+- [11ty: Filters](https://www.11ty.dev/docs/filters/)
+- [11ty: JavaScript template functions](https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions)
 
 ## Inspirational Posts, Guides, and Tutorials
 
@@ -31,6 +34,11 @@
 - [Fixing Content-Security-Policies with Cloudflare Workers](https://www.blackhillsinfosec.com/fixing-content-security-policies-with-cloudflare-workers/)
 - [How to Safely Share Your Email Address on a Website](https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website/#the-javascript-approach)
 - [CSP nonces the easy way with Cloudflare Workers](https://scotthelme.co.uk/csp-nonces-the-easy-way-with-cloudflare-workers/)
+- [We have a problem with promises](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+- [SO: How to wait until an element exists?](https://stackoverflow.com/a/61511955)
+
+## Things I Want to Try Soon
+- [A Set of Useful 11ty Filters](https://www.aleksandrhovhannisyan.com/blog/useful-11ty-filters/)
 
 ## Git References I Use ~~Sometimes~~ A Lot
 

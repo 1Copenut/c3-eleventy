@@ -9,14 +9,14 @@
     <meta name="description" content="{{ config.globalDescription }}" />
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }}</title>
   {% if '/posts' in page.url %}
     {% include "layouts/partials/head/_postsSeoFB.njk" %}
   {% else %}
     {% include "layouts/partials/head/_seoFB.njk" %}
   {% endif %}
-  <title>{{ title }}</title>
-  {% include "layouts/partials/head/_css.njk" %}
-  <link rel="canonical" href="{{ canonical }}" />
   {% include "layouts/partials/head/_wellKnown.njk" %}
+  <link rel="canonical" href="{{ canonical }}" />
   {% include "layouts/partials/head/_seo.njk" %}
+  {% include "layouts/partials/head/_css.njk" %}
 </head>

@@ -13,7 +13,10 @@
       <script type="text/javascript" src="../js/contactForm.js"></script>
     {% endif %}
     {% if page.url === '/security/' %}
-      <script type="text/javascript" src="../js/securityEmail.js"></script>
+      <script type="module" src="../js/securityEmail.mjs"></script>
+    {% endif %}
+    {% if page.url === '/privacy/' %}
+      <script type="module" src="../js/privacyEmail.mjs"></script>
     {% endif %}
   </body>
 </html>

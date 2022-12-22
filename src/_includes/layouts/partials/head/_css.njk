@@ -1,14 +1,12 @@
+<!-- TODO: Add a CSP with hash in prod -->
+{% set js %}
+  {% include "../../../js/_inline/handleAsyncStylesheets.js" %}
+{% endset %}
+<script type="text/javascript" nonce="{{ config.nonceSecret }}">
+  {{ js | minifyInlineScripts | safe }}
+</script>
 <link rel="preload" as="style" href="/css/publicsans.css" />
 <link rel="stylesheet" data-async="css-async-load" href="/css/publicsans.css" media="print" />
 <link rel="preload" as="style" href="/css/sourceserif.css" />
 <link rel="stylesheet" data-async="css-async-load" href="/css/sourceserif.css" media="print" />
-<!-- TODO: Add a CSP with hash in prod -->
-<script type="text/javascript" nonce="{{ config.nonceSecret }}">
-  Array.prototype.slice.call(document.querySelectorAll('[data-async="css-async-load"]')).map(function(e) {
-    e.addEventListener('load', function() {
-      this.media = "all";
-      this.onload = null;
-    });
-  });
-</script>
-<link rel="stylesheet" href="{{ css.styles }}" />
+<link rel="stylesheet" href={{ css.styles }} />
