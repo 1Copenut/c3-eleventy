@@ -1,15 +1,4 @@
 # ========================================
-# Basic security headers
-# ========================================
-/*
-  content-security-policy: default-src 'self'; base-uri 'none'; object-src 'none'; connect-src 'none'; frame-src 'none'; img-src 'self' data; style-src 'self'; script-src 'self' 'sha256-/pCZr9s9eY+VI/71Ozs2ML/NnT/hpWPnVgLcMvvObaU='; frame-ancestors 'none'; require-trusted-types-for 'script';
-  referrer-policy: no-referrer, strict-origin-when-cross-origin
-  strict-transport-security: max-age=63072000; includeSubDomains;
-  x-content-type-options: nosniff
-  X-frame-options: DENY
-  X-XSS-protection: 1; mode=block
-
-# ========================================
 # .well-known directory
 # ========================================
 /.well-known

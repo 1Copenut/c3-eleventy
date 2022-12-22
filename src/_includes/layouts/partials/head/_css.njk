@@ -2,7 +2,7 @@
 {% set js %}
   {% include "../../../js/_inline/handleAsyncStylesheets.js" %}
 {% endset %}
-<script type="text/javascript">
+<script type="text/javascript" nonce="{{ config.nonceSecret }}">
   {{ js | minifyInlineScripts | safe }}
 </script>
 <link rel="preload" as="style" href="/css/publicsans.css" />

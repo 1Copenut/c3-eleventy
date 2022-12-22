@@ -20,11 +20,11 @@ Sitnick the Developer - @sitnikcode - PostCSS, Autoprefixer
 Andy Bell - @piccalilli_ - Fluid typography with CSS clamp
 Deque Systems - @dequesystems - axe-core
 Cypress.io - @Cypress_io - Cypress end-to-end testing
-Netlify - @netlify - Hosting
+Cloudflare - @cloudflare - Hosting
 
 
 /* SITE */
-Last updated: August 27, 2022
+Last updated: December 14, 2022
 Language: English
 Standards: HTML5, CSS3, JavaScript ES6
 Accessibility: WCAG 2.1 Level AA

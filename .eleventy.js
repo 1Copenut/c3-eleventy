@@ -1,3 +1,4 @@
+require("dotenv").config();
 const generatePermalinkDate = require("./src/_lib/generatePermalinkDate");
 const minifyInlineScripts = require("./src/_lib/minifyInlineScripts");
 
@@ -14,8 +15,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy(".well-known/*.txt");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("_headers");
+  eleventyConfig.addPassthroughCopy("_routes.json");
 
   eleventyConfig.addFilter("generatePermalinkDate", generatePermalinkDate);
+
+  eleventyConfig.addGlobalData("env", process.env);
+
   eleventyConfig.addNunjucksAsyncFilter(
     "minifyInlineScripts",
     minifyInlineScripts
