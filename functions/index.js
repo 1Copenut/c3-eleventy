@@ -1,6 +1,3 @@
-import CryptoJS from "crypto-js";
-import { v4 } from "uuid";
-
 export const onRequest = async ({ request, next, env }) => {
   const NONCE_SECRET = env.NONCE_SECRET;
   const NONCE_TOKEN = nonceGenerator();
@@ -55,6 +52,6 @@ class AttributeWriter {
 }
 
 function nonceGenerator() {
-  var hash = CryptoJS.SHA256(v4());
-  return hash.toString();
+  let nonce = btoa(crypto.getRandomValues(new Uint32Array(2)));
+  return nonce;
 }

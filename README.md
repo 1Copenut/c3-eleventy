@@ -30,6 +30,7 @@
 - [I Finally Understand Eleventy's Data Cascade.](https://benmyers.dev/blog/eleventy-data-cascade/)
 - [Fixing Content-Security-Policies with Cloudflare Workers](https://www.blackhillsinfosec.com/fixing-content-security-policies-with-cloudflare-workers/)
 - [How to Safely Share Your Email Address on a Website](https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website/#the-javascript-approach)
+- [CSP nonces the easy way with Cloudflare Workers](https://scotthelme.co.uk/csp-nonces-the-easy-way-with-cloudflare-workers/)
 
 ## Git References I Use ~~Sometimes~~ A Lot
 
