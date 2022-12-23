@@ -10,13 +10,13 @@
       {% include "layouts/partials/_footer.njk" %}
     </div>
     {% if page.url === '/contact/' %}
-      <script type="text/javascript" src="../js/contactForm.js"></script>
+      <script type="text/javascript" src="../js/contactForm.js" nonce="{{ config.nonceSecret }}"></script>
     {% endif %}
     {% if page.url === '/security/' %}
-      <script type="module" src="../js/securityEmail.mjs"></script>
+      <script type="module" src="../js/securityEmail.mjs" nonce="{{ config.nonceSecret }}"></script>
     {% endif %}
     {% if page.url === '/privacy/' %}
-      <script type="module" src="../js/privacyEmail.mjs"></script>
+      <script type="module" src="../js/privacyEmail.mjs" nonce="{{ config.nonceSecret }}"></script>
     {% endif %}
   </body>
 </html>

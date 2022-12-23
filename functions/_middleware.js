@@ -11,7 +11,7 @@ export const onRequest = async ({ request, next, env }) => {
     response.headers.set("cf-nonce-generator", "HIT");
     response.headers.set(
       "Content-Security-Policy",
-      `default-src 'self'; base-uri 'none'; object-src 'none'; connect-src 'none'; frame-src https://challenges.cloudflare.com; img-src 'self' data; style-src 'self'; script-src 'self' 'nonce-${NONCE_TOKEN}' https://challenges.cloudflare.com; frame-ancestors 'none'; require-trusted-types-for 'script';`
+      `default-src 'self'; base-uri 'none'; object-src 'none'; connect-src 'none'; frame-src https://challenges.cloudflare.com; img-src 'self' data; style-src 'self'; script-src 'strict-dynamic' 'nonce-${NONCE_TOKEN}'; frame-ancestors 'none'; require-trusted-types-for 'script';`
     );
     response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
     response.headers.set("X-Frame-Options", "SAMEORIGIN");

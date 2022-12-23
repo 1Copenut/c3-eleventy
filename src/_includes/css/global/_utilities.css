@@ -33,6 +33,6 @@
   width: 1px;
 }
 
-.utils__visibility--none {
+.utils__display--none {
   display: none !important;
 }

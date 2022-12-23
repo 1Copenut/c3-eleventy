@@ -18,5 +18,8 @@
   {% include "layouts/partials/head/_wellKnown.njk" %}
   <link rel="canonical" href="{{ canonical }}" />
   {% include "layouts/partials/head/_seo.njk" %}
+  {% if env.ENVIRONMENT === "production" %}
+    {% include "layouts/partials/head/_turnstile.njk" %}
+  {% endif %}
   {% include "layouts/partials/head/_css.njk" %}
 </head>

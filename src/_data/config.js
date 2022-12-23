@@ -5,4 +5,5 @@ module.exports = {
   language: "en",
   title: "Continuum Design. Work for the digital age.",
   nonceSecret: process.env.NONCE_SECRET,
+  turnstileScriptURL: "https://challenges.cloudflare.com/turnstile/v0/api.js",
 };
