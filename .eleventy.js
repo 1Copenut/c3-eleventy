@@ -1,6 +1,7 @@
 require("dotenv").config();
 const generatePermalinkDate = require("./src/_lib/generatePermalinkDate");
 const minifyInlineScripts = require("./src/_lib/minifyInlineScripts");
+const minifyExternalScripts = require("./src/_lib/minifyExternalScripts");
 
 module.exports = function (eleventyConfig) {
   // Pass items through to /dist
@@ -9,9 +10,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/_copied/css/*.css": "css" });
   eleventyConfig.addPassthroughCopy({ "src/_includes/js/*.js": "js" });
   eleventyConfig.addPassthroughCopy({ "src/_includes/js/*.mjs": "js" });
-  eleventyConfig.addPassthroughCopy({
-    "src/_includes/js/helpers/*.mjs": "js/helpers",
-  });
   eleventyConfig.addPassthroughCopy(".well-known/*.txt");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("_headers");
@@ -20,11 +18,8 @@ module.exports = function (eleventyConfig) {
   // Synchronous filters
   eleventyConfig.addFilter("generatePermalinkDate", generatePermalinkDate);
 
-  // Asynchronous filters
-  eleventyConfig.addNunjucksAsyncFilter(
-    "minifyInlineScripts",
-    minifyInlineScripts
-  );
+  // Minify external scripts
+  eleventyConfig.addFilter("minifyExternalScripts", minifyExternalScripts);
 
   // Short codes
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
