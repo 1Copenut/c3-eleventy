@@ -29,7 +29,7 @@ module.exports = function (eleventyConfig) {
   // Short codes
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-  // Environment variables
+  // Environment variable
   eleventyConfig.addGlobalData("env", process.env);
 
   return {

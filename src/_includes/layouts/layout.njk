@@ -12,11 +12,8 @@
     {% if page.url === '/contact/' %}
       <script type="text/javascript" src="../js/contactForm.js"></script>
     {% endif %}
-    {% if page.url === '/security/' %}
-      <script type="module" src="../js/securityEmail.mjs"></script>
-    {% endif %}
-    {% if page.url === '/privacy/' %}
-      <script type="module" src="../js/privacyEmail.mjs"></script>
+    {% if page.url === '/security/' or page.url === '/privacy/' %}
+      <script type="module" src="../js/emailHandler.mjs"></script>
     {% endif %}
   </body>
 </html>
