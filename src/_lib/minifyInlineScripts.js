@@ -1,11 +1,8 @@
 const { minify } = require("terser");
 
-async function minifyScripts(code, callback) {
+async function minifyInlineScripts(code, callback) {
   try {
-    if (
-      process.env.ENVIRONMENT === "staging" ||
-      process.env.ENVIRONMENT === "production"
-    ) {
+    if (process.env.ENVIRONMENT === "production") {
       const minified = await minify(code);
       callback(null, minified.code);
     } else {
@@ -18,4 +15,4 @@ async function minifyScripts(code, callback) {
   }
 }
 
-module.exports = minifyScripts;
+module.exports = minifyInlineScripts;

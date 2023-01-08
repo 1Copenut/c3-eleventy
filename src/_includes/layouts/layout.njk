@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ config.language }}">
+  {% set contactJS %}
+    <script type="text/javascript" src="../js/contactForm.js" nonce="{{ config.nonceSecret }}"></script>
+  {% endset %}
+
+  {% set emailJS %}
+    <script type="module" src="../js/emailHandler.js" nonce="{{ config.nonceSecret }}"></script>
+  {% endset %}
+
   {% include "layouts/partials/head/_head.njk" %}
   <body>
     {% include "layouts/partials/_skipNav.njk" %}
@@ -10,13 +18,10 @@
       {% include "layouts/partials/_footer.njk" %}
     </div>
     {% if page.url === '/contact/' %}
-      <script type="text/javascript" src="../js/contactForm.js"></script>
+      {{ contactJS | generateMinifiedPath | safe }}
     {% endif %}
-    {% if page.url === '/security/' %}
-      <script type="module" src="../js/securityEmail.mjs"></script>
-    {% endif %}
-    {% if page.url === '/privacy/' %}
-      <script type="module" src="../js/privacyEmail.mjs"></script>
+    {% if page.url === '/security/' or page.url === '/privacy/' %}
+      {{ emailJS | generateMinifiedPath | safe }}
     {% endif %}
   </body>
 </html>
