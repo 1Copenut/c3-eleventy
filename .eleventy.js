@@ -1,5 +1,6 @@
 require("dotenv").config();
 const generatePermalinkDate = require("./src/_lib/generatePermalinkDate");
+const generateMinifiedPath = require("./src/_lib/generateMinifiedPath");
 const minifyInlineScripts = require("./src/_lib/minifyInlineScripts");
 
 module.exports = function (eleventyConfig) {
@@ -7,18 +8,19 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy({ "src/_copied/fonts": "fonts" });
   eleventyConfig.addPassthroughCopy({ "src/_copied/css/*.css": "css" });
-  eleventyConfig.addPassthroughCopy({ "src/_includes/js/*.js": "js" });
-  eleventyConfig.addPassthroughCopy({ "src/_includes/js/*.mjs": "js" });
-  eleventyConfig.addPassthroughCopy({
-    "src/_includes/js/helpers/*.mjs": "js/helpers",
-  });
   eleventyConfig.addPassthroughCopy(".well-known/*.txt");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy("_routes.json");
 
+  // Don't minify JS if we're not in production
+  if (process.env.ENVIRONMENT !== "production") {
+    eleventyConfig.addPassthroughCopy({ "src/_includes/js/*.js": "js" });
+  }
+
   // Synchronous filters
   eleventyConfig.addFilter("generatePermalinkDate", generatePermalinkDate);
+  eleventyConfig.addFilter("generateMinifiedPath", generateMinifiedPath);
 
   // Asynchronous filters
   eleventyConfig.addNunjucksAsyncFilter(
@@ -29,7 +31,7 @@ module.exports = function (eleventyConfig) {
   // Short codes
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-  // Environment variables
+  // Environment variable
   eleventyConfig.addGlobalData("env", process.env);
 
   return {

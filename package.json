@@ -4,9 +4,13 @@
   "description": "Continuum Design, LLC. Built on Eleventy.",
   "main": "index.js",
   "scripts": {
-    "build": "npm install && rimraf dist/ && npx @11ty/eleventy && npm prune --omit=dev",
-    "build:test": "npm run build && npx http-server ./dist/ -d false -o",
-    "start": "rimraf dist/ && npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy && npm run minifyEmailJs && npm run minifyContactJs",
+    "minifyContactJs": "terser ./src/_includes/js/contactForm.js --compress --output ./dist/js/contactForm.min.js",
+    "minifyEmailJs": "terser ./src/_includes/js/emailHandler.js --compress --output ./dist/js/emailHandler.min.js",
+    "postbuild": "npm prune --omit=dev",
+    "prebuild": "npm install && rimraf dist/",
+    "staging": "npm run build && npx http-server ./dist/ -d false -o",
+    "start": "npm install && rimraf dist/ && npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
