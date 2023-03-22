@@ -16,15 +16,6 @@ const createInputErrorMessage = (field) => {
   field.setAttribute("aria-describedby", `error-msg-${fieldId}`);
 };
 
-const removeInputErrorMessage = (field) => {
-  const parent = field.closest("li");
-  if (!parent.classList.contains(JS_INVALID)) return;
-
-  parent.classList.remove(JS_INVALID);
-  field.removeAttribute("aria-invalid");
-  field.removeAttribute("aria-describedby");
-};
-
 const createSubmitErrorMessage = (target) => {
   const invalidInputs = document.querySelectorAll(
     ":scope .contact-form__fieldset :invalid"
@@ -33,7 +24,7 @@ const createSubmitErrorMessage = (target) => {
   const alertTextNode = document.createElement("p");
   const alertTextMsg = `Your form has ${invalidInputs.length} error${
     invalidInputs.length === 1 ? "" : "s"
-  }. Please update and press Send message.`;
+  }. Please update and press the Send message button.`;
 
   while (alertBox.firstChild) {
     alertBox.removeChild(alertBox.firstChild);
@@ -44,6 +35,37 @@ const createSubmitErrorMessage = (target) => {
   requestAnimationFrame(() => {
     alertBox.focus();
   });
+};
+
+const removeInputErrorMessage = (field) => {
+  const parent = field.closest("li");
+  if (!parent.classList.contains(JS_INVALID)) return;
+
+  parent.classList.remove(JS_INVALID);
+  field.removeAttribute("aria-invalid");
+  field.removeAttribute("aria-describedby");
+};
+
+const submitFormData = (e) => {
+  e.preventDefault();
+  e.stopImmediatePropagation();
+
+  // Turnstile requires a FormData object
+  const formData = new FormData(contactForm);
+  const formDataURL = new URLSearchParams(formData);
+
+  fetch("https://httpbin.org/post", {
+    method: "POST",
+    body: formDataURL,
+  })
+    .then((response) => {
+      if (response.ok) {
+        window.location.href = "/contact/thankyou/";
+      } else {
+        window.location.href = "/contact/frownyface/";
+      }
+    })
+    .catch((err) => console.log(err));
 };
 
 const validateInputs = (e) => {
@@ -63,20 +85,9 @@ const validateInputs = (e) => {
     return;
   }
 
-  // TODO: Add submitFormData()
-
-  window.location.href = "/contact/thankyou/";
+  submitFormData(e);
 };
 
-const submitFormData = (e) => {
-  e.preventDefault();
-  e.stopImmediatePropagation();
-
-  // Turnstile requires a FormData object
-  const formData = new FormData(contactForm);
-};
-
-contactForm.addEventListener("submit", validateInputs);
 document.addEventListener("DOMContentLoaded", () => {
   /**
    * Error messages are hard to get right and can be a cognitive challenge
@@ -87,4 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fields.forEach((field) => {
     field.addEventListener("blur", (e) => removeInputErrorMessage(e.target));
   });
+
+  contactForm.addEventListener("submit", validateInputs);
 });
