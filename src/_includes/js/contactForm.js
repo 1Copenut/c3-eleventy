@@ -54,7 +54,7 @@ const submitFormData = (e) => {
   const formData = new FormData(contactForm);
   const formDataURL = new URLSearchParams(formData);
 
-  fetch("https://httpbin.org/post", {
+  fetch("https://contactform.continuumdesign.net", {
     method: "POST",
     body: formDataURL,
   })
