@@ -17,6 +17,9 @@
   {% endif %}
   {% include "layouts/partials/head/_wellKnown.njk" %}
   <link rel="canonical" href="{{ canonical }}" />
+  {% if config.environment === 'production' %}
+    {% include "layouts/partials/head/_sentry.njk" %}
+  {% endif %}
   {% include "layouts/partials/head/_seo.njk" %}
   {% if config.environment === 'production' %}
     {% include "layouts/partials/head/_turnstile.njk" %}
