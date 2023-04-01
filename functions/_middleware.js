@@ -7,11 +7,15 @@ export const onRequest = async ({ request, next, env }) => {
   const contentType = headers["content-type"];
 
   // 200 OK. Set CSP headers.
-  if (contentType && contentType.startsWith("text/html")) {
+  if (
+    response.status === 200 &&
+    contentType &&
+    contentType.startsWith("text/html")
+  ) {
     response.headers.set("cf-nonce-generator", "HIT");
     response.headers.set(
       "Content-Security-Policy",
-      `default-src 'self'; base-uri 'none'; object-src 'none'; connect-src https://sentry.io/; frame-src https://challenges.cloudflare.com; img-src 'self' data; style-src 'self'; script-src 'self' 'nonce-${NONCE_TOKEN}' https://challenges.cloudflare.com; frame-ancestors 'none'; require-trusted-types-for 'script'; report-uri https://o1405800.ingest.sentry.io/api/6739194/security/?sentry_key=3e24862ff9ce4761ab71fce722fc4c6b;`
+      `default-src 'self'; base-uri 'none'; object-src 'none'; connect-src https://sentry.io/; frame-src https://challenges.cloudflare.com; img-src 'self' data; style-src 'self'; script-src 'strict-dynamic' 'nonce-${NONCE_TOKEN}'; frame-ancestors 'none'; require-trusted-types-for 'script'; report-uri https://o1405800.ingest.sentry.io/api/6739194/security/?sentry_key=3e24862ff9ce4761ab71fce722fc4c6b;`
     );
     response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
     response.headers.set("X-Frame-Options", "SAMEORIGIN");

@@ -21,11 +21,7 @@ tags: ['sitemap']
     <form
       action="thankyou/"
       class="contact-form"
-      data-netlify="true"
       id="continuum-contact-form"
-      method="post"
-      name="continuum-contact"
-      netlify-honeypot="botz"
       novalidate
     >
       <fieldset class="contact-form__fieldset">
@@ -35,11 +31,11 @@ tags: ['sitemap']
         <div class="contact-form__alert" role="alert" tabindex="-1"></div>
         <ul class="utils__list--no-bullets contact-form__list" role="list">
           <li class="contact-form__list-item">
-            <label for="name" class="contact-form__label"><span aria-hidden="true" class="contact-form--flourish">&#x2916;&nbsp;</span>Your name</label>
+            <label for="name" class="contact-form__label"><span aria-hidden="true" class="contact-form--flourish">&#8674;&nbsp;</span>Your name</label>
             <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-name">A name of two or more letters is required</p>
             <input
               autocomplete="name"
-              class="js-validate"
+              class="js--validate"
               id="name"
               maxlength="50"
               minlength="2"
@@ -51,12 +47,12 @@ tags: ['sitemap']
           </li>
           <li class="contact-form__list-item">
             <label for="email" class="contact-form__label"
-              ><span aria-hidden="true" class="contact-form--flourish">&#x2916;&nbsp;</span>Email address</label
+              ><span aria-hidden="true" class="contact-form--flourish">&#8674;&nbsp;</span>Email address</label
             >
             <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-email">A valid email address is required</p>
             <input
               autocomplete="email"
-              class="js-validate"
+              class="js--validate"
               id="email"
               maxlength="75"
               name="email"
@@ -66,12 +62,12 @@ tags: ['sitemap']
           </li>
           <li class="contact-form__list-item">
             <label for="telephone" class="contact-form__label"
-              ><span aria-hidden="true" class="contact-form--flourish">&#x2916;&nbsp;</span>Telephone number <em>(optional)</em></label
+              ><span aria-hidden="true" class="contact-form--flourish">&#8674;&nbsp;</span>Telephone number <em>(optional)</em></label
             >
              <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-telephone">Enter a valid telephone number with area code</p>
             <input
               autocomplete="tel"
-              class="js-validate"
+              class="js--validate"
               id="telephone"
               maxlength="20"
               name="telephone"
@@ -81,26 +77,30 @@ tags: ['sitemap']
             />
           </li>
           <li class="contact-form__list-item">
-            <label for="message" class="contact-form__label"><span aria-hidden="true" class="contact-form--flourish">&#x2916;&nbsp;</span>Your message to Continuum Design</label>
+            <label for="message" class="contact-form__label"><span aria-hidden="true" class="contact-form--flourish">&#8674;&nbsp;</span>Your message to Continuum Design</label>
             <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-message">A short message is required</p>
             <textarea
-              class="js-validate"
+              class="js--validate"
               id="message"
               maxlength="750"
               minlength="5"
+              name="message"
               required
             ></textarea>
           </li>
-          <li class="contact-form__list-item utils__visibility--none">
-            <label for="botz" class="contact-form__label">Leave this field blank if you are a human</label>
-            <input type="text" id="botz" name="botz" />
-          </li>
           <li class="contact-form__list-item">
             <label for="consented" class="contact-form__label contact-form__label--checkbox">
-              <input class="js-validate" type="checkbox" id="consented" name="consent" required />
-              <span>I consent to being contacted</span>
+              <input class="js--validate" type="checkbox" id="consented" name="consent" required />
+              <span>I give Continuum Design permission to contact me</span>
             </label>
             <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-consented">You must check the consent box before submitting</p>
+          </li>
+          <li class="contact-form__list-item utils__display--none">
+            <label for="ztob" class="contact-form__label">Leave this field blank if you are a human</label>
+            <input type="text" id="ztob" name="ztob" />
+          </li>
+          <li class="contact-form__list-item utils__margin-top--0">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAABZIfCpkjA2TLo6"></div>
           </li>
           <li class="contact-form__list-item">
             <input class="contact-form__submit" type="submit" value="Send message" />

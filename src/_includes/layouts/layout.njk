@@ -8,6 +8,10 @@
     <script type="module" src="../js/emailHandler.js" nonce="{{ config.nonceSecret }}"></script>
   {% endset %}
 
+  {% set nestedEmailJS %}
+    <script type="module" src="../../js/emailHandler.js" nonce="{{ config.nonceSecret }}"></script>
+  {% endset %}
+
   {% include "layouts/partials/head/_head.njk" %}
   <body>
     {% include "layouts/partials/_skipNav.njk" %}
@@ -20,8 +24,13 @@
     {% if page.url === '/contact/' %}
       {{ contactJS | generateMinifiedPath | safe }}
     {% endif %}
+
     {% if page.url === '/security/' or page.url === '/privacy/' %}
       {{ emailJS | generateMinifiedPath | safe }}
+    {% endif %}
+
+    {% if page.url === '/contact/frownyface/' %}
+      {{ nestedEmailJS | generateMinifiedPath | safe }}
     {% endif %}
   </body>
 </html>

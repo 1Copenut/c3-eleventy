@@ -36,6 +36,8 @@
 - [CSP nonces the easy way with Cloudflare Workers](https://scotthelme.co.uk/csp-nonces-the-easy-way-with-cloudflare-workers/)
 - [We have a problem with promises](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
 - [SO: How to wait until an element exists?](https://stackoverflow.com/a/61511955)
+- [A Deep Dive Into Eleventy Static Site Generator](https://www.smashingmagazine.com/2021/03/eleventy-static-site-generator/)
+- [Using requestAnimationFrame in ReactJS](https://medium.com/dhiwise/reactjs-requestanimationframe-da2155706c36)
 - [Using npm pre- and post-hooks](https://www.yld.io/blog/using-npm-pre-and-post-hooks/)
 - [npm scripts](https://docs.npmjs.com/cli/v9/using-npm/scripts)
 
