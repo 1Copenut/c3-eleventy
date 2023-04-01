@@ -52,11 +52,11 @@ const submitFormData = (e) => {
 
   // Turnstile requires a FormData object
   const formData = new FormData(contactForm);
-  const formDataURL = new URLSearchParams(formData);
+  // const formDataURL = new URLSearchParams(formData);
 
   fetch("https://contactform.continuumdesign.net", {
     method: "POST",
-    body: formDataURL,
+    body: formData,
   })
     .then((response) => {
       if (response.ok) {
