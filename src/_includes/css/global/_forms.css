@@ -199,6 +199,10 @@ input:invalid {
   .contact-form {
     &__list-item {
       margin-top: var(--fluid-4-margin);
+
+      &:last-of-type {
+        margin-top: var(--fluid-4-margin);
+      }
     }
   }
 }
