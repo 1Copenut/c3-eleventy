@@ -8,7 +8,7 @@
     "minifyContactJs": "terser ./src/_includes/js/contactForm.js --compress --output ./dist/js/contactForm.min.js",
     "minifyEmailJs": "terser ./src/_includes/js/emailHandler.js --compress --output ./dist/js/emailHandler.min.js",
     "postbuild": "npm prune --omit=dev",
-    "prebuild": "npm install && rimraf dist/",
+    "prebuild": "npm ci && rimraf dist/",
     "staging": "npm run build && npx http-server ./dist/ -d false -o",
     "start": "npm install && rimraf dist/ && npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,16 +22,16 @@
   "author": "Trevor Pierce",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.1",
     "dayjs": "^1.11.7",
     "dotenv": "^16.0.3",
     "http-server": "^14.1.1",
     "md5": "^2.3.0",
-    "postcss": "^8.4.19",
+    "postcss": "^8.4.21",
     "postcss-csso": "^6.0.1",
     "postcss-import": "^15.1.0",
-    "postcss-nested": "^6.0.0",
-    "rimraf": "^3.0.2",
-    "terser": "^5.16.1"
+    "postcss-nested": "^6.0.1",
+    "rimraf": "^4.4.1",
+    "terser": "^5.16.8"
   }
 }
