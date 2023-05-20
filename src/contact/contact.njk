@@ -71,7 +71,7 @@ tags: ['sitemap']
               id="telephone"
               maxlength="20"
               name="telephone"
-              pattern="^[(]{0,1}[0-9]{3}[)]{0,1}[-.\s]?[0-9]{3}[-.\s]?[0-9]{4}$"
+              pattern="^([\+)][0-9]{0,3})?[(]?\s?[0-9]{3}[)]?[-.\s]?[0-9]{3}[-.\s]?[0-9]{4}"
               placeholder="123-456-7890"
               type="tel"
             />
@@ -89,8 +89,8 @@ tags: ['sitemap']
             ></textarea>
           </li>
           <li class="contact-form__list-item">
-            <label for="consented" class="contact-form__label contact-form__label--checkbox">
-              <input class="js--validate" type="checkbox" id="consented" name="consent" required />
+            <label for="optedIn" class="contact-form__label contact-form__label--checkbox">
+              <input class="js--validate" type="checkbox" id="optedIn" name="optedIn" required />
               <span>I give Continuum Design permission to contact me</span>
             </label>
             <p aria-live="assertive" class="contact-form__error-msg" id="error-msg-consented">You must check the consent box before submitting</p>
