@@ -1,7 +1,8 @@
 const ALERT_BOX = ".contact-form__alert"; // Alert box for errors on submit
+const CONTACT_FORM_URL = "https://contactform.continuumdesign.net";
 const JS_INVALID = "js--invalid";
 
-const contactForm = document.getElementById("continuum-contact-form");
+const contactForm = document.querySelector("form#continuum-contact-form");
 const fields = Array.prototype.slice.call(
   document.querySelectorAll(".js--validate")
 );
@@ -52,9 +53,8 @@ const submitFormData = (e) => {
 
   // Turnstile requires a FormData object
   const formData = new FormData(contactForm);
-  // const formDataURL = new URLSearchParams(formData);
 
-  fetch("https://contactform.continuumdesign.net", {
+  fetch(CONTACT_FORM_URL, {
     method: "POST",
     body: formData,
   })
@@ -78,7 +78,6 @@ const validateInputs = (e) => {
   });
 
   if (!contactForm.checkValidity()) {
-    console.log("Halt heathens!");
     e.preventDefault();
     e.stopImmediatePropagation();
     createSubmitErrorMessage(ALERT_BOX);
