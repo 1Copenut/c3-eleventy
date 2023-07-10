@@ -76,7 +76,7 @@ footer {
   nav[aria-label='Pagination'],
   main {
     .content__layout {
-      grid-column-start: 3;
+      grid-column-start: 4;
       grid-column-end: 11;
     }
   }

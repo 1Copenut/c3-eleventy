@@ -31,12 +31,12 @@
   --fluid-max-ratio: 1.333;
 
   /* Typefaces */
-  --typefaces-sans: 'Public Sans', Arial, Helvetica, 'sans-serif';
-  --typefaces-serif: 'Source Serif VF', Georgia, serif;
+  --typefaces-sans: 'Fig Tree', Arial, Helvetica, 'sans-serif';
+  --typefaces-serif: 'Bitter', Georgia, serif;
 
   /*  Type Weights */
   --font-weight-light: 300;
-  --font-weight-balanced: 365;
+  --font-weight-balanced: 355;
   --font-weight-normal: 400;
   --font-weight-semi-bold: 550;
   --font-weight-semi-bold--list: 650;
@@ -88,19 +88,21 @@
   --fluid-max-size-6: var(--fluid-max-size) * var(--fluid-max-scale-5);
   --fluid-max-size-7: var(--fluid-max-size) * var(--fluid-max-scale-6);
 
-  --fluid-0: calc(((var(--fluid-min-size-0) * 1rem) + (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)));
+  --fluid-0: calc(((var(--fluid-min-size-0) * 0.875rem) + (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)));
   --fluid-1: calc(((var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)));
-  --fluid-1-margin: calc(var(--fluid-min-size-0) * 0.8333333333rem);
   --fluid-2: calc(((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
-  --fluid-2-margin: calc(var(--fluid-min-size-0) * 1.25rem);
   --fluid-3: calc(((var(--fluid-min-size-3) * 1rem) + (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)));
-  --fluid-3-margin: calc(var(--fluid-min-size-0) * 1.5625rem);
   --fluid-4: calc(((var(--fluid-min-size-4) * 1rem) + (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)));
-  --fluid-4-margin: calc(var(--fluid-min-size-0) * 1.953125rem);
   --fluid-5: calc(((var(--fluid-min-size-5) * 1rem) + (var(--fluid-max-size-5) - var(--fluid-min-size-5)) * var(--fluid-bp)));
-  --fluid-5-margin: calc(var(--fluid-min-size-0) * 2.44140625rem);
   --fluid-6: calc(((var(--fluid-min-size-6) * 1rem) + (var(--fluid-max-size-6) - var(--fluid-min-size-6)) * var(--fluid-bp)));
   --fluid-7: calc(((var(--fluid-min-size-7) * 1rem) + (var(--fluid-max-size-7) - var(--fluid-min-size-7)) * var(--fluid-bp)));
+
+  --fluid-1-margin: calc(var(--fluid-min-size-0) * 0.5rem);
+  --fluid-2-margin: calc(var(--fluid-min-size-0) * 0.8333333333rem);
+  --fluid-3-margin: calc(var(--fluid-min-size-0) * 1.25rem);
+  --fluid-4-margin: calc(var(--fluid-min-size-0) * 1.5625rem);
+  --fluid-5-margin: calc(var(--fluid-min-size-0) * 1.953125rem);
+  --fluid-6-margin: calc(var(--fluid-min-size-0) * 2.44140625rem);
 
   /* Type modifiers */
   /* Because sometimes we just need to make things a hair smaller :) */

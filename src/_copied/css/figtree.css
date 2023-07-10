@@ -1,0 +1,19 @@
+/**
+ * https://github.com/uswds/public-sans/blob/develop/site/_data/weights.yml
+ */
+/* thin:          100 */
+/* extra light:   200 */
+/* light:         300 */
+/* regular:       400 */
+/* medium:        500 */
+/* semibold:      600 */
+/* bold:          700 */
+/* extra bold:    800 */
+/* black:         900 */
+@font-face {
+  font-family: 'Fig Tree';
+  font-style: normal;
+  font-display: swap;
+  font-variation-settings: "wght" var(--font-weight-bold);
+  src:  url('../fonts/Figtree.woff2') format('woff2');
+}
