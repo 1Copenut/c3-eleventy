@@ -46,6 +46,7 @@ input:invalid {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    font-variation-settings: "wght" var(--font-weight-normal);
     margin: var(--fluid-2-margin) 0 0;
     padding: 0;
 
@@ -94,8 +95,12 @@ input:invalid {
     }
 
     .contact-form__label {
-      font-weight: var(--font-weight-bold);
+      font-variation-settings: "wght" var(--font-weight-bold);
       margin: 0;
+    }
+
+    .contact-form__label > * {
+      font-variation-settings: "wght" var(--font-weight-bold);
     }
 
     .contact-form__label,

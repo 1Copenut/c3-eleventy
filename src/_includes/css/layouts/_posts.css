@@ -128,7 +128,7 @@
     figcaption {
       font-style: italic;
       max-width: 60ch;
-      padding: 0 0 0 1vw;
+      padding: 0 0 0 0.325rem;
 
       strong {
         display: block;
@@ -160,6 +160,14 @@
         grid-column-start: 2;
         grid-column-end: 13;
         grid-row: 1;
+      }
+
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        max-width: 28ch;
       }
   
       main {
@@ -209,7 +217,7 @@
   .layout {
     &--posts {
       [aria-label='Breadcrumbs'] .content__layout {
-        grid-column-start: 3;
+        grid-column-start: 4;
       }
     }
   }
@@ -219,7 +227,7 @@
       column-gap: 1.75rem;
 
       div[role="region"] {
-        grid-column-start: 3;
+        grid-column-start: 4;
       }
 
       main {
@@ -253,6 +261,12 @@
       }
     }
 
+    &__grid--no-aside {
+      main {
+        grid-column-start: 4;
+      }
+    }
+
     &__jump-link-definitions {
       border: none;
       margin: 0;
@@ -265,7 +279,7 @@
 @media only screen and (min-width: 80rem) {
   .posts {
     &__grid {
-      column-gap: 2rem;
+      column-gap: 2.25rem;
     }
   }
 }

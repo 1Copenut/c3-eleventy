@@ -8,7 +8,7 @@
 
   a {
     display: inline-block;
-    font-weight: var(--font-weight-light);
+    font-variation-settings: "wght" var(--font-weight-semi-bold);
     margin: 1rem 0 0;
     max-width: 50ch;
     text-decoration: none;
@@ -40,6 +40,7 @@
 
   img {
     height: 6.25rem;
+    object-fit: cover;
     width: 100%;
   }
 

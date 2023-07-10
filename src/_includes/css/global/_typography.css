@@ -185,7 +185,7 @@ strong {
  * ======================================== */
  /* Tablet devices - 768px breakpoint */
 @media only screen and (min-width: 48rem) {
-  h2 {
-    margin: 0 0 var(--fluid-2-margin);
+  p, {
+    margin: 0 0 var(--fluid-5-margin) 2px;
   }
 }
