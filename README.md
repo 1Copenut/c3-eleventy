@@ -50,8 +50,7 @@
 - [SO: View the change history of a file using Git versioning](https://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning)
 - [Signing Git Commits and Tags with GPG](https://jigarius.com/blog/signing-git-commits)
 - [Pro Git: Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
-- [Pro Git: Interactive
-  Staging](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)
+- [Pro Git: Interactive Staging](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)
 
 ## NPM References
   
