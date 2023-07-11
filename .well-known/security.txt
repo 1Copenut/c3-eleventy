@@ -1,9 +1,8 @@
 # Our security contact channels
 # ==================================================
-# Security email address must include "Security issue"
-# in the subject line or it will be flagged as spam.
-# Do not include any attachments.
-Contact: <!-- TODO: Add the email address when ready to go live -->
+# The best way to reach me is the contact form, but
+# a security email address is available on the 
+# canonical /security/ page URL below.
 Contact: https://continuumdesign.net/contact/
 
 # Public key expiration
