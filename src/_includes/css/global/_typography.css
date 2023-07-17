@@ -17,7 +17,7 @@ body {
   color: var(--color-text-black);
   font-family: var(--typefaces-sans);
   font-weight: var(--font-weight-normal);
-  line-height: 1.7;
+  line-height: var(--font-line-height);
   letter-spacing: -0.05px;
   word-spacing: -1px;
 }
@@ -58,7 +58,7 @@ h4,
 h5,
 h6 {
   font-family: var(--typefaces-sans);
-  font-weight: var(--font-weight-bold);
+  font-variation-settings: "wght" var(--font-weight-bold);
   letter-spacing: -0.05px;
   word-spacing: -1px;
 }
@@ -101,7 +101,7 @@ h6 {
 p {
   font-family: var(--typefaces-serif);
   font-size: var(--fluid-0);
-  font-variation-settings: "wght" var(--font-weight-balanced);
+  font-variation-settings: "wght" var(--font-weight-normal--mobile);
   margin: 0 0 var(--fluid-4-margin);
   max-width: 72ch;
 }
@@ -126,8 +126,8 @@ ul {
 
 li {
   font-size: var(--fluid-0);
-  font-variation-settings: "wght" var(--font-weight-balanced);
-  margin: 0 0 var(--font-vertical-rhythm-quarter) 0;
+  font-variation-settings: "wght" var(--font-weight-normal--mobile);
+  margin: 0 0 var(--fluid-1-margin) 0;
   padding: 0 0 0 0.25rem;
 
   &:last-of-type {
@@ -167,8 +167,9 @@ a {
   }
 }
 
+b,
 strong {
-  font-variation-settings: "wght" var(--font-weight-bold) !important;
+  font-variation-settings: "wght" var(--font-weight-semi-bold--dark) !important;
 }
 
 /* ========================================
@@ -185,7 +186,20 @@ strong {
  * ======================================== */
  /* Tablet devices - 768px breakpoint */
 @media only screen and (min-width: 48rem) {
-  p, {
+  p {
     margin: 0 0 var(--fluid-5-margin) 2px;
   }
+}
+
+/* Mid-size screens 1024px to 1280px */
+@media only screen and (min-width: 64rem) {
+  p,
+  li {
+    font-variation-settings: "wght" var(--font-weight-balanced);
+  }
+
+  b,
+strong {
+  font-variation-settings: "wght"var(--font-weight-semi-bold--list)!important;
+}
 }
