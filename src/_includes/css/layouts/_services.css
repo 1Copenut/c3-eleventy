@@ -50,7 +50,7 @@
   }
 
   &__quote-entry {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semi-bold--list);
   }
 
   &__quote-definition {
@@ -100,11 +100,15 @@
     }
 
     strong {
-      font-variation-settings: "wght" var(--font-weight-semi-bold--list) !important;
-
       &:after {
-        content: ' — '
+        content: ':'
       }
+    }
+
+    span {
+      display: block;
+      margin-left: 1.75rem;
+      max-width: 45ch;
     }
   }
 }
