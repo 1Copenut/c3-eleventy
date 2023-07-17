@@ -19,16 +19,17 @@ Zach Leatherman - @zachleat - Eleventy
 Sitnick the Developer - @sitnikcode - PostCSS, Autoprefixer
 Andy Bell - @piccalilli_ - Fluid typography with CSS clamp
 Deque Systems - @dequesystems - axe-core
+Black Hills Infosec - @BHinfoSecurity - Security posture, CSP guidance
 Cypress.io - @Cypress_io - Cypress end-to-end testing
 Cloudflare - @cloudflare - Hosting
-Black Hills Infosec - @BHinfoSecurity - Security posture, CSP guidance
+Umami - GDPR-compliant, privacy-first analytics
 
 
 /* SITE */
-Last updated: July 10, 2023
+Last updated: July 16, 2023
 Language: English
 Standards: HTML5, CSS3, JavaScript ES6
 Accessibility: WCAG 2.1 Level AA
 Components: Eleventy, PostCSS, ES6 and modules, Cypress
 Software: Photoshop, VSCode, Vim, Node, NPM, Chrome, Firefox, Safari, NVDA, VoiceOver
-Saas providers: Cloudflare, Sentry.io
+Saas providers: Cloudflare, Sentry.io, Umami.is
