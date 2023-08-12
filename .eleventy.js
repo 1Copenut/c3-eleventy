@@ -12,6 +12,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy("_routes.json");
+  eleventyConfig.addPassthroughCopy({
+    "google2604c2a182173f8d.html": "google2604c2a182173f8d.html",
+  });
 
   // Don't minify JS if we're not in production
   if (process.env.ENVIRONMENT !== "production") {
