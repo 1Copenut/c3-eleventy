@@ -1,4 +1,4 @@
-# Continuum Design ~~v3.dough~~ ~~v3.it\'s-about-time~~ v3.is-it-ever-gonna-launch?
+# Continuum Design ~~v3.dough~~ ~~v3.it\'s-about-time~~ ~~v3.is-it-ever-gonna-launch?~~ is live!
 
 ## Eleventy References I Use A Lot
 
