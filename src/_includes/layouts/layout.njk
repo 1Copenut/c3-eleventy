@@ -25,7 +25,7 @@
       {{ contactJS | generateMinifiedPath | safe }}
     {% endif %}
 
-    {% if page.url === '/security/' or page.url === '/privacy/' %}
+    {% if page.url === '/security/' or page.url === '/privacy/' or page.url === '/accessibility/' %}
       {{ emailJS | generateMinifiedPath | safe }}
     {% endif %}
 
