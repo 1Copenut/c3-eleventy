@@ -6,6 +6,7 @@ const contactForm = document.querySelector("form#continuum-contact-form");
 const fields = Array.prototype.slice.call(
   document.querySelectorAll(".js--validate")
 );
+const alertBox = document.querySelector(ALERT_BOX);
 
 const createInputErrorMessage = (field) => {
   const parent = field.closest("li");
@@ -17,25 +18,33 @@ const createInputErrorMessage = (field) => {
   field.setAttribute("aria-describedby", `error-msg-${fieldId}`);
 };
 
-const createSubmitErrorMessage = (target) => {
+const createSubmitErrorMessage = () => {
   const invalidInputs = document.querySelectorAll(
     ":scope .contact-form__fieldset :invalid"
   );
-  const alertBox = document.querySelector(target);
   const alertTextNode = document.createElement("p");
   const alertTextMsg = `Your form has ${invalidInputs.length} error${
     invalidInputs.length === 1 ? "" : "s"
   }. Please update and press the Send message button.`;
 
-  while (alertBox.firstChild) {
+  if (alertBox.firstChild) {
     alertBox.removeChild(alertBox.firstChild);
   }
 
+  alertBox.setAttribute("role", "alert");
+  alertBox.setAttribute("tabindex", "-1");
+
   alertTextNode.append(alertTextMsg);
   alertBox.append(alertTextNode);
+
   requestAnimationFrame(() => {
     alertBox.focus();
   });
+};
+
+const removeAlertboxAttributes = () => {
+  alertBox.removeAttribute("role");
+  alertBox.removeAttribute("tabindex");
 };
 
 const removeInputErrorMessage = (field) => {
@@ -80,7 +89,7 @@ const validateInputs = (e) => {
   if (!contactForm.checkValidity()) {
     e.preventDefault();
     e.stopImmediatePropagation();
-    createSubmitErrorMessage(ALERT_BOX);
+    createSubmitErrorMessage();
     return;
   }
 
@@ -98,5 +107,9 @@ document.addEventListener("DOMContentLoaded", () => {
     field.addEventListener("blur", (e) => removeInputErrorMessage(e.target));
   });
 
+  // Remove role and tabindex from alertbox
+  alertBox.addEventListener("blur", removeAlertboxAttributes);
+
+  // Validate inputs and make async fetch call
   contactForm.addEventListener("submit", validateInputs);
 });
