@@ -1,0 +1,49 @@
+---
+title: Accessibility policy
+layout: layouts/layout.njk
+tags: ['sitemap']
+---
+
+<main aria-labelledby="content-heading" role="main" id="content">
+  <div class="content__layout">
+    <h1 id="content-heading">{{ title }}</h1>
+    <div class="services__container">
+      <p>Continuum Design <em>(Continuum Design, LLC)</em> is committed to digital accessibility for all. Information should be available for everyone to use and enjoy.</p>
+      
+      <h2>How do I measure accessibility on this site?</h2>
+
+      <p>Continuum Design refers to <a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noopener noreferrer">Web Content Accessibility Guidelines (WCAG) 2.1</a> for accessibility guidance. The site is tested for <strong>Level AA</strong> compliance. My testing methodology is explained below.</p>
+
+      <h2>Testing for accessibility</h2>
+
+      <p>I test the pages of this site using the <a href="https://www.deque.com/axe/" target="_blank" rel="noopener noreferrer">axe browser plugin</a> for automated scans. Scanners like axe are a good first step, and generally catch 30-35% of accessibility errors.</p>
+
+      <p>I also use a number of manual processes when testing for accessibility:</p>
+
+      <ul>
+        <li>Zooming layouts to 200%, 300%, 400% at 1280px browser width</li>
+        <li>Honoring browser font size preferences</li>
+        <li>Limiting page shift or content changes</li>
+        <li>Navigating links and contact form by keyboard only</li>
+        <li>Writing clean HTML markup</li>
+        <li>Properly nesting heading levels</li>
+        <li>Testing pages with MacOS and iOS VoiceOver screen reader</li>
+      </ul>
+
+      <h2>Future enhancements</h2>
+
+      <p>This site was released as soon as I had a minimally viable product. So there&rsquo;s a few things I want to do going forward:</p>
+
+      <ul>
+        <li>Add a dark mode theme</li>
+        <li>Optimize CSS and JavaScript to load pages even faster</li>
+        <li>Rework margins and padding to use latest inline and block CSS</li>
+        <li>Add automated tests to run axe scans at build time</li>
+      </ul>
+
+      <h2>Questions or problems?</h2>
+
+      <p>If you have any questions about Continuum Design's accessibility policy or have trouble using the site, please do not hesitate to contact me. You can <a href="/contact/">use the form</a> or <a id="contact" class="js-link--email" href="">email the studio</a>, whichever is more comfortable. I take accessibility very seriously and know there are always opportunities for improvement.</p>
+    </div>
+  </div>
+</main>
