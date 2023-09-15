@@ -196,11 +196,7 @@ input:invalid {
       padding: 0.875rem 1.5rem;
     }
 
-    &:not(:focus) {
-      opacity: 0.5;
-      /* TODO: Ensure these transitions wouldn't be better as transforms */
-      transition: opacity 1s ease;
-    }
+    
   }
 }
 

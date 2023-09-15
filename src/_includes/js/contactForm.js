@@ -27,9 +27,12 @@ const createSubmitErrorMessage = (target) => {
     invalidInputs.length === 1 ? "" : "s"
   }. Please update and press the Send message button.`;
 
-  while (alertBox.firstChild) {
+  if (alertBox.firstChild) {
     alertBox.removeChild(alertBox.firstChild);
   }
+
+  alertBox.setAttribute("role", "alert");
+  alertBox.setAttribute("tabindex", "-1");
 
   alertTextNode.append(alertTextMsg);
   alertBox.append(alertTextNode);
