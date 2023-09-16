@@ -142,10 +142,10 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin: 3vw 0 0 4vw;
+        margin: 3vh 3vw 0 4vw;
 
         + .footer__block {
-          margin: 3vh 3vw 0 3vw;
+          margin: 3vh 3vw 0 4vw;
         }
       }
 
@@ -176,7 +176,7 @@
       /* Layout */
       &__block {
         flex: 0 0 55%;
-        margin: 3vh 0 0 3vw;
+        margin: 3vh 0 0 4vw;
       }
 
       &__block + .footer__block {
