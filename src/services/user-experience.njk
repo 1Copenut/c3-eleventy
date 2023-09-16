@@ -1,0 +1,76 @@
+---
+date: 2021-11-02
+layout: 'layouts/servicesLayout.njk'
+pageDescription: Continuum Design creates robust, accessible user experiences.
+parentDir: '/services/'
+parentText: All services
+shortTitle: User experience
+tags: ['services', 'sitemap']
+title: A great experience helps users get to yes
+---
+
+{% set previousPost = collections.services | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.services | getNextCollectionItem(page) %}
+
+<main aria-labelledby="content-heading" role="main" id="content">
+<div class="content__layout">
+  <h1 id="content-heading">{{ title }}</h1>
+  <div class="services__opening">
+    <blockquote class="services__lead-paragraph">
+      <p>
+        <span class="type__leading-quote">&ldquo;</span>A website is no good if users can&rsquo;t find the goods and services they want to buy. 
+      </p>
+    </blockquote>
+  </div>
+
+  <h2 class="services__content-header">User-experience (UX)</h2>
+  <p class="services__content-paragraph">
+      UX explores common tasks like registering for a newsletter, or uploading photos to make a book. UX seamlessly blends interfaces and forms to collect data and accomplish tasks. It adopts ideas from psychology about how we perceive information and makes purchasing goods and services easier.
+    </p>
+
+  <h2 class="services__content-header">User-interface (UI) design</h2>
+  <p class="services__content-paragraph">
+      UI design incorporates shape, typography, interaction, animation, and proximity 
+      to identify controls users can click or tap. UI design chooses what color to make 
+      the submit button and how to organize content neatly.
+    </p>
+
+  <h2 class="services__content-header">Information architecture</h2>
+  <p class="services__content-paragraph">
+      Information architecture answers the question <strong>&ldquo;Which link should I click to view power tools?&rdquo;</strong> Good information architecture helps users find what that they want with fewer clicks and less frustration. Bad information architecture leaves users cruising the digital isles of your business, looking in vain for French-fried onions.
+    </p>
+
+  <div class="content__action-link-container">
+    <a href="/contact/" class="content__action-link">
+      <svg
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+        <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+        <path
+            d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+          />
+        </svg>
+        <span>Contact me</span>
+      </a>
+    </div>
+  </div>
+</main>
+
+<nav aria-label="Pagination">
+  <ul class="content__layout pagination__list" role="list">
+    {% if previousPost %}
+      <li class="pagination__list-item">
+        <strong class="utils__visibility--sr-only">Previous:</strong><span aria-hidden="true">&laquo;</span> <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>
+      </li>
+    {% endif %}
+    {% if nextPost %}
+      <li class="pagination__list-item pagination__list-item--next">
+        <strong class="utils__visibility--sr-only">Next:</strong><a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a> <span aria-hidden="true">&raquo;</span>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
