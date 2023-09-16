@@ -78,7 +78,7 @@
     </div>
   </div>
 
-  <div class="footer__block">
+  <div class="footer__block footer__block--social">
     <h2 id="list-title-social" class="footer__heading footer__heading--social">
       Open
       <span aria-hidden="true">_</span>
@@ -123,7 +123,18 @@
   </ul>
 </div>
 
-<div class="footer__copyright">
+<div class="footer__block utils__flex-basis--100 utils__width--100 utils__margin--0">
+  <div class="footer__block">
+    <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
+      <h2 id="a11y-webring-club" class="footer__heading utils__text-align--left">a11y-webring.club</h2>
+      <p class="footer__list-item">This site is a member of the <a class="footer__link" rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
+      <ul class="footer__list footer__list--full-width" role="list">
+        <li class="footer__list-item footer__list-item--full-width"><a class="footer__link" rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/prev">Previous website</a></li>
+        <li class="footer__list-item footer__list-item--full-width"><a class="footer__link" rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/random">Random website</a></li>
+        <li class="footer__list-item footer__list-item--full-width"><a class="footer__link" rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/next">Next website</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="footer__block">
     <h2 id="list-title-support" class="footer__heading utils__text-align--left">Support</h2>
     <ul aria-labelledby="list-title-support" class="footer__list footer__list--full-width" role="list">
@@ -134,6 +145,8 @@
       <li class="footer__list-item footer__list-item--full-width"><a class="footer__link" href="/sitemap.xml">Sitemap</a></li>
     </ul>
   </div>
-  &#169; {% year %} Continuum Design. All rights reserved.
+  <div class="footer__copyright">
+    &#169; {% year %} Continuum Design. All rights reserved.
+  </div>
 </div>
 </footer>

@@ -18,16 +18,34 @@ tags: ['sitemap']
 
       <p>I test the pages of this site using the <a href="https://www.deque.com/axe/" target="_blank" rel="noopener noreferrer">axe browser plugin</a> for automated scans. Scanners like axe are a good first step, and generally catch 30-35% of accessibility errors.</p>
 
-      <p>I also use a number of manual processes when testing for accessibility:</p>
+      <p>I also use a number of best practices and manual tests to gauge accessibility:</p>
 
-      <ul>
-        <li>Zooming layouts to 200%, 300%, 400% at 1280px browser width</li>
-        <li>Honoring browser font size preferences</li>
-        <li>Limiting page shift or content changes</li>
-        <li>Navigating links and contact form by keyboard only</li>
-        <li>Writing clean HTML markup</li>
+      <h3 id="list-1">Semantic HTML</h3>
+      <hr/>
+      <ul aria-labelledby="list-1">
+        <li>Clean HTML5 markup</li>
         <li>Properly nesting heading levels</li>
-        <li>Testing pages with MacOS and iOS VoiceOver screen reader</li>
+        <li>Clearly labeled form inputs</li>
+        <li>Meaningful error messages and notifications</li>
+        <li>Descriptive alt text for images</li>
+      </ul>
+
+      <h3 id="list-2">Responsive design</h3>
+      <hr/>
+      <ul aria-labelledby="list-2">
+        <li>Fluid type that sizes to fit</li>
+        <li>Honoring browser font size preferences</li>
+        <li>Limiting page shift and content redraws</li>
+        <li>Optimized for small screens all the way to high-density displays</li>
+      </ul>
+
+      <h3 id="list-3">Manual testing</h3>
+      <hr/>
+      <ul aria-labelledby="list-3">
+        <li>Zooming layouts to 200%, 300%, 400% at 1280px browser width</li>
+        <li>Limiting page shift or content redraws</li>
+        <li>Navigating links and contact form by keyboard only</li>
+        <li>Browsing with MacOS and iOS VoiceOver screen reader</li>
       </ul>
 
       <h2>Future enhancements</h2>
