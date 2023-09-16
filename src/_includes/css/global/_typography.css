@@ -179,7 +179,7 @@ a {
 
 b,
 strong {
-  font-variation-settings: "wght" var(--font-weight-semi-bold--dark) !important;
+  font-variation-settings: "wght" var(--font-weight-semi-bold) !important;
 }
 
 /* ========================================
@@ -207,9 +207,4 @@ strong {
   li {
     font-variation-settings: "wght" var(--font-weight-balanced);
   }
-
-  b,
-strong {
-  font-variation-settings: "wght"var(--font-weight-semi-bold--list)!important;
-}
 }

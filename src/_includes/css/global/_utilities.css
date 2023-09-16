@@ -1,6 +1,10 @@
 /* ========================================
  * /global _UTILITIES.CSS
  * ======================================== */
+.utils__flex-basis--100 {
+  flex-basis: 100% !important;
+}
+
 .utils__list--no-bullets {
   list-style-type: none !important;
 }
@@ -13,6 +17,10 @@
   margin-bottom: 0 !important;
 }
 
+.utils__margin-left--0 {
+  margin-left: 0 !important;
+}
+
 .utils__margin-top--0 {
   margin-top: 0 !important;
 }
@@ -23,6 +31,10 @@
 
 .utils__text-align--center {
   text-align: center !important;
+}
+
+.utils__width--100 {
+  width: 100% !important;
 }
 
 .utils__visibility--sr-only {
