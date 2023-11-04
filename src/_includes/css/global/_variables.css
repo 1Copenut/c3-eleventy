@@ -2,6 +2,9 @@
  * /global _VARIABLES.CSS
  * ======================================== */
 :root {
+  /* Borders and radiuses */
+  --border-radius-standard: 3px;
+
   /* Colors */
   --color-alice-blue: #f0f8ff;
   --color-background-black: #121212;
@@ -13,9 +16,11 @@
   --color-background-dusty-rose: #ab4776;
   --color-background-dusty-rose--dark: #882455;
   --color-background-gray: #727272;
+  --color-code-blue--background: #f2f7fe;
+  --color-code-gray--comment: #707070;
   --color-form--error: #a70e0e;
   --color-link-blue: #234a71;
-  --color-link-blue-light: #2397d3;
+  --color-link-blue--light: #2397d3;
   --color-footer-black: #212121;
   --color-footer-gray: #888888;
   --color-text-black: #2b2b2b;
@@ -31,8 +36,8 @@
   --fluid-max-ratio: 1.333;
 
   /* Typefaces */
-  --typefaces-sans: 'Fig Tree', Arial, Helvetica, 'sans-serif';
-  --typefaces-serif: 'Bitter', Georgia, serif;
+  --typefaces-sans: "Fig Tree", Arial, Helvetica, "sans-serif";
+  --typefaces-serif: "Bitter", Georgia, serif;
 
   /*  Type Weights */
   --font-weight-light: 300;
@@ -46,7 +51,10 @@
 
   /* CSS locks for fluid type */
   --fluid-screen: 100vw;
-  --fluid-bp: calc((var(--fluid-screen) - (var(--fluid-min-width) * 1rem)) / (var(--fluid-max-width) - var(--fluid-min-width)));
+  --fluid-bp: calc(
+    (var(--fluid-screen) - (var(--fluid-min-width) * 1rem)) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
 
   /*
    * Fluid type scales
@@ -90,14 +98,54 @@
   --fluid-max-size-6: var(--fluid-max-size) * var(--fluid-max-scale-5);
   --fluid-max-size-7: var(--fluid-max-size) * var(--fluid-max-scale-6);
 
-  --fluid-0: calc(((var(--fluid-min-size-0) * 1rem) + (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)));
-  --fluid-1: calc(((var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)));
-  --fluid-2: calc(((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
-  --fluid-3: calc(((var(--fluid-min-size-3) * 1rem) + (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)));
-  --fluid-4: calc(((var(--fluid-min-size-4) * 1rem) + (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)));
-  --fluid-5: calc(((var(--fluid-min-size-5) * 1rem) + (var(--fluid-max-size-5) - var(--fluid-min-size-5)) * var(--fluid-bp)));
-  --fluid-6: calc(((var(--fluid-min-size-6) * 1rem) + (var(--fluid-max-size-6) - var(--fluid-min-size-6)) * var(--fluid-bp)));
-  --fluid-7: calc(((var(--fluid-min-size-7) * 1rem) + (var(--fluid-max-size-7) - var(--fluid-min-size-7)) * var(--fluid-bp)));
+  --fluid-0: calc(
+    (
+      (var(--fluid-min-size-0) * 1rem) +
+        (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)
+    )
+  );
+  --fluid-1: calc(
+    (
+      (var(--fluid-min-size-1) * 1rem) +
+        (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)
+    )
+  );
+  --fluid-2: calc(
+    (
+      (var(--fluid-min-size-2) * 1rem) +
+        (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)
+    )
+  );
+  --fluid-3: calc(
+    (
+      (var(--fluid-min-size-3) * 1rem) +
+        (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)
+    )
+  );
+  --fluid-4: calc(
+    (
+      (var(--fluid-min-size-4) * 1rem) +
+        (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)
+    )
+  );
+  --fluid-5: calc(
+    (
+      (var(--fluid-min-size-5) * 1rem) +
+        (var(--fluid-max-size-5) - var(--fluid-min-size-5)) * var(--fluid-bp)
+    )
+  );
+  --fluid-6: calc(
+    (
+      (var(--fluid-min-size-6) * 1rem) +
+        (var(--fluid-max-size-6) - var(--fluid-min-size-6)) * var(--fluid-bp)
+    )
+  );
+  --fluid-7: calc(
+    (
+      (var(--fluid-min-size-7) * 1rem) +
+        (var(--fluid-max-size-7) - var(--fluid-min-size-7)) * var(--fluid-bp)
+    )
+  );
 
   --fluid-1-margin: calc(var(--fluid-min-size-0) * 0.5rem);
   --fluid-2-margin: calc(var(--fluid-min-size-0) * 0.8333333333rem);

@@ -29,13 +29,24 @@ tags: ['security', 'networking']
 
       <div class="posts__byline-container">
         <ul role="list">
-          <li><span itemprop="author"><strong>Author:</strong> {{ author }}</span></li>
-          <li><time datetime="2022-02-13" itemProp="datePublished"><strong>Published:</strong> {{ dateTime }}</time></li>
+          <li>
+            <span itemprop="author">
+              <strong>Author:</strong>
+              {{ author }}</span></li>
+          <li>
+            <time datetime="2022-02-13" itemProp="datePublished">
+              <strong>Published:</strong>
+              {{ dateTime }}</time>
+          </li>
           <li>
             <strong>This post is tagged:</strong>
             <ul class="list--unordered-second-level">
-              <li><a href="#">security</a></li>
-              <li><a href="#">networking</a></li>
+              <li>
+                <a href="#">security</a>
+              </li>
+              <li>
+                <a href="#">networking</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -43,18 +54,31 @@ tags: ['security', 'networking']
 
       <p>Don't worry. As long as you hit that wire with the connecting hook at precisely 88 miles per hour, the instance the lightning strikes the tower, everything will be fine. Now, Biff, um, can I assume that your insurance is gonna pay for the damage? You bet. Right. Yeah, who are you?</p>
 
-      <h2 class="posts__jump-link-header">The jump box must only be accessed with SSH&nbsp;<a aria-describedby="aside-def-1" href="#aside-def-1">[&nbsp;1&nbsp;]</a></h2>
+      <h2 class="posts__jump-link-header">The jump box must only be accessed with SSH&nbsp;<a aria-describedby="aside-def-1" href="#aside-def-1">[&nbsp;1&nbsp;]</a>
+      </h2>
       <p>Hey, hey, keep rolling, keep rolling there. No, no, no, no, this sucker's electrical. But I need a nuclear reaction to generate the one point twenty-one gigawatts of electricity that I need. You too. Look, there's a rhythmic ceremonial ritual coming up. Yeah. The car, Dad, I mean He wrecked it, totaled it. I needed that car tomorrow night, Dad, I mean do you have any idea how important this was, do you have any clue?</p>
 
-      <h3 class="posts__jump-link-header">It starts with a secure shell&nbsp;<a  aria-describedby="aside-def-2" href="#aside-def-2">[&nbsp;2&nbsp;]</a></h3>
+      <h3 class="posts__jump-link-header">It starts with a secure shell&nbsp;<a  aria-describedby="aside-def-2" href="#aside-def-2">[&nbsp;2&nbsp;]</a>
+      </h3>
       <p>Yet. No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling through the parking lot, you see us struggling in the car, you walk up, you open the door and you say, your line, George. Yeah, I guessed you're a sailor, aren't you, that's why you wear that life preserver. Hey c'mon, I had to change, you think I'm going back in that zoot suit? The old man really came through it worked. Good, I'll see you tonight. Don't forget, now, 1:15 a.m., Twin Pines Mall.</p>
 
       <figure class="posts__figure">
-        <img  class="posts__figure-image" src="https://via.placeholder.com/700x400" alt="Placeholder" height="400" width="700" />
+        <img  class="posts__figure-image" src="https://via.placeholder.com/700x395" alt="Placeholder" height="395" width="700"/>
         <figcaption class="posts__figure-caption">
           <strong>Figure 1:</strong> Logging into OpenWrt via SSH using PuTTY running on Windows. In a real scenario, we would never use the password, favoring SSH public/private key pairs instead. This image is just an example of what SSH looks like in action.
         </figcaption>
       </figure>
+
+      <p>
+        <img class="posts__figure-image" src="https://via.placeholder.com/350x200" alt="Placeholder" height="200" width="350"/>
+      </p>
+
+      <p>
+        <pre><div>JavaScript</div><code><span class="utils__code--comment">/* Anonymous arrow function */</span>
+const <span class="utils__code--keyword">testFunc</span> = () => {
+  return ("Hey ma, it's me!");
+}</code></pre>
+      </p>
     </div>
   </main>
 
@@ -64,11 +88,13 @@ tags: ['security', 'networking']
       <dl class="posts__jump-link-definitions" itemscope itemtype="https://schema.org/DefinedTermSet">
         <div itemscope itemtype="https://schema.org/DefinedTerm">
           <dt id="aside-def-1" itemprop="name">Jump server</dt>
-          <dd itemprop="description">A jump server, jump host or jump box is a system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between then. <a href="#">Wiki - Jump Server</a></dd>
+          <dd itemprop="description">A jump server, jump host or jump box is a system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between then. <a href="#">Wiki - Jump Server</a>
+          </dd>
         </div>
         <div itemscope itemtype="https://schema.org/DefinedTerm">
           <dt id="aside-def-2" itemprop="name">Secure shell (SSH)</dt>
-          <dd itemprop="description">SSH is a network protocol for running services securely over an unsecured network. Typical applications include remote command-line login and remote command-line execution, but any network service can be accessed with SSH. <a href="#">Wiki - Secure Shell</a></dd>
+          <dd itemprop="description">SSH is a network protocol for running services securely over an unsecured network. Typical applications include remote command-line login and remote command-line execution, but any network service can be accessed with SSH. <a href="#">Wiki - Secure Shell</a>
+          </dd>
         </div>
       </dl>
     </div>
