@@ -18,9 +18,8 @@ title: Accessible by design
 
     <div class="services__opening">
       <blockquote class="services__lead-paragraph">
-        <p>
-          <span class="type__leading-quote">&ldquo;</span>Accessibility is a requirement. It&rsquo;s not a feature or a nice-to-have.&rdquo;
-      </p>
+        <span class="type__leading-quote">&ldquo;</span>
+        <span>Accessibility is a requirement. It&rsquo;s not a feature or a nice-to-have.&rdquo;</span>
       </blockquote>
     </div>
 
@@ -78,7 +77,7 @@ title: Accessible by design
           <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
           <path
             d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
-          />
+/>
         </svg>
         <span>Contact me</span>
       </a>
@@ -90,12 +89,16 @@ title: Accessible by design
   <ul class="content__layout pagination__list" role="list">
     {% if previousPost %}
       <li class="pagination__list-item">
-        <strong class="utils__visibility--sr-only">Previous:</strong><span aria-hidden="true">&laquo;</span> <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>
+        <strong class="utils__visibility--sr-only">Previous:</strong>
+        <span aria-hidden="true">&laquo;</span>
+        <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>
       </li>
     {% endif %}
     {% if nextPost %}
       <li class="pagination__list-item pagination__list-item--next">
-        <strong class="utils__visibility--sr-only">Next:</strong><a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a> <span aria-hidden="true">&raquo;</span>
+        <strong class="utils__visibility--sr-only">Next:</strong>
+        <a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a>
+        <span aria-hidden="true">&raquo;</span>
       </li>
     {% endif %}
   </ul>
