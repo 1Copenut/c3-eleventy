@@ -3,9 +3,9 @@
  * ======================================== */
 
 /* Default "back by one" breadcrumb */
-nav[aria-label='Breadcrumbs'] {
+nav[aria-label="Breadcrumbs"] {
   height: 2.5rem;
-  padding-top: 0.5rem;
+  padding-block-start: 0.5rem;
 
   .content__breadcrumb-list,
   .content__breadcrumb-list-item {
@@ -26,7 +26,7 @@ nav[aria-label='Breadcrumbs'] {
     }
 
     &::before {
-      content: '<';
+      content: "<";
       color: var(--color-background-blue--dark);
     }
   }
@@ -34,13 +34,14 @@ nav[aria-label='Breadcrumbs'] {
 
 /* Tablet devices - 768px breakpoint */
 @media only screen and (min-width: 48rem) {
-  nav[aria-label='Breadcrumbs'] {
+  nav[aria-label="Breadcrumbs"] {
     height: 4rem;
     padding: 0;
 
     .content__breadcrumb-list {
       align-self: center;
-      margin: 0;
+      margin-block: 0;
+      margin-inline: 0;
     }
 
     .content__breadcrumb-list-item {
@@ -48,24 +49,24 @@ nav[aria-label='Breadcrumbs'] {
       margin-right: 0.325rem;
 
       &::before {
-        content: '';
+        content: "";
       }
 
       &::after {
         color: var(--color-background-gray);
-        content: '>';
+        content: ">";
         margin-left: 0.4rem;
       }
 
       &:last-of-type::after {
-        content: '';
+        content: "";
       }
     }
 
     .content__breadcrumb-link {
       font-size: calc(var(--fluid-0) * var(--type-size-modifier--secondary));
 
-      &[aria-current='location'] {
+      &[aria-current="location"] {
         color: var(--color-background-black);
         cursor: default;
         font-variation-settings: "wght" var(--font-weight-bold);

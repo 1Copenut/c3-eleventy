@@ -19,22 +19,24 @@
 }
 
 /* Landmark defaults */
-nav[aria-label='Breadcrumbs'],
-nav[aria-label='Pagination'],
+nav[aria-label="Breadcrumbs"],
+nav[aria-label="Pagination"],
 header,
 main,
 aside {
   column-gap: 1.5rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: 0 auto;
+  margin-block: 0;
+  margin-inline: auto;
   max-width: 1440px;
   width: 100%;
 
   .content__layout {
     grid-column-start: 1;
     grid-column-end: 13;
-    margin: 0 6vw 0 6vw;
+    margin-block: 0;
+    margin-inline: 6vw;
   }
 }
 
@@ -44,36 +46,38 @@ header {
 
   .content__layout {
     grid-column-start: 2;
-    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
   }
 }
 
 footer {
-  margin-top: 2rem;
+  margin-block-start: 2rem;
 }
 
 /* Tablet devices - 768px breakpoint */
 @media only screen and (min-width: 48rem) {
-  nav[aria-label='Breadcrumbs'],
-  nav[aria-label='Pagination'],
+  nav[aria-label="Breadcrumbs"],
+  nav[aria-label="Pagination"],
   main,
   aside {
     .content__layout {
       grid-column-start: 2;
       grid-column-end: 12;
-      margin: 0;
+      margin-block: 0;
+      margin-inline: 0;
     }
   }
 
   footer {
-    margin-top: 3rem;
+    margin-block-start: 3rem;
   }
 }
 
 /* Mid-size screens 1024px to 1280px */
 @media only screen and (min-width: 64rem) {
-  nav[aria-label='Breadcrumbs'],
-  nav[aria-label='Pagination'],
+  nav[aria-label="Breadcrumbs"],
+  nav[aria-label="Pagination"],
   main {
     .content__layout {
       grid-column-start: 4;
@@ -82,6 +86,6 @@ footer {
   }
 
   footer {
-    margin-top: 6rem;
+    margin-block-start: 6rem;
   }
 }

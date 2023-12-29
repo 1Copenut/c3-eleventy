@@ -1,7 +1,7 @@
 /* ========================================
  * /landmarks _HEADER.CSS
  * ======================================== */
-[role='banner'] {
+[role="banner"] {
   background-color: var(--color-background-dusty-rose);
   height: 6.25rem;
   position: relative;
@@ -9,7 +9,8 @@
   a {
     display: inline-block;
     font-variation-settings: "wght" var(--font-weight-semi-bold);
-    margin: 1rem 0 0;
+    margin-block: 1rem 0;
+    margin-inline: 0;
     max-width: 50ch;
     text-decoration: none;
 
@@ -27,13 +28,14 @@
     color: var(--color-white);
     display: block;
     font-size: var(--fluid-2);
-    margin-bottom: 0.25rem;
+    margin-block-end: 0.25rem;
     padding: 0 0.5rem 0 0.25rem;
 
     + span {
       display: inline-block;
       font-size: var(--fluid-0);
-      margin: 0;
+      margin-block: 0;
+      margin-inline: 0;
       padding-right: 1rem;
     }
   }
@@ -90,7 +92,7 @@
     height: 18rem;
 
     a {
-      margin-top: 3rem;
+      margin-block-start: 3rem;
     }
 
     img {
