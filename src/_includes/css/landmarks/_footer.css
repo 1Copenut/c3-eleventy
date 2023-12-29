@@ -1,9 +1,9 @@
 /* ========================================
  * /landmarks _FOOTER.CSS
  * ======================================== */
-[role='contentinfo'] {
+[role="contentinfo"] {
   background: var(--color-background-black)
-    url('../../images/backgrounds/footer-hog@2x.png');
+    url("../../images/backgrounds/footer-hog@2x.png");
   background-position: bottom 60px right 25px;
   background-repeat: no-repeat;
   background-size: auto 9%;
@@ -26,7 +26,7 @@
 
     &__block--social {
       align-content: flex-start;
-      background: url('../../images/backgrounds/ampersand.png') top 25px left
+      background: url("../../images/backgrounds/ampersand.png") top 25px left
         30% no-repeat;
       background-size: auto 80px;
     }
@@ -98,7 +98,7 @@
     }
 
     &__link {
-      color: var(--color-link-blue-light);
+      color: var(--color-link-blue--light);
       display: inline-block;
       font-size: calc(var(--fluid-0) * var(--type-size-modifier--footer));
       padding: 0.325rem 0;
