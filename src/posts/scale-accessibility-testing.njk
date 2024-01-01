@@ -1,16 +1,16 @@
 ---
 author: Trevor Pierce
 date: 2023-12-28
-dateTime: December 28, 2023, 9:05pm
-pageDescription: Accessibility is an important aspect of testing, but testers do not scale... Without a little help from automation.
+dateTime: January 1, 2024, 3:57pm
+pageDescription: Accessibility is an important aspect of testing, but testers do not scale...without a little help from automation.
 parentDir: '/posts/'
 parentText: All posts
 permalink: "posts/{{ date | generatePermalinkDate }}/{{ title | slugify }}/index.html"
 shortTitle: Scale accessibility testing
 socialImageAltText: ALT_TEXT_HERE
 socialImageUrl: YOUR_IMAGE_URL_HERE
-title: How I scale accessibility testing with DevOps
-tags: ['accessibility', 'devOps']
+title: How I scale accessibility testing with automation and DevOps
+tags: ['accessibility', 'DevOps']
 ---
 <div class="posts__grid">
   <div role="region">
@@ -21,33 +21,42 @@ tags: ['accessibility', 'devOps']
 
       {% include "layouts/partials/posts/_byline.njk" %}
 
-      <p>Don't worry. As long as you hit that wire with the connecting hook at precisely 88 miles per hour, the instance the lightning strikes the tower, everything will be fine. Now, Biff, um, can I assume that your insurance is gonna pay for the damage? You bet. Right. Yeah, who are you?</p>
+      <p>I’ve been an acessibility specialist for seven years and a designer for a baker’s dozen before that. I didn’t set out to become an accessibility advocate; the job chose me. Well, I took a chance fixing a website, and found a calling instead.</p>
 
-      <h2 class="posts__jump-link-header">The jump box must only be accessed with SSH&nbsp;<a aria-describedby="aside-def-1" href="#aside-def-1">[&nbsp;1&nbsp;]</a>
+      <p>The work is rewarding but difficult. I spend a lot of time looking for ways to scale my testing efforts.</p>
+
+      <p>Accessibility requires manual testing to be thorough. I test 3-4 browsers with three and sometimes four screen readers. I zoom layouts to 200, 300, 400%. I navigate using a keyboard. I reason about instructions, upload documents, and fill out forms. I have not found a way to reliably automate many of these tests.</p>
+
+      <p>But there are a few parts of accessibiilty testing that can be automated. There are also some good ways to scale individual and small team efforts.</p>
+
+      <h2>Automated testing, part I</h2>
+      <p>Many development teams use continuous integration (CI) servers to run tests and build artifacts. I saw an opportunity to include accessibility tests as part of those CI workflows. I added the <a aria-label="Axe-core GitHub repo. Link opens in a new tab." href="https://github.com/dequelabs/axe-core" target="_blank" rel="external noopener noreferrer">axe-core</a> testing library to end-to-end tests first. I programmed tests to run when pages loaded, when errors triggered, and when modal dialogs or flyout menus opened. I also ran tests if there were complex interactions or multi-step processes.</p>
+
+      <p>The tests were informative, but not exhaustive. They took a long time to run and only caught 30-35% of issues. Still, they were a good first step and created an accessibility perimeter.</p>
+
+      <h2>Automated testing, part II</h2>
+      <p>I took the knowledge I’d gained writing page-level tests and applied them to design systems next. I used the axe-core library again, and paired it with <a aria-label="Cypress component testing. Link opens in a new tab." href="https://docs.cypress.io/guides/component-testing/overview" target="_blank" rel="external noopener noreferrer">Cypress component testing</a>. Cypress was easy to install, and ran locally and on the CI server. I pulled data from the axe-core <a aria-label="results object API. Link opens in a new tab." href="https://www.deque.com/axe/core-documentation/api-documentation/#error-result" target="_blank" rel="external noopener noreferrer">results object</a> to write custom error messages. This made it easier to find accessibility errors in log files and gave me information to fix them.</p>
+
+      <h3>Design systems are a multiplier</h3>
+      <p>Focusing on design systems turned out to be an excellent way to scale my efforts. By focusing on single components, tests were easier to write. I reviewed less false positives. Bugs fixes happened faster and made big improvements for consumers. If I or a teammate fixed one component violation, it could improve hundreds of component instances downstream.</p>
+
+      <h3>The benefit of well-tested components</h3>
+      <p>Well-tested components pay dividends for as long as they're in use. Maintainers receive early feedback that their code has issues to fix. Accessibility issues that get fixed earlier in the development process cost less and ship sooner.</p>
+
+      <p>Consumers benefit from well-tested components. Developers can build rich interfaces, confident they're shipping more accessible software. This built-in warning system does garner extra costs in time to write and test, but pays off in fewer bugs and higher quality.</p>
+
+      <h2 class="posts__jump-link-header">Discovering DevOps&nbsp;<a aria-describedby="aside-def-1" href="#aside-def-1">[&nbsp;1&nbsp;]</a>
       </h2>
-      <p>Hey, hey, keep rolling, keep rolling there. No, no, no, no, this sucker's electrical. But I need a nuclear reaction to generate the one point twenty-one gigawatts of electricity that I need. You too. Look, there's a rhythmic ceremonial ritual coming up. Yeah. The car, Dad, I mean He wrecked it, totaled it. I needed that car tomorrow night, Dad, I mean do you have any idea how important this was, do you have any clue?</p>
+      <p>I was having a blast standing up automated tests and watching the green lights fly by on my screen. But I was also spending a lot of time writing the same code to set up and tear down test environments. That became my introduction to DevOps.</p>
 
-      <h3 class="posts__jump-link-header">It starts with a secure shell&nbsp;<a  aria-describedby="aside-def-2" href="#aside-def-2">[&nbsp;2&nbsp;]</a>
-      </h3>
-      <p>Yet. No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling through the parking lot, you see us struggling in the car, you walk up, you open the door and you say, your line, George. Yeah, I guessed you're a sailor, aren't you, that's why you wear that life preserver. Hey c'mon, I had to change, you think I'm going back in that zoot suit? The old man really came through it worked. Good, I'll see you tonight. Don't forget, now, 1:15 a.m., Twin Pines Mall.</p>
+      <h3>Docker and the Bash shell</h3>
+      <p>By this time I was starting to run into cross-platform issues. Intel vs. ARM chips. Mac vs. Linux. Docker vs. native. I caught myself saying "Hm, works on my machine" and knew it was time to scale up again.</p>
 
-      <figure class="posts__figure">
-        <img  class="posts__figure-image" src="https://via.placeholder.com/700x395" alt="Placeholder" height="395" width="700"/>
-        <figcaption class="posts__figure-caption">
-          <strong>Figure 1:</strong> Logging into OpenWrt via SSH using PuTTY running on Windows. In a real scenario, we would never use the password, favoring SSH public/private key pairs instead. This image is just an example of what SSH looks like in action.
-        </figcaption>
-      </figure>
+      <p>I took a few weeks to learn about the <a aria-label="Bash shell manual. Link opens in a new tab." href="https://www.man7.org/linux/man-pages/man1/bash.1.html" target="_blank" rel="external noopener noreferrer">Bash shell</a> and how shell commands could be used to build a recipe called a <a aria-label="Dockerfile manual. Link opens in a new tab." href="https://docs.docker.com/build/building/packaging/" target="_blank" rel="external noopener noreferrer">Dockerfile</a>. I used that Dockerfile to run tests inside a portable container. By managing code in Docker, I ensured the tests would run in many environments without changing code.</p>
 
-      <p>
-        <img class="posts__figure-image" src="https://via.placeholder.com/350x200" alt="Placeholder" height="200" width="350"/>
-      </p>
-
-      <p>
-        <pre><div>JavaScript</div><code><span class="utils__code--comment">/* Anonymous arrow function */</span>
-const <span class="utils__code--keyword">testFunc</span> = () => {
-  return ("Hey ma, it's me!");
-}</code></pre>
-      </p>
+      <h2>Next steps</h2>
+      <p>I'm only getting started with respect to scaling and automation. I've discovered <a aria-label="Terraform. Link opens in a new tab." href="https://www.terraform.io/" target="_blank" rel="external noopener noreferrer">Terraform</a> and the possibilities it offers. My vision is to build entire test pipelines with a single <code class="utils__code--inline-block">
+          <span class="utils__code--keyword">> terraform apply</span></code> command. I'll start small, building secure pipelines in <a aria-label="GitHub Actions. Link opens in a new tab." href="https://github.com/features/actions" target="_blank" rel="external noopener noreferrer">GitHub Actions</a>, then expanding into <a aria-label="Amazon Web Services (AWS). Link opens in a new tab." href="https://aws.amazon.com/" target="_blank" rel="external noopener noreferrer">Amazon Web Services (AWS)</a>.</p>
     </div>
   </main>
 
@@ -56,13 +65,9 @@ const <span class="utils__code--keyword">testFunc</span> = () => {
       <h2 class="posts__jump-definition-header" id="post-definitions-id">Definition of terms</h2>
       <dl class="posts__jump-link-definitions" itemscope itemtype="https://schema.org/DefinedTermSet">
         <div itemscope itemtype="https://schema.org/DefinedTerm">
-          <dt id="aside-def-1" itemprop="name">Jump server</dt>
-          <dd itemprop="description">A jump server, jump host or jump box is a system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between then. <a href="#">Wiki - Jump Server</a>
-          </dd>
-        </div>
-        <div itemscope itemtype="https://schema.org/DefinedTerm">
-          <dt id="aside-def-2" itemprop="name">Secure shell (SSH)</dt>
-          <dd itemprop="description">SSH is a network protocol for running services securely over an unsecured network. Typical applications include remote command-line login and remote command-line execution, but any network service can be accessed with SSH. <a href="#">Wiki - Secure Shell</a>
+          <dt id="aside-def-1" itemprop="name">DevOps</dt>
+          <dd itemprop="description">DevOps is a methodology in the software development and IT industry. Used as a set of practices and tools, DevOps integrates and automates the work of software development and IT operations&hellip;<br/>
+            <a aria-label="Wikipedia - DevOps. Link opens in a new tab." href="https://en.wikipedia.org/wiki/DevOps" target="_blank" rel="external noopener noreferrer">Wikipedia - DevOps</a>
           </dd>
         </div>
       </dl>

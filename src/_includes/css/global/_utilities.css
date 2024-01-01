@@ -11,6 +11,14 @@
   font-weight: var(--font-weight-bold);
 }
 
+.utils__code--inline-block {
+  background-color: var(--color-code-blue--background);
+  margin-block: 1rem;
+  padding-block: 1rem !important;
+  padding-inline: 1.5rem 0 !important;
+  white-space: initial !important;
+}
+
 /* Layout */
 .utils__flex-basis--100 {
   flex-basis: 100% !important;

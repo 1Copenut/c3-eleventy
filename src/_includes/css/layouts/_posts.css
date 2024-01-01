@@ -82,18 +82,17 @@
         padding-block: 0.325rem;
         padding-inline: 0.75rem;
       }
+    }
 
-      code {
-        display: block;
-        background: none;
-        white-space: pre;
-        -webkit-overflow-scrolling: touch;
-        overflow-x: scroll;
-        max-width: 100%;
-        min-width: 100px;
-        padding-block: 1rem;
-        padding-inline: 1.5rem 1rem;
-      }
+    code {
+      display: block;
+      white-space: pre;
+      -webkit-overflow-scrolling: touch;
+      overflow-x: scroll;
+      max-width: 100%;
+      min-width: 100px;
+      padding-block: 1rem;
+      padding-inline: 1.5rem 1rem;
     }
   }
 
