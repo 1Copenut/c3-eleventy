@@ -1,0 +1,38 @@
+{# <div class="posts__lead">
+  <blockquote class="posts__lead-paragraph">
+    <p itemProp="description">{{ pageDescription }}</p>
+  </blockquote>
+</div> #}
+
+<div class="services__opening">
+  <blockquote class="services__lead-paragraph">
+    <span class="type__leading-quote">&ldquo;</span>
+    <span itemProp="description">{{ pageDescription }}</span>
+  </blockquote>
+
+  <div class="posts__byline-container">
+    <ul class="list--unordered" role="list">
+      <li>
+        <span itemprop="author">
+          <strong>Author:</strong>
+          {{ author }}</span></li>
+      <li>
+        <time datetime="2022-02-13" itemProp="datePublished">
+          <strong>Published:</strong>
+          {{ dateTime }}</time>
+      </li>
+      <li>
+        <strong>This post is tagged:</strong>
+        <ul class="list--unordered-second-level">
+          {% for tag in tags %}
+            {% if (tag !== 'posts' and tag !== 'sitemap') %}
+              <li>
+                <a href="#">{{ tag }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

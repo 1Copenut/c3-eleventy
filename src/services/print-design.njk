@@ -13,28 +13,27 @@ title: Print design pays homage to our past
 {% set nextPost = collections.services | getNextCollectionItem(page) %}
 
 <main aria-labelledby="content-heading" role="main" id="content">
-<div class="content__layout">
-  <h1 id="content-heading">{{ title }}</h1>
-  <div class="services__opening">
-    <blockquote class="services__lead-paragraph">
-      <p>
-        <span class="type__leading-quote">&ldquo;</span>Print design is the purest form of print design. It is raw, tactile, and timeless.
-      </p>
-    </blockquote>
-  </div>
+  <div class="content__layout">
+    <h1 id="content-heading">{{ title }}</h1>
+    <div class="services__opening">
+      <blockquote class="services__lead-paragraph">
+        <span class="type__leading-quote">&ldquo;</span>
+        <span>Print is the purest form of design. It is real, raw, tactile, and timeless.</span>
+      </blockquote>
+    </div>
 
-  <h2 class="services__content-header">Posters</h2>
-  <p class="services__content-paragraph">
+    <h2 class="services__content-header">Posters</h2>
+    <p class="services__content-paragraph">
       I can design one-color all the way up to full-color posters. I will work with you to select paper, colors, and a printer. We will explore different options like soy-based inks or digital offset printing to match your budget.
     </p>
 
-  <h2 class="services__content-header">Identity systems</h2>
-  <p class="services__content-paragraph">
+    <h2 class="services__content-header">Identity systems</h2>
+    <p class="services__content-paragraph">
       Business cards, letterhead, envelopes, and cover sheets are all part of a quality identity system. Reinforce your brand with easy-to-read billing statements and quotes. Make your business card stand out in a sea of ordinary on the grocery store pin board.
     </p>
 
-  <h2 class="services__content-header">Data visualization</h2>
-  <p class="services__content-paragraph">
+    <h2 class="services__content-header">Data visualization</h2>
+    <p class="services__content-paragraph">
       Data visualization is a niche specialty for organizing data into charts
       and tables. The data is then used to tell a story like rate of change or
       sports statistics. Charts are often paired with tables to offer visual and
@@ -43,19 +42,19 @@ title: Print design pays homage to our past
       story, not just a story.
     </p>
 
-  <div class="content__action-link-container">
-    <a href="/contact/" class="content__action-link">
-      <svg
+    <div class="content__action-link-container">
+      <a href="/contact/" class="content__action-link">
+        <svg
           aria-hidden="true"
           focusable="false"
           role="presentation"
           viewBox="0 0 512 512"
           xmlns="http://www.w3.org/2000/svg"
         >
-        <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-        <path
+          <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+          <path
             d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
-          />
+/>
         </svg>
         <span>Contact me</span>
       </a>
@@ -67,12 +66,16 @@ title: Print design pays homage to our past
   <ul class="content__layout pagination__list" role="list">
     {% if previousPost %}
       <li class="pagination__list-item">
-        <strong class="utils__visibility--sr-only">Previous:</strong><span aria-hidden="true">&laquo;</span> <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>
+        <strong class="utils__visibility--sr-only">Previous:</strong>
+        <span aria-hidden="true">&laquo;</span>
+        <a href="{{ previousPost.url }}">{{ previousPost.data.shortTitle }}</a>
       </li>
     {% endif %}
     {% if nextPost %}
       <li class="pagination__list-item pagination__list-item--next">
-        <strong class="utils__visibility--sr-only">Next:</strong><a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a> <span aria-hidden="true">&raquo;</span>
+        <strong class="utils__visibility--sr-only">Next:</strong>
+        <a href="{{ nextPost.url }}">{{ nextPost.data.shortTitle }}</a>
+        <span aria-hidden="true">&raquo;</span>
       </li>
     {% endif %}
   </ul>

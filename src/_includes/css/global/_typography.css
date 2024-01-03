@@ -46,7 +46,8 @@ td {
   font-weight: var(--font-weight-normal);
   line-height: var(--font-line-height);
   letter-spacing: 0;
-  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
   padding: 0;
   word-spacing: 0;
 }
@@ -67,26 +68,30 @@ h1 {
   font-size: var(--fluid-4);
   letter-spacing: 0;
   line-height: var(--fluid-3-vertical-rhythm);
-  margin: var(--fluid-4-margin) 0;
+  margin-block: var(--fluid-4-margin);
+  margin-inline: 0;
 }
 
 h2 {
   font-size: var(--fluid-3);
   line-height: var(--fluid-3-vertical-rhythm);
-  margin: 0 0 var(--fluid-1-margin);
+  margin-block: 0 var(--fluid-1-margin);
+  margin-inline: 0;
 }
 
 h3 {
   font-size: var(--fluid-2);
   line-height: var(--fluid-2-vertical-rhythm);
-  margin: 0 0 var(--fluid-1-margin);
+  margin-block: 0 var(--fluid-1-margin);
+  margin-inline: 0;
 }
 
 h4,
 h5 {
   font-size: var(--fluid-1);
   line-height: var(--fluid-1-vertical-rhythm);
-  margin: 0 0 var(--fluid-1-margin);
+  margin-block: 0 var(--fluid-1-margin);
+  margin-inline: 0;
 }
 
 h1,
@@ -102,7 +107,8 @@ p {
   font-family: var(--typefaces-serif);
   font-size: var(--fluid-0);
   font-variation-settings: "wght" var(--font-weight-normal--mobile);
-  margin: 0 0 var(--fluid-4-margin);
+  margin-block: 0 var(--fluid-4-margin);
+  margin-inline: 0;
   max-width: 72ch;
 }
 
@@ -110,7 +116,8 @@ ol,
 ul,
 dl {
   font-size: var(--fluid-0);
-  margin: 0 0 var(--fluid-4-margin);
+  margin-block: 0 var(--fluid-4-margin);
+  margin-inline: 0;
   padding-left: 1.25rem;
   max-width: 72ch;
 }
@@ -127,11 +134,13 @@ ul {
 li {
   font-size: var(--fluid-0);
   font-variation-settings: "wght" var(--font-weight-normal--mobile);
-  margin: 0 0 var(--fluid-1-margin) 0;
+  margin-block: 0 var(--fluid-1-margin) 0;
+  margin-inline: 0;
   padding: 0 0 0 0.25rem;
 
   &:last-of-type {
-    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
   }
 
   > * {
@@ -156,9 +165,9 @@ div[tabindex="-1"] {
 }
 
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   &:focus-visible {
     outline: 4px solid var(--color-background-dusty-rose--dark);
     outline-offset: 6px;
@@ -194,10 +203,11 @@ strong {
 /* ========================================
  * Media queries
  * ======================================== */
- /* Tablet devices - 768px breakpoint */
+/* Tablet devices - 768px breakpoint */
 @media only screen and (min-width: 48rem) {
   p {
-    margin: 0 0 var(--fluid-5-margin) 2px;
+    margin-block: 0 var(--fluid-5-margin);
+    margin-inline: 0;
   }
 }
 

@@ -5,11 +5,12 @@
 /* Action links */
 .content__action-link-container {
   display: block;
-  margin: var(--font-vertical-rhythm) 0;
+  margin-block: var(--font-vertical-rhythm);
+  margin-inline: 0;
   margin-left: -6px;
 
   &--short {
-    margin-top: 0.5rem;
+    margin-block-start: 0.5rem;
   }
 
   a {

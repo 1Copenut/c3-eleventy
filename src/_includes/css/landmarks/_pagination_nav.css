@@ -5,11 +5,12 @@
 /* End of page pagination */
 nav[aria-label="Pagination"] {
   height: auto;
-  padding-top: 0.5rem;
+  padding-block-start: 0.5rem;
 
   .pagination__list,
   .pagination__list-item {
-    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
     padding: 0;
   }
 
@@ -21,7 +22,7 @@ nav[aria-label="Pagination"] {
     flex-direction: row;
     font-family: var(--typefaces-sans);
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-block-start: 2rem;
     padding: 0 6vw;
   }
 
@@ -46,7 +47,7 @@ nav[aria-label="Pagination"] {
 
 /* Tablet devices - 768px breakpoint */
 @media only screen and (min-width: 48rem) {
-  nav[aria-label='Pagination'] {
+  nav[aria-label="Pagination"] {
     .pagination__list {
       border-top: 1px solid var(--color-footer-gray);
       padding: 1.5rem 0.5rem 0;
@@ -60,9 +61,9 @@ nav[aria-label="Pagination"] {
 
 /* Mid-size screens 1024px to 1280px */
 @media only screen and (min-width: 64rem) {
-  nav[aria-label='Pagination'] {
+  nav[aria-label="Pagination"] {
     .pagination__list {
-      margin-top: 3rem;
+      margin-block-start: 3rem;
     }
   }
 }
