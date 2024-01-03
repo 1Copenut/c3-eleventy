@@ -1,13 +1,13 @@
 {% set canonical = config.url + page.url %}
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   {% if pageDescription %}
-    <meta name="description" content="{{ pageDescription }}" />
+    <meta name="description" content="{{ pageDescription }}"/>
   {% else %}
-    <meta name="description" content="{{ config.globalDescription }}" />
+    <meta name="description" content="{{ config.globalDescription }}"/>
   {% endif %}
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{{ title }}</title>
   {% if '/posts' in page.url %}
     {% include "layouts/partials/head/_postsSeoFB.njk" %}
@@ -15,7 +15,7 @@
     {% include "layouts/partials/head/_seoFB.njk" %}
   {% endif %}
   {% include "layouts/partials/head/_wellKnown.njk" %}
-  <link rel="canonical" href="{{ canonical }}" />
+  <link rel="canonical" href="{{ canonical }}"/>
   {% include "layouts/partials/head/_seo.njk" %}
   {% if config.environment === 'production' %}
     {% include "layouts/partials/head/_sentry.njk" %}
