@@ -11,9 +11,9 @@
 /* extra bold:    800 */
 /* black:         900 */
 @font-face {
-  font-family: 'Fig Tree';
-  font-style: normal;
+  font-family: "Fig Tree";
   font-display: swap;
+  font-style: normal;
   font-variation-settings: "wght" var(--font-weight-bold);
-  src:  url('../fonts/Figtree.woff2') format('woff2');
+  src: url("../fonts/Figtree.woff2") format("woff2");
 }

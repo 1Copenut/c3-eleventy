@@ -1,15 +1,17 @@
-@font-face{
-  font-family: 'Bitter';
-  font-style: normal;
+@font-face {
+  font-family: "Bitter";
+  font-display: swap;
   font-stretch: normal;
+  font-style: normal;
   font-variation-settings: "wght" var(--font-weight-normal);
-  src: url('../fonts/Bitter.ttf') format('truetype');
+  src: url("../fonts/Bitter.ttf") format("truetype");
 }
 
-@font-face{
-  font-family: 'Bitter';
-  font-style: italic;
+@font-face {
+  font-family: "Bitter";
+  font-display: swap;
   font-stretch: normal;
+  font-style: italic;
   font-variation-settings: "wght" var(--font-weight-balanced);
-  src: url('../fonts/Bitter-Italic.ttf') format('truetype');
+  src: url("../fonts/Bitter-Italic.ttf") format("truetype");
 }
