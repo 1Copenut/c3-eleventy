@@ -22,11 +22,10 @@ Deque Systems - @dequesystems - axe-core
 Black Hills Infosec - @BHinfoSecurity - Security posture, CSP guidance
 Cypress.io - @Cypress_io - Cypress end-to-end testing
 Cloudflare - @cloudflare - Hosting
-Umami - GDPR-compliant, privacy-first analytics
-
+Bluesky - @continuumdesign.net
 
 /* SITE */
-Last updated: July 16, 2023
+Last updated: January 6, 2025
 Language: English
 Standards: HTML5, CSS3, JavaScript ES6
 Accessibility: WCAG 2.1 Level AA
