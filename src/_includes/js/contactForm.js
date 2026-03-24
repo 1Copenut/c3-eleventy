@@ -4,7 +4,7 @@ const JS_INVALID = "js--invalid";
 
 const contactForm = document.querySelector("form#continuum-contact-form");
 const fields = Array.prototype.slice.call(
-  document.querySelectorAll(".js--validate")
+  document.querySelectorAll(".js--validate"),
 );
 const alertBox = document.querySelector(ALERT_BOX);
 
@@ -20,7 +20,7 @@ const createInputErrorMessage = (field) => {
 
 const createSubmitErrorMessage = () => {
   const invalidInputs = document.querySelectorAll(
-    ":scope .contact-form__fieldset :invalid"
+    ":scope .contact-form__fieldset :invalid",
   );
   const alertTextNode = document.createElement("p");
   const alertTextMsg = `Your form has ${invalidInputs.length} error${
@@ -66,6 +66,9 @@ const submitFormData = (e) => {
   fetch(CONTACT_FORM_URL, {
     method: "POST",
     body: formData,
+    headers: {
+      "X-Requested-With": "XMLHttpRequest",
+    },
   })
     .then((response) => {
       if (response.ok) {
